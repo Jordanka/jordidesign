@@ -1,0 +1,745 @@
+/* -----------------------------
+ * USA Projects General CSS
+ *
+ * ---------
+ * CSS Index
+ *
+ * 001 - Meyer's Reset
+ * 002 - Fonts
+ * 003 - Box Model
+ * 003 - General Styles
+
+ * ---------------
+ * 001 - Meyer's reset
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------------
+ * 002 - Grid System
+ */
+
+/* clearfix */
+.clearfix, .row {display:inline-block;} /*Those two .clearfix have to be separate!)*/
+.clearfix, .row {display:block;}
+
+.col {float:left; position:relative;}
+.gu1{width: 120px;}
+.gu2{width: 200px;}
+.gu3{width: 250px;}
+.gu4{width: 350px;}
+.gu5{width: 466px;}
+.gu6{width: 564px;}
+.gu7{width: 662px;}
+.gu8{width: 760px;}
+.gu9{width: 858px;}
+.gu10{width: 956px;}
+.gu11{width: 1054px;}
+.gu12{width:100%; max-width: 1110px;}
+
+.canvas {
+	margin:0 auto;
+	position:relative;
+	max-width: 1140px;
+}
+
+
+.hide {
+	display: none;
+}
+
+.next_hidden {
+	margin-right: 200px;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+ body {
+ 	font-size: 1em;
+ 	line-height: 1.1em;
+ 	font-family: 'Lato', sans-serif;
+}
+
+#first {    
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;  
+    opacity:0.5;
+    background-color:#000;
+    color:#fff;
+    z-index:9999;
+}
+
+/* ---------------
+ * 004 - Header
+ */
+
+#logo img {
+	margin: 15px auto;
+	display: block;
+}
+
+#logo .menu-btn {
+	position: absolute;
+	top: 5px;
+	left: 30px;
+	cursor: pointer;
+}
+
+#header {
+    width: 100%;
+    height: 60px;
+    background-color: #efeff1;
+}
+
+#header h1 {
+	font-size: 2em;
+	margin-top: 20px;
+	margin-left: 20px;
+	float: left;
+}
+
+#main-buttons {
+	float: right;
+	margin-top: 15px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+#main-buttons img {
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+#menu-container {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #000;
+    z-index: 100;
+}
+
+#menu-container .menu-btn {
+	float: right;
+	cursor: pointer;
+	margin: 20px;
+}
+
+#menu-container > ul {
+    margin-top: 40%;
+}
+
+#menu-container ul li {
+	width: 180px;
+	margin-left: 20px;
+    padding: 12px 0;
+    border-top: 1px solid white;
+}
+
+#menu-container ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* ---------------
+ * 004 - Tables
+ */
+
+.dataTables_wrapper {
+	margin-top: 30px;
+}
+
+#example {
+	padding: 20px 0 30px 0;
+}
+
+.filter_title {
+	text-transform: uppercase;
+	margin-top: 30px;
+	padding-bottom: 10px;
+  	border-bottom: 1px solid black;
+}
+
+.export_title {
+	margin-top: 30px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+  	border-bottom: 1px solid black;
+}
+
+.filter_title a, .export_title a {
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+	border: 1px solid black;
+	padding: 2px 6px 5px 6px;
+	color: black;
+	float: right;
+	position: relative;
+	top: -5px;
+}
+
+#export {
+	width: 400px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+#export a {
+	border: 1px solid black;
+	padding: 4px 10px;
+	margin-top: 27px;
+	float: left;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	cursor: pointer;
+}
+
+#example_length {
+	float: right;
+	margin-top: 15px;
+	position: relative;
+	z-index: 99999;
+}
+
+#example_length select {
+	height: 30px;
+	width: 70px;	
+}
+
+.canvas.novedad_list #other_filters {
+	width: 1140px;
+}
+
+.canvas.small_list #example_length, .canvas.small_list #example_paginate, .canvas.small_list #example_info {
+	display: none;
+}
+
+.canvas.pages #example_length {
+	display: block;
+	position: relative;
+	top: -148px;
+}
+
+.canvas.small_list #example_filter {
+	position: relative;
+	top: -148px;
+}
+
+.canvas.small_list #example {
+	position: relative;
+	top: -90px;
+}
+
+label.activo_small  {
+	margin-top: 50px;
+	margin-left: 280px;
+	font-size: 0.9em;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+
+label.conocimientos_small {
+	display: inline;
+}
+
+label.activo_small select {
+	width: 100px;
+}
+
+#example_filter {
+  	text-align: left;
+  	float: left;
+  	width: 150px;
+}
+
+#other_filters {
+    width: 760px;
+  	z-index: 99;
+  	margin-top: 5px;
+}
+
+.line {
+	width: 1px;
+	height: 55px;
+	float: left;
+	padding-left: 15px
+}
+
+.dataTables_filter {
+	width: 150px;
+	float: left;
+	position: absolute;
+}
+
+.dataTables_filter label {
+  	display: block;
+  	float: left;
+  	font-size: 0.9em;
+  	font-weight: bold;
+  	padding-right: 10px;
+  	padding-top: 5px;
+}
+
+.dataTables_filter input, .dataTables_filter select {
+  	width: 125px;
+  	margin: 5px 0;
+  	font-size: 0.9em;
+  	height: 20px;
+  	display: block;
+}
+
+.dataTables_filter input[type=search], .dataTables_filter select {
+  	height: 34px;
+  	margin-left: 0;
+  	height: 28px;
+}
+
+.dataTables_filter input[type=search] {
+	width: 250px; 
+}
+.dataTables_filter input[type=date] {
+	width: 125px;
+}
+
+tbody th, table.dataTable tbody td.actions {
+	width: 150px;
+	padding-left: 20px;
+}
+
+.actions img {
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.dataTables_wrapper .dataTables_info {
+	padding-bottom: 70px;
+}
+
+/* ---------------
+ * 004 - Form & Profile General CSS
+ */
+
+.steps {
+	float: left;
+	margin: 10px 20px 0 20px;
+}	
+
+.step {
+	border-top: 2px solid black;
+	margin: 20px 10px;
+	cursor: pointer;
+	padding-top: 10px;
+}
+
+.step h2 {
+ 	text-transform: uppercase;
+}
+
+.form_step {
+	clear: both;
+	margin: 0 10px;
+}
+
+.form_step h2 {
+	font-weight: bold;
+	padding: 30px 0 10px 0;
+	border-bottom: 1px solid black;
+	margin-bottom: 10px;
+}
+
+.form_step .col {
+	margin-top: 15px;
+}
+
+.profile {
+	margin: 0 10px;
+}
+
+.profile img {
+	margin-top: 35px;
+}
+
+.profile h2 {
+ 	font-size: 4em;
+ 	float: left;
+ 	font-weight: 800;
+ 	margin-top: 35px;
+}
+
+.profile p {
+ 	font-size: 1.5em;
+ 	float: left;
+ 	margin-top: 25px;
+}
+
+/* ---------------
+ * 004 - Form Page
+ */
+
+.form_page {
+	margin: 0 20px;
+	float: left;
+}
+
+label {
+	display: block;
+	padding: 10px 0 5px 0;
+}
+
+input, select {
+	font-family: 'Lato', sans-serif;
+	margin-right: 5px;
+	height: 20px;
+	padding: 2px 5px;
+}
+
+input[type=month] {
+	width: 155px;
+}
+
+select {
+	height: 28px;
+	width: 180px;
+	-webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+select.small_select {
+	width: 138px;
+}
+
+select option {
+	padding: 2px 5px;
+}
+
+.add_select {
+	height: 34px;
+	display: inline;
+	padding: 1px 8px 2px 10px;
+	font-size: 1.5em;
+	font-weight: bold;
+	border: 1px solid #999;
+	background-color: white;
+	position: relative;
+	top: 4px;
+	cursor: pointer;
+}
+
+input[type=checkbox] {
+	position: relative;
+	top: 5px;
+	margin-left: 20px;
+	margin-bottom: 11px;
+}
+
+input[type=radio] {
+	width: 15px !important;
+	margin-top: 12px !important;
+	margin-right: 62px;
+}
+
+.span {
+	float: left;
+}
+
+.form_step .gu4 {
+	padding-right: 50px;
+}
+
+.add {
+	padding-right: 20px;
+	float: left;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.activo {
+	width: 100%;
+	float: left;
+	margin-top: 20px;
+}
+
+.activo input[type=checkbox] {
+	margin-left: 0;
+}
+
+.hijos p {
+	width: 84px; 
+}
+
+.tecnologia_head, .tecnologia {
+	float: left;
+	width: 100%;
+	padding-right: 20px;
+}
+
+.tecnologia {
+	border-top: 1px solid #ccc;
+}
+
+.tecnologia p {
+	padding: 12px 0;
+	float: left;
+}
+
+.tecnologia select {
+	margin: 5px 0;
+}
+
+.tech_skills {
+	float: right;
+}
+
+.tech_skills .col {
+	width: 80px;
+}
+
+.tecnologia_head .tech_skills .col{
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.bottom {
+	margin-left: 220px;
+}
+
+.submit {
+	border-top: 1px solid black;
+	margin: 40px 10px 20px 10px;
+	padding-top: 30px;
+	padding-bottom: 80px;
+}
+
+.submit a, .novedades a {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	border: 1px solid black;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+.submit .save {
+	float: left;
+}
+
+.submit .save a {
+	margin-right: 5px;
+}
+
+.submit .nav {
+	float: right;
+}
+
+.submit .nav a {
+	margin-left: 5px;
+}
+
+
+
+/* ---------------
+ * 004 - Ovelay Page
+ */
+
+.overlay_page .submit {
+	padding-bottom: 10px;
+}
+
+.overlay_page .form_step .gu4 {
+	padding-right: 0;
+}
+
+.overlay_page input[type=checkbox] {
+	margin-left: 0;
+}
+
+blackout {
+	width:	100%; height: 100%;
+	z-index: 99999;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed; display: none;
+	top:0px; left:0px;
+	cursor: pointer;
+}
+
+blackout iframe {
+	position: absolute;
+  	width: 370px;
+ 	background-color: white;
+  	border: 0px;
+  	padding: 0 15px;
+}
+
+/* ---------------
+ * 004 - Profile Page
+ */
+
+.profile_page .gu2 {
+	width: 180px
+}
+
+.profile_page .steps {
+	margin: 20px 0 0 0;
+}
+
+.profile_page h4 {
+	font-size: 0.9em;
+}
+
+.profile_page h3 {
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.profile img {
+	cursor: pointer;
+}
+
+.profile_page .tech .col {
+	margin: 15px 0;
+}
+
+.profile_page .tech h4, .profile_page .tech h3 {
+	display: inline;
+}
+
+.profile_page .tech h3 {
+	margin-right: 10px;
+}
+
+/* ---------------
+ * 004 - Novedades
+ */
+
+.novedades {
+	height: 100%;
+	border-left: 1px solid black;
+	margin-left: 20px;
+	padding: 35px 20px 50px 20px;
+}
+
+.novedades h2 {
+	font-weight: bold;
+}
+
+.agregar_novedad {
+	margin-top: 20px;
+	background-color: #efeff1;
+	padding: 10px 20px 20px 20px;
+	margin-bottom: 20px;
+}
+
+.agregar_novedad a {
+	display: block;
+	margin-top: 20px;
+	width: 80px;
+}
+
+.novedad {
+	float:left;
+	border-top: 1px solid #efeff1;
+	padding-top: 15px;
+	margin-top: 15px;
+	width: 250px;
+}
+
+.novedad p {
+	float: left;
+}
+
+.novedad span {
+	display: block;
+	font-size: 0.8em;
+}
+
+.novedad .actions {
+	float: right;
+}
+
+a.novedades_all {
+	padding: 4px 8px;
+	font-size: 0.9em;
+	float: left;
+	margin-top: 20px;
+}
+
+
+
+
+

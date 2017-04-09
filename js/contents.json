@@ -1,0 +1,674 @@
+{
+    "tecnologias": {
+        "uxdev": {
+            "01": {
+                "name": "HTML5 | CSS3",
+                "percent": "90%",
+                "circle": "580",
+                "image": "html5-css3",
+                "description": "HTML5 y CSS3 son los nuevos estándares de los lenguajes estructurales que dan forma y estilos a los sitios web. Gracias a ellos contamos con nuevas etiquetas y selectores, así como mejores herramientas para la creación de layouts, animaciones y responsive design. Con la ayuda de preprocesadores como SASS o frameworks como Bootstrap este trabajo se simplifica en gran medida."
+            },
+            "02": {
+                "name": "JS | jQuery | AngularJS",
+                "percent": "70%",
+                "circle": "460",
+                "image": "javascript-jquery-angular",
+                "description": "Javascript (JS) es el lenguaje standard para las acciones del lado de el cliente y se ejecuta directamente en el navegador, interactuando con el DOM. Frameforks como jQuery y AngularJS son útiles extensiones siendo el primero una excelente herramienta para manipular el DOM y el segundo un modelo MVC que facilita la interacción con el servidor en aplicaciones via data-binding y directivas."
+            },
+            "03": {
+                "name": "PHP | MySql | Ajax",
+                "percent": "30%",
+                "circle": "210",
+                "image": "php-mysql",
+                "description": "PHP es un lenguaje de lado del servidor que procesa la información proveniente de una base de datos como MySQL, mediante el lenguaje estructurado SQL en este caso, para generar el código/contenido que la aplicación necesita. Ajax, por otra parte, es una técnica de Javascript que permite mantener una comunicación asincrónica con el servidor en segundo plano, o lo que es lo mismo, interactuar desde el front con el servidor sin recargar el sitio."
+            },
+            "04": {
+                "name": "SASS",
+                "percent": "60%",
+                "circle": "430",
+                "image": "sass",
+                "description": "Sass es un metalenguaje de script que es compilado a CSS. El mismo extiende a CSS proveyendo de varios mecanismos que están presentes en los lenguajes de programación tradicionales como variables y funciones. Conjuntamente con la librería Compass, la cual provee una gran cantidad de funciones listas para su implementación, Sass es una poderosa herramienta para hacer del CSS un trabajo menos tedioso y mejorar la edición y reusabilidad del mismo."
+            },
+            "05": {
+                "name": "Bootstrap",
+                "percent": "90%",
+                "circle": "580",
+                "image": "bootstrap",
+                "description": "Twitter Bootstrap es un framework o conjunto de herramientas de Código abierto para diseño de sitios y aplicaciones web. Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS, así como, extensiones de JavaScript opcionales adicionales."
+            }
+        },
+        "graphic": {
+            "01": {
+                "name": "Adobe Photoshop",
+                "percent": "90%",
+                "circle": "580",
+                "image": "photoshop",
+                "description": "Adobe Photoshop es sin dudas la mejor herramientas para la edición de imágenes. Si bien se crean otras herramientas más “orientadas” al diseño web, ninguna ha conseguido suplantar al Photoshop en la facilidad de manejo, la potencia de sus herramientas y calidad de sus resultados. Con la reciente incorporación de los Layer Comps y la conversión de sus estilos a CSS, es difícil encontrar nuevas objeciones para continuar disfrutando de su uso."
+            },
+            "02": {
+                "name": "Adobe Illustrator",
+                "percent": "90%",
+                "circle": "580",
+                "image": "illustrator",
+                "description": "Mientras Photoshop domina el imperio de las imágenes, Illustrator lo supera con creces en lo que a dibujo vectorial se refiere. Ganándole fácilmente la pulseada a Corel Draw y gracias a una fluida interacción con Photoshop mediante los Vector Smart Objects, la dupla Photoshop/Illustrator termina siendo la plataforma por excelencia de trabajo para todo diseñador."
+            },
+            "03": {
+                "name": "Adobe InDesign",
+                "percent": "60%",
+                "circle": "430",
+                "image": "indesign",
+                "description": "Adobe InDesing es una aplicación para la composición digital de páginas, la cual le terminó ganando el lugar a su predecesor Quark Xpress como favorita para trabajos editoriales. Útil por sus facilidades en la sistematización de los contenidos y su integración con el resto de las herramientas del paquete de Adobe, aporta muchos conceptos que fueron reciclados por Adobe Muse en la composición de páginas webs."
+            },
+            "04": {
+                "name": "Adobe Animate",
+                "percent": "70%",
+                "circle": "460",
+                "image": "animate",
+                "description": "Adobe Animate es el sucesor de Edge Animate de Adobe, consistente en herramientas para sustituir a Flash en la generación de contenidos web animados. Esta evolución es posible gracias a que estos contenidos estan creados en HTML5/CSS3/JS que son los actuales estándares. Aunque es una ventaja contar con la una interfaz conocida como la de Flash a la hora de crear las animaciones, Animate aun tiene el reto de integrarse de una mejor manera con el código del sitio ya que su entrega no es muy accesible."
+            },
+            "05": {
+                "name": "Adobe Muse",
+                "percent": "80%",
+                "circle": "520",
+                "image": "muse",
+                "description": "Adobe Muse es una útil herramienta de prototipado con facilidades que permite crear aplicaciones con interacciones básicas en un entorno multidispositivo. Si bien genera código basura, es una manera rápida de testear a los usuarios sin gastar recursos de desarrollo. Es similar a Dreamweaver, aunque esta última cuenta con mejor control del código que Adobe Muse, pero menos facilidades de dibujo y estructura."
+            }
+        },
+        "industrial": {
+            "01": {
+                "name": "Audodesk 3DStudioMax",
+                "percent": "60%",
+                "circle": "430",
+                "image": "3dmax",
+                "description": "Autodesk 3D Studio Max es un software de modelado, animación, simulación y renderización en 3D para modelado arquitectónico o de productos, juegos, cine y gráficos de movimiento. Es un de los softwares más complejos que he usado y son de destacar los simuladores de luz y materiales, potenciados gracias al motor de render Vray, los cuales aprovechan las propiedades físicas para generar efectos hiperrealistas."
+            },
+            "02": {
+                "name": "Audodesk AutoCAD",
+                "percent": "60%",
+                "circle": "430",
+                "image": "acad",
+                "description": "Autodesk AutoCAD es un software CAD utilizado para dibujo 2D y modelado 3D. Es reconocido por sus amplias capacidades de edición, que hacen posible el dibujo digital de planos de edificios o la recreación de imágenes en 3D. Es uno de los programas más usados por arquitectos, ingenieros, diseñadores industriales y afines."
+            },
+            "03": {
+                "name": "Wordpress",
+                "percent": "80%",
+                "circle": "520",
+                "image": "wordpress",
+                "description": "WordPress es un sistema de gestión de contenidos o CMS  enfocado a la creación de cualquier tipo de sitio web. Originalmente alcanzó una gran relevancia usado para la creación de blogs, para convertirse con el tiempo en una de las principales herramientas para la creación de páginas web comerciales."
+            },
+            "04": {
+                "name": "Joomla",
+                "percent": "70%",
+                "circle": "460",
+                "image": "joomla",
+                "description": "Aunque menos popular que Wordpress, Joomla es  también un sistema de gestión de contenidos o CMS que permite desarrollar sitios web dinámicos e interactivos. Permite crear, modificar o eliminar contenido de un sitio web de manera sencilla a través de un panel de administración. Es un software de código abierto, programado o desarrollado en PHP."
+            },
+            "05": {
+                "name": "Adobe After Effects",
+                "percent": "40%",
+                "circle": "290",
+                "image": "after",
+                "description": "Adobe After Effects es uno los softwares basados en línea de tiempo más potentes del mercado orientado a la realización de gráficos profesionales en movimiento, montaje de vídeo y efectos especiales audiovisuales. Al igual que muchos de los softwares de Adobe, basa su funcionamiento en la superposición de capas y una de sus principales fortalezas es la gran cantidad de plugins que ayudan a aligerar las cargas de trabajo repetitivo."
+            }
+        }
+    },
+    "contenidos": {
+        "webapps": "_Diseño gráfico web para multidispositivos. Prototipos de alta definición visual. Diseño basado en guías de estilos. Transiciones y animaciones. Propuestas validadas técnicamente.",
+        "graphics": "_Diseño de interfaces gráficas con metodología UX. Diseño UI, wireframing, prototipado y testeo con usuarios. Desarrollo frontend responsive HTML5/CSS3/JS para webs y aplicaciones.",
+        "industrial": "_Diseño gráfico e industrial. Branding, editorial y campañas de marketing. Diseño de productos y packagings. Modelado CAD para impresión 3d de moldes. Diseño de stands y POP, modelos 3d y documentación CAD. ",
+        "about": "Mi nombre es Jordanka Juanes, 35 años, cubana. Soy licenciada en Diseño Industrial, recibida en la Habana en el 2004. En un prinicipio dedicada al Diseño Industrial, fui encontrando mi camino en del Diseño Web y posteriormente en el desarrollo Frontend.",
+        "cronologia": "Cronologia detalle",
+        "steps": {
+            "01": {
+                "title": "investigacion",
+                "content": "_El primer paso es socavar información sobre nuestros usuarios tanto como podamos mediante diferentes técnicas. Del procesamiento de esta información surgen las Personas que, protagonistas de cada Caso de Uso, son el objeto para definir con qué flow y features se puede completar la tarea de la mejor manera."
+            },
+            "02": {
+                "title": "design",
+                "content": "_Diseño. Comienza la etapa creativa a muy bajo nivel. Sketches a mano alzada en reuniones de equipo, con el fin de generar propuestas de layouts para A/B testeos preliminares, incluso en papel. El proceso parte de decisiones a gran escala, para luego ir entrando en detalles hasta obtener wireframes de alta definición, basados en los cuales se generan las propuestas gráficas."
+            },
+            "03": {
+                "title": "usertest",
+                "content": "_En las etapas iniciales se realizan testeos rápidos sobre sketches, los cuales se van complejizando con las iteraciones. Es una ventaja usar para crear los wireframes una herramienta que a su vez genere un prototipo, como Adobe Muse. De requerirse acciones más complejas, en fases avanzadas se puede crear un prototipo funcional con ayuda de Javascript."
+            },
+            "04": {
+                "title": "iterate",
+                "content": "_Las iteraciones son la garantía de que no vamos avanzando a ciegas. En un principio lo más importante es la rapidez: test sencillos con pocos usuarios van bien siempre que podamos corregir y probar otra vez. Sólida la estructura y aplicada la propuesta gráfica, podemos hacer testeos más cuidadosos los cuales continuan después de la implementación con la ayuda de las métricas."
+            },
+            "05": {
+                "title": "develop",
+                "content": "_El desarrollo Frontend se facilita cuando lo reliza el propio diseñador, obteniendo un resultado visual más cuidado y pudiendo definir comportamientos y animaciones no contemplados por las limitaciones del prototipo. Por otra parte, los conocimientos de Backend Dev son un importante pilar para crear un producto lógico, viable y ajustado a las posibilidades técnicas."
+            }
+        },
+        "secciones": {
+            "Diseño Web/Apps": {
+                "ss1" : "webs",
+                "ss2" : "interfaces",
+                "ss3" : "guias"
+            },
+            "UX/UI & Frontend" :  {
+                "ss1" : "ux",
+                "ss2" : "frontend",
+                "ss3" : "cms"
+            },
+            "Gráfico & Industrial" :  {
+                "ss1" : "grafico",
+                "ss2" : "productos",
+                "ss3" : "stands"
+            },
+            "Cronología" :  {
+                "ss1" : "aracnia",
+                "ss2" : "omatic",
+                "ss3" : "w3americas",
+                "ss4" : "cirkuitplanet",
+                "ss5" : "global"
+            }
+        }    
+    },
+    "works": {
+	"01": {
+            "id": "1",
+            "titulo": "AHS Center",
+            "seccion": "Diseño Web/Apps",
+            "subseccion": "webs",
+            "proveedor": "W3 Américas",
+            "cliente": "Citi",
+            "fecha": "2015",
+            "url": "//jordidesign.com/devs/ahs_center/index.html",
+            "skills": "photoshop,illustrator,muse",
+            "detalle": "A pedido de un cliente interno de Citi, realizamos un portal para AHS Center, con el objetivo de comunicar eventos sociales, alojar publicaciones, transmitir notas de la directiva y compartir información de interés común para las diferentes sucursales del banco.",
+            "miniatura": "ahs_center",
+            "imagenes": "4"
+        },
+	"02": {
+            "id": "2",
+            "titulo": "Global Mobile",
+            "seccion": "Diseño Web/Apps",
+            "subseccion": "webs",
+            "proveedor": "W3 Américas",
+            "cliente": "Citi",
+            "fecha": "2016",
+            "url": "",
+            "skills": "photoshop,illustrator",
+            "detalle": "Con motivo del lanzamiento de la nueva aplicación de Citi Mobile para smartphones, es nos solicitó el diseño de una landing page para descargar la aplicación y comunicar los diferentes features y beneficios de la misma.",
+            "miniatura": "gmobile",
+            "imagenes": "3"
+        },
+	"03": {
+            "id": "3",
+            "titulo": "Puro",
+            "seccion": "Diseño Web/Apps",
+            "subseccion": "webs",
+            "proveedor": "Omatic",
+            "cliente": "Puro",
+            "fecha": "2016",
+            "url": "",
+            "skills": "photoshop,illustrator",
+            "detalle": "Puro es una divertida cadena de indumentaria con un toque distintivo por el colorido de sus productos y la osadía en la combinación de las texturas. Con Omatic, diseñé un template su e-commerce.",
+            "miniatura": "puro",
+            "imagenes": "4"
+        },
+	"04": {
+            "id": "4",
+            "titulo": "Flannigan's",
+            "seccion": "Diseño Web/Apps",
+            "subseccion": "webs",
+            "proveedor": "W3 Américas",
+            "cliente": "Flannigan's",
+            "fecha": "2014",
+            "url": "",
+            "skills": "photoshop,illustrator",
+            "detalle": "Flannigan's es una cadena de restaurantes tipo bodegón, con bastante popularidad en la Florida. Ante la necesidad de rediseñar su sitio web, recurrieron a W3 donde le presentamos dos propuestas responsive, manteniendo el centro de atención en el atractivo de los platos.",
+            "miniatura": "flanigans",
+            "imagenes": "3"
+        },
+	"05": {
+            "id": "5",
+            "titulo": "Eagle Ford",
+            "seccion": "Diseño Web/Apps",
+            "subseccion": "interfaces",
+            "proveedor": "W3 Américas",
+            "cliente": "Eagle Ford",
+            "fecha": "2014",
+            "url": "https://play.google.com/store/apps/details?id=com.w3.eagleford&hl=es",
+            "skills": "photoshop,illustrator",
+            "detalle": "Eagle Ford App fue iniciativa de un emprendedor privado que contactó a W3 Américas para diseñar y desarrollar una app con información útil para la zona petrolera de Eagle Ford, en el sur de Texas. La app desarrollada ganó un premio de innovación en el lugar. En W3 Américas estuve a cargo del diseño visual de la misma. ",
+            "miniatura": "eagle",
+            "imagenes": "3"
+        },
+	"06": {
+            "id": "6",
+            "titulo": "Knowledge Center",
+            "seccion": "Diseño Web/Apps",
+            "subseccion": "interfaces",
+            "proveedor": "W3 Américas",
+            "cliente": "Citi",
+            "fecha": "2014",
+            "url": "",
+            "skills": "photoshop,illustrator",
+            "detalle": "A pedido de Citi, rediseñamos la base de datos Knowledge Center, la cual contiene toda la documentación de soporte del sector AHS. La misma consta de dos vistas frontend, una para usuario final y otra de administrador, además de un backend para la carga del material, evualuación y actualización del material.",
+            "miniatura": "ahs_kc",
+            "imagenes": "4"
+        },
+	"07": {
+            "id": "7",
+            "titulo": "US Project",
+            "seccion": "Diseño Web/Apps",
+            "subseccion": "interfaces",
+            "proveedor": "W3 Américas",
+            "cliente": "W3 Américas",
+            "fecha": "2014",
+            "url": "",
+            "skills": "photoshop,illustrator,html5,css3,php,mysql",
+            "detalle": "Cumpliendo el doble objetivo de cubrir una necesidad interna y hacer una suerte de ejercicio final del curso de PHP recibido el W3, diseñé y desarrollé una plataforma para la presentación de proyectos a los clientes. La misma cuenta con un backend con el listado de proyectos y un front donde se pueden visualizar los mismos desde una url segura.",
+            "miniatura": "usproject",
+            "imagenes": "3"
+        },
+	"08": {
+            "id": "8",
+            "titulo": "W3 GMS",
+            "seccion": "Diseño Web/Apps",
+            "subseccion": "interfaces",
+            "proveedor": "W3 Américas",
+            "cliente": "W3 Américas",
+            "fecha": "2015",
+            "url": "",
+            "skills": "photoshop,illustrator,html5,css3,jquery",
+            "detalle": "El Global Management System (GMS) es un sistema desarrollado a pedido interno de W3 que consta de cuatro módulos, dos de los cuales, Control y Force ya se encuentran implementados dentro de la empresa. Los cuatro módulos cubren las funciones de control de horas, administración y recursos humanos y management de proyectos. ",
+            "miniatura": "w3_gms",
+            "imagenes": "4"
+        },
+	"09": {
+            "id": "9",
+            "titulo": "Xmass Gifts",
+            "seccion": "Diseño Web/Apps",
+            "subseccion": "guias",
+            "proveedor": "W3 Américas",
+            "cliente": "Tonic 3",
+            "fecha": "2015",
+            "url": "",
+            "skills": "photoshop,illustrator",
+            "detalle": "A pedido interno de los directivos de W3 Américas, realicé la propuesta gráfica para una landing que ofrecía un regalo de navidad a seleccionar y un destinatario de un préstamo KIVA para ayuda social. Como complemento se ofrecía un wallpaper navideño.",
+            "miniatura": "xmass",
+            "imagenes": "3"
+        },
+	"10": {
+            "id": "10",
+            "titulo": "Programa Superar",
+            "seccion": "Diseño Web/Apps",
+            "subseccion": "guias",
+            "proveedor": "W3 Américas",
+            "cliente": "Bayer",
+            "fecha": "2015",
+            "url": "",
+            "skills": "photoshop,illustrator",
+            "detalle": "Superar es un programa de Bayer para promocionar su tratamiento para la Chronic Thromboembolic Pulmonary Hypertension (CTEPH). Para ellos en W3 diseñamos una landing sobre plataforma ICMS con login para clientes, donde los mismos tienen acceso a información sobre la enfermedad y contacto con Bayer para obtener o distribuir el tratamiento.",
+            "miniatura": "superar",
+            "imagenes": "4"
+        },
+	"11": {
+            "id": "11",
+            "titulo": "Citi Brasil",
+            "seccion": "Diseño Web/Apps",
+            "subseccion": "guias",
+            "proveedor": "W3 Américas",
+            "cliente": "Citi",
+            "fecha": "2016",
+            "url": "",
+            "skills": "photoshop,illustrator",
+            "detalle": "Citi Brasil es el principal cliente de la división Saavedra de W3. Para ellos nos encontramos implementando la nueva guía de estilos T&A en su sitio web citibank.com.br. Además de los proyectos de implementación, W3 brinda el servicio de BAU Creativo con campañas digitales por las diferentes vias promocionales del banco.",
+            "miniatura": "citi_br",
+            "imagenes": "4"
+        },
+	"12": {
+            "id": "12",
+            "titulo": "Citi WMLA",
+            "seccion": "Diseño Web/Apps",
+            "subseccion": "guias",
+            "proveedor": "W3 Américas",
+            "cliente": "Citi",
+            "fecha": "2014",
+            "url": "",
+            "skills": "photoshop,illustrator",
+            "detalle": "Para Citi Wealth Management Latin América (WMLA), nuestro principal cliente dentro de Citi, realizamos el diseño y guia responsive basado en su anterior guía de estilos Avatar. La implementación de la nueva guía responsive se realizó sobre sus 5 sitios principales, WMLA, International Personal Banking (IPB), Citi Privated Client (CPC), Citigold y Global Excecutive Client (GEB).",
+            "miniatura": "wmla",
+            "imagenes": "4"
+        },
+	"13": {
+            "id": "13",
+            "titulo": "Brag Badges",
+            "seccion": "UX/UI & Frontend",
+            "subseccion": "ux",
+            "proveedor": "W3 Américas",
+            "cliente": "Tonic3",
+            "fecha": "2015",
+            "url": "//jordidesign.com/devs/brag_badges/index.html",
+            "skills": "photoshop,illustrator,html5,css3,jquery",
+            "detalle": "Como iniciativa de Tonic3, realizamos la fase de research y análisis y más tarde prototipado y testeo de un sistema para que los clientes reconozcan el trabajo de los empleados de Tonic3. Como parte del proceso se realizaron entrevistas y se definieron personas, user cases, mvp, asi como se evaluaron posibles enhacement features.",
+            "miniatura": "brag_badges",
+            "imagenes": "5"
+        },
+	"14": {
+            "id": "14",
+            "titulo": "Safer Nation",
+            "seccion": "UX/UI & Frontend",
+            "subseccion": "ux",
+            "proveedor": "W3 Américas",
+            "cliente": "Tonic3",
+            "fecha": "2014",
+            "url": "//marvelapp.com/14a3gg",
+            "skills": "photoshop,illustrator,marvel",
+            "detalle": "La función de la app Safer Nation es permitirle a los representantes de las aseguradoras enviar un informe in situ acerca de accidentes en la rutas que puedan tener sus clientes, principalmente empresas de transporte por carretera. En W3 hicimos el análisis funcional, las propuestas gráficas, de las cuales participé, y posteriormente el desarrollo de la aplicación.",
+            "miniatura": "safer",
+            "imagenes": "4"
+        },
+	"15": {
+            "id": "15",
+            "titulo": "GMS Force",
+            "seccion": "UX/UI & Frontend",
+            "subseccion": "ux",
+            "proveedor": "W3 Américas",
+            "cliente": "W3 Américas",
+            "fecha": "2015",
+            "url": "//jordidesign.com/devs/force/index.html",
+            "skills": "photoshop,illustrator,html5,css3,jquery",
+            "detalle": "Force es el módulo del General Management System (GMS) de W3 que gestiona los perfiles de los empleados y las incidencias relativas a los mismos. Para su desarrollo entrevistamos al personal de RRHH y testeamos directamente con ellos los prototipos generados.",
+            "miniatura": "force",
+            "imagenes": "4"
+        },
+	"16": {
+            "id": "16",
+            "titulo": "GMS Control",
+            "seccion": "UX/UI & Frontend",
+            "subseccion": "ux",
+            "proveedor": "W3 Américas",
+            "cliente": "W3 Américas",
+            "fecha": "2015",
+            "url": "//jordidesign.com/devs/control/index.html",
+            "skills": "photoshop,illustrator,muse",
+            "detalle": "Control es el módulo del General Management System (GMS) de W3 que permite a los empleados cargar las horas trabajadas sus proyectos. Luego de una fase de investigación con usuarios de W3, nos inclinamos por hacer rapid testings con papel para probar varias ideas. Decantados por un layout realizamos los wireframes y con ellos un prototipo en Muse con el cual hicimos testeos más detallados.",
+            "miniatura": "control_gms",
+            "imagenes": "4"
+        },
+	"17": {
+            "id": "17",
+            "titulo": "W3 20 años",
+            "seccion": "UX/UI & Frontend",
+            "subseccion": "frontend",
+            "proveedor": "W3 Américas",
+            "cliente": "W3 Américas",
+            "fecha": "2015",
+            "url": "//www.w3americas.com/20aniversario/",
+            "skills": "photoshop,illustrator,html5,css3,jquery,angular",
+            "detalle": "Con motivo de los 20 años de W3 me asignaron la tarea de crear las piezas necesarias para las celebraciones. Una de ellas fue una cronología de fotos la cual diseñé y desarrollé con angular y animaciones CSS3.",
+            "miniatura": "w3_20anos",
+            "imagenes": "3"
+        },
+	"18": {
+            "id": "18",
+            "titulo": "Qüi Derma",
+            "seccion": "UX/UI & Frontend",
+            "subseccion": "frontend",
+            "proveedor": "W3 Américas",
+            "cliente": "Qüi Derma",
+            "fecha": "2015",
+            "url": "//www.quiderma.com.ar/",
+            "skills": "photoshop,illustrator,html5,css3,jquery",
+            "detalle": "Qüi Derma es una línea de geles dermatológicos con su aplicador iónico. Con Omatic realizamos el diseño y desarrollo frontend de su sitio responsive de 6 secciones.",
+            "miniatura": "qui_derma",
+            "imagenes": "3"
+        },
+	"19": {
+            "id": "19",
+            "titulo": "Huertas del Pilar",
+            "seccion": "UX/UI & Frontend",
+            "subseccion": "frontend",
+            "proveedor": "Omatic",
+            "cliente": "Huertas del Pilar",
+            "fecha": "2016",
+            "url": "//www.huertasdelpilar.com.ar/",
+            "skills": "photoshop,illustrator,html5,css3,jquery",
+            "detalle": "Huertas del Pilar es un fabricante y distribuidor de comidas envasadas de línea saludable. Con Omatic diseñamos y desarrollamos su sitio web responsive donde se aprecia la amplia gama de productos que comercializa Huertas.",
+            "miniatura": "huertas",
+            "imagenes": "3"
+        },
+	"20": {
+            "id": "20",
+            "titulo": "Beast",
+            "seccion": "UX/UI & Frontend",
+            "subseccion": "frontend",
+            "proveedor": "Omatic",
+            "cliente": "Beast",
+            "fecha": "2015",
+            "url": "//www.beast.com.ar/index.html",
+            "skills": "photoshop,illustrator,html5,css3,jquery",
+            "detalle": "Beast es el emprendimiento de jovenes diseñadores industriales motivados por el mundo del gym. Los mismos desarrollaron una línea de productos nacionales entre los que se incluyen kettlebells, sogas y muñequeras. Con Omatic, diseñamos su sitio web responsive.",
+            "miniatura": "beast",
+            "imagenes": "4"
+        },
+	"21": {
+            "id": "21",
+            "titulo": "AlerSM",
+            "seccion": "UX/UI & Frontend",
+            "subseccion": "cms",
+            "proveedor": "Omatic",
+            "cliente": "Aler SM",
+            "fecha": "2016",
+            "url": "//www.alersm.com/",
+            "skills": "photoshop,illustrator,html5,css3,jquery,wordpress",
+            "detalle": "Aler SM es un importante distribuidor de equipos para tratamientos estéticos en argentina. Con Omatic diseñamos y desarrollamos su sito con un showroom de equipos y un blog de noticias relacionadas con la empresa y sus productos.",
+            "miniatura": "aler_sm",
+            "imagenes": "4"
+        },
+	"22": {
+            "id": "22",
+            "titulo": "Fortress Jets",
+            "seccion": "UX/UI & Frontend",
+            "subseccion": "cms",
+            "proveedor": "Aracnia",
+            "cliente": "Fortress Jets",
+            "fecha": "2014",
+            "url": "//www.fortressjets.com/",
+            "skills": "html5,css3,jquery,wordpress",
+            "detalle": "Fortress Jet es una arrendadora de Jets privados de alta gama. Para su sitio web, desarrollé un template para Wordpress usando HTML5, WP Bones Framework y LESS.",
+            "miniatura": "fortress",
+            "imagenes": "3"
+        },
+	"23": {
+            "id": "23",
+            "titulo": "IAAS",
+            "seccion": "UX/UI & Frontend",
+            "subseccion": "cms",
+            "proveedor": "Aracnia",
+            "cliente": "IAAS",
+            "fecha": "2013",
+            "url": "//www.iaas.com.ar/",
+            "skills": "photoshop,illustrator,html5,css3,joomla",
+            "detalle": "IAAS es un instituto de buceo que organiza viajes a diferentes partes del mundo y cursos hasta buzo profesional. Para ellos diseñé y desarrollé un template para Joomla e implementé el mismo en la plataforma, con módulos de galerías de fotos, calendario sincronizado con gcalendar y carrito de compras.",
+            "miniatura": "iaas",
+            "imagenes": "3"
+        },
+	"24": {
+            "id": "24",
+            "titulo": "AUT Lecheros",
+            "seccion": "UX/UI & Frontend",
+            "subseccion": "cms",
+            "proveedor": "Aracnia",
+            "cliente": "AUT Lecheros",
+            "fecha": "2016",
+            "url": "//www.unidadytrabajo.com/",
+            "skills": "html5,css3,jquery,bootstrap,wordpress",
+            "detalle": "La Asociación Unidad y Trabajo Lecheros nos solicitó el desarrollo de su blog de noticias, clasificadas por proyectos. Para ello desarrollamos un sitio responsive en Wordpress.",
+            "miniatura": "aut_lecheros",
+            "imagenes": "3"
+        },
+	"25": {
+            "id": "25",
+            "titulo": "Cirkuit Adds",
+            "seccion": "Gráfico & Industrial",
+            "subseccion": "grafico",
+            "proveedor": "Cirkuit Planet",
+            "cliente": "Cirkuit Planet",
+            "fecha": "2012",
+            "url": "",
+            "skills": "photoshop,illustrator",
+            "detalle": "Como parte de las campañas integrales de promoción de productos de Cirkuit Planet, realizamos innumerables piezas gráficas para los diferentes medios, online e impresos.",
+            "miniatura": "cirkuitadds",
+            "imagenes": "4"
+        },
+	"26": {
+            "id": "26",
+            "titulo": "Catálogo CKP Live",
+            "seccion": "Gráfico & Industrial",
+            "subseccion": "grafico",
+            "proveedor": "Cirkuit Planet",
+            "cliente": "Cirkuit Planet",
+            "fecha": "2011",
+            "url": "",
+            "skills": "photoshop,illustrator,indesign",
+            "detalle": "CKP Live es las líneas de productos con gráfica propia dentro de Cirkuit Planet. Anualmente se diseña, conjuntamente con el de las otras licencias, un catálogo para promocionar esta línea propia en los diferentes eventos y retails.",
+            "miniatura": "ckplivecat",
+            "imagenes": "5"
+        },
+	"27": {
+            "id": "27",
+            "titulo": "Catálogo Disney",
+            "seccion": "Gráfico & Industrial",
+            "subseccion": "grafico",
+            "proveedor": "Cirkuit Planet",
+            "cliente": "Disney - Pixar",
+            "fecha": "2012",
+            "url": "",
+            "skills": "photoshop,illustrator,indesign",
+            "detalle": "Disney es la licencia más importante dentro de la producción de Cirkuit Planet. Cada año una parte importante de nuestro tiempo iba dedicada a la elaboración de sus líneas de productos y finalmente diseñábamos un catálogo con la fabricación anual.",
+            "miniatura": "disneycat",
+            "imagenes": "4"
+        },
+	"28": {
+            "id": "28",
+            "titulo": "Branding",
+            "seccion": "Gráfico & Industrial",
+            "subseccion": "grafico",
+            "proveedor": "Cirkuit Planet",
+            "cliente": "Aracnia",
+            "fecha": "2010",
+            "url": "",
+            "skills": "photoshop,illustrator",
+            "detalle": "Aunque la mayoría de las veces trabajé con marcas ya asentadas, en algunas oportunidades tuve que trabajar en la creación de un nuevo branding, así como en sus aplicaciones.",
+            "miniatura": "branding",
+            "imagenes": "5"
+        },
+	"29": {
+            "id": "29",
+            "titulo": "Disney Collection",
+            "seccion": "Gráfico & Industrial",
+            "subseccion": "productos",
+            "proveedor": "Cirkuit Planet",
+            "cliente": "Disney-Pixar",
+            "fecha": "2012",
+            "url": "",
+            "skills": "photoshop,illustrator",
+            "detalle": "Disney es la principal licencia de Cirkuit Planet y el mayor objeto de su producción. Mouses, teclados, auriculares, bolsos, parlantes y toda clase de accesorios fueron diseñados por nuestro equipo para los diferentes personajes de Disney.",
+            "miniatura": "disney",
+            "imagenes": "5"
+        },
+	"30": {
+            "id": "30",
+            "titulo": "Otras colecciones",
+            "seccion": "Gráfico & Industrial",
+            "subseccion": "productos",
+            "proveedor": "Cirkuit Planet",
+            "cliente": "Cirkuit Planet",
+            "fecha": "2012",
+            "url": "",
+            "skills": "photoshop,illustrator",
+            "detalle": "Además de Disney, Cirkuit Planet también cuenta con importantes licencias como NBA, Weenicons, Anne Stokes así como una línea propia: CKP Live. Para ellos diseñamos mouses, teclados, auriculares, bolsos, parlantes entre otros accesorios.",
+            "miniatura": "other",
+            "imagenes": "5"
+        },
+	"31": {
+            "id": "31",
+            "titulo": "Weenicons Pendrives",
+            "seccion": "Gráfico & Industrial",
+            "subseccion": "productos",
+            "proveedor": "Cirkuit Planet",
+            "cliente": "Weenicons",
+            "fecha": "2012",
+            "url": "",
+            "skills": "3dmax,acad",
+            "detalle": "Weenicons es una divertida linea de personajes que emulan artistas famosos. Para ellos diseñamos una variada línea de pendrives de cada celebridad modelados en CAD para su fabricación en China.",
+            "miniatura": "wee_pendrives",
+            "imagenes": "5"
+        },
+	"32": {
+            "id": "32",
+            "titulo": "Disney Pendrives",
+            "seccion": "Gráfico & Industrial",
+            "subseccion": "productos",
+            "proveedor": "Cirkuit Planet",
+            "cliente": "Disney-Pixar",
+            "fecha": "2012",
+            "url": "",
+            "skills": "3dmax,acad",
+            "detalle": "Disney es la principal licencia de Cirkuit Planet y como parte de su línea de productos, diseñamos varios pendrives para algunos de sus personajes más reconocidos. Modelados en 3D/CAD y fabricados en China.",
+            "miniatura": "jack",
+            "imagenes": "5"
+        },
+	"33": {
+            "id": "33",
+            "titulo": "Cirkuit Planet Stands",
+            "seccion": "Gráfico & Industrial",
+            "subseccion": "stands",
+            "proveedor": "Cirkuit Planet",
+            "cliente": "Cirkuit Planet",
+            "fecha": "2012",
+            "url": "",
+            "skills": "3dmax,acad,photoshop,illustrator",
+            "detalle": "Aprovechando mis conocimientos previos de diseño de Stands, me fue encomendada la tarea de realizar los diseños y gráficas para las diferentes Ferias Internacionales en las que se presentaba Cirkuit para promover sus productos.",
+            "miniatura": "cirkuitstands",
+            "imagenes": "4"
+        },
+	"34": {
+            "id": "34",
+            "titulo": "Global Construcciones POP",
+            "seccion": "Gráfico & Industrial",
+            "subseccion": "stands",
+            "proveedor": "Global Construcciones",
+            "cliente": "Global Construcciones",
+            "fecha": "2009",
+            "url": "",
+            "skills": "3dmax,acad,photoshop,illustrator",
+            "detalle": "Además de stands, en Global Construcciones realicé varios diseños de puntos de venta y material POP para sus diferentes clientes.",
+            "miniatura": "pop",
+            "imagenes": "4"
+        },
+	"35": {
+            "id": "35",
+            "titulo": "Prosegur Stand",
+            "seccion": "Gráfico & Industrial",
+            "subseccion": "stands",
+            "proveedor": "Global Construcciones",
+            "cliente": "Prosegur",
+            "fecha": "2009",
+            "url": "",
+            "skills": "3dmax,acad,photoshop,illustrator",
+            "detalle": "Entre la gran variedad de stands que desarrollé para Global Construcciones  se incluye este stand artesanal para Prosegur el cual incluyó zona de juegos, paneles de leds barra de atención y depósito.",
+            "miniatura": "prosegur",
+            "imagenes": "3"
+        },
+	"36": {
+            "id": "36",
+            "titulo": "UADE Stand",
+            "seccion": "Gráfico & Industrial",
+            "subseccion": "stands",
+            "proveedor": "Global Construcciones",
+            "cliente": "UADE",
+            "fecha": "2009",
+            "url": "",
+            "skills": "3dmax,acad,photoshop,illustrator",
+            "detalle": "Uno de los proyectos más efectivos en la relación costo/resultado fue esta propuesta modular para UADE. La sala de conferencia fue creada con estructura metálica y tela, reutilizando los mismos elementos en ambas configuraciones de stand.",
+            "miniatura": "uade",
+            "imagenes": "5"
+        }
+    }
+}

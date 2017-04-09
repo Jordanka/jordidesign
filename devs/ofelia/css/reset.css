@@ -1,0 +1,42 @@
+/*_________button reset________*/
+
+button {
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+}
+
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+select, input:focus, button:focus, textarea {
+    outline:0;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+select, input:focus, button:focus, textarea, a:focus {
+    outline: 0;
+}

@@ -1,0 +1,90 @@
+.version.tarea /* version checker */
+{
+	color: #00001A;
+	background-color: #ED5D0A;
+}
+
+#muse_css_mq
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 438px;
+	background-image: none;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	padding-bottom: 62px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#u103
+{
+	z-index: 2;
+	width: 960px;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u112
+{
+	z-index: 4;
+	width: 229px;
+	height: 30px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 120px;
+	left: 300px;
+}
+
+.ie #u112
+{
+	background-color: #FFFFFF;
+	opacity: 0.01;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+}
+
+#u112:hover
+{
+	background-color: #FF0000;
+	opacity: 0.1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+	filter: alpha(opacity=10);
+	width: 229px;
+	height: 30px;
+	min-height: 0px;
+	margin: 120px -10000px 0px 0px;
+}
+
+.ie #u112:hover
+{
+	opacity: 0.1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+	filter: alpha(opacity=10);
+}
+
+.html
+{
+	background-color: #7F7F7F;
+}
+
+body
+{
+	position: relative;
+	min-width: 962px;
+	padding-top: 35px;
+	padding-bottom: 36px;
+}
+
+

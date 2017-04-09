@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+
+@font-face {
+    font-family: 'swis721_cn_btbold';
+    src: url('../assets/fonts/font_-_truetype_-_swiss_721_bold_condensed_bt-webfont.woff2') format('woff2'),
+         url('../assets/fonts/font_-_truetype_-_swiss_721_bold_condensed_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'swis721_cn_btroman';
+    src: url('../assets/fonts/font_-_truetype_-_swiss_721_condensed_bt-webfont.woff2') format('woff2'),
+         url('../assets/fonts/font_-_truetype_-_swiss_721_condensed_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'swis721_ltcn_btlight';
+    src: url('../assets/fonts/font_-_truetype_-_swiss_721_light_condensed_bt-webfont.woff2') format('woff2'),
+         url('../assets/fonts/font_-_truetype_-_swiss_721_light_condensed_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

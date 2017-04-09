@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Force - Human Resources Module</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href="css/vendor/jquery.dataTables.css" rel="stylesheet">    
+    <link href="css/rrhhstyles.css" rel="stylesheet">
+</head>
+
+<body class="background">
+	<div id="logo">
+		<a class="menu-btn"><img src="assets/menu.jpg"></a>
+		<img src="assets/logo.jpg">
+	</div>
+
+	<!--Contenido del Menu Lateral-->
+    <div id='menu-container'>
+    	<a id="back-btn" class="menu-btn"><img src="assets/back.png"></a>
+        <ul>
+            <li><a href="index.html">Legajos</a></li>
+            <li><a href="lista_novedades.html">Novedades</a></li>
+            <li><a href="lista_bancos.html">Bancos</a></li>
+            <li><a href="lista_posiciones.html">Posiciones</a></li>
+            <li><a href="lista_sectores.html">Sectores</a></li>
+            <li><a href="lista_oficinas.html">Oficinas</a></li>
+            <li><a href="lista_conocimientos.html">Conocimientos</a></li>
+        </ul>
+    </div>
+	
+	<div id="header">
+		<h1>Legajos</h1>
+		<div id="main-buttons">
+			<a href="form.html" class="new_employee"><img src="assets/new_employee.jpg"></a>
+		</div>
+	</div>
+
+	<div  class="canvas">
+		<div class="filter_title">Filtros<a href="">+</a></div>
+
+		<div id="other_filters" class="col gu8 dataTables_filter hide">
+			<div class="line"></div>
+			<label>Desde:
+				<input type="date" class="" placeholder="" aria-controls="example">
+			</label>
+
+			<label>Hasta:
+				<input type="date" class="" placeholder="" aria-controls="example">
+			</label>
+
+			<div class="line"></div>
+
+			<label>Genero:
+				<select>
+				  <option value="argentino" selected>Todos</option>
+				  <option value="soltero">Masculino</option>
+				  <option value="casado">Femenino</option>
+				</select>
+			</label>
+
+			<label>Posiciones:
+				<select class="small_select">
+				  <option value="argentino" selected>Todos</option>
+				  <option value="argentino">Líder de Diseño</option>
+				  <option value="venezolano">Líder Técnico</option>
+				  <option value="uruguayo">Desarrollador</option>
+				  <option value="chileno">Diseñador</option>
+				</select>
+			</label>
+
+			<label>Responsables:
+				<select>
+			      <option value="argentino" selected>Todos</option>
+				  <option value="argentino">Pablo Trapalla</option>
+				  <option value="venezolano">María Nicolás</option>
+				  <option value="uruguayo">Juan Saint</option>
+				  <option value="chileno">Adriana Castro</option>
+				</select>
+			</label>
+
+			<div class="line"></div>
+
+			<label>Sector:
+				<select class="small_select">
+				  <option value="argentino" selected>Todos</option>
+				  <option value="argentino">Proyectos</option>
+				  <option value="venezolano">Administración</option>
+				  <option value="uruguayo">Recursos Humanos</option>
+				  <option value="chileno">Métricas</option>
+				</select>
+			</label>
+
+			<label>Uni. de Negocio:
+				<select>
+				  <option value="argentino" selected>Todos</option>
+				  <option value="argentino">LATAM</option>
+				  <option value="venezolano">Brasil</option>
+				  <option value="uruguayo">USA</option>
+				</select>
+			</label>
+
+			<label>Oficina:
+				<select class="small_select">
+					<option value="argentino" selected>Todos</option>
+				  <option value="argentino">Saavedra</option>
+				  <option value="venezolano">San Telmo</option>
+				  <option value="uruguayo">Tandil</option>
+				  <option value="chileno">Dalla</option>
+				</select>
+			</label>
+
+			<div class="line"></div>
+			
+			<label>Activo:
+				<select>
+				  <option value="argentino" selected>Todos</option>
+				  <option value="venezolano">Si</option>
+				  <option value="uruguayo">No</option>
+				</select>
+			</label>
+
+			<label>Completados:
+				<select>
+				  <option value="argentino" selected>Todos</option>
+				  <option value="venezolano">Si</option>
+				  <option value="uruguayo">No</option>
+				</select>
+			</label>
+
+			<div class="clear"></div>
+		</div>
+
+		<div class="export_title">Exportar archivo<a href="">+</a></div>
+		
+		<div id="export" class="col gu8 dataTables_filter hide">
+			<label>Formato de archivo:
+				<select>
+				  <option value="argentino" selected>XLS</option>
+				  <option value="argentino">PDF</option>
+				</select>
+			</label>
+			<a>guardar</a>
+		</div>
+
+		<table id="example" class="display" cellspacing="0" width="100%">
+		    <thead>
+		        <tr>
+		            <th>No</th>
+		            <th>Nombre</th>
+		            <th>Fecha de registro</th>
+		            <th>% Completado</th>
+		            <th>Actions</th>
+		        </tr>
+		    </thead>
+		 
+		    <tfoot>
+		        <tr>
+		            <th>No</th>
+		            <th>Nombre</th>
+		            <th>Fecha de registro</th>
+		            <th>% Completado</th>
+		            <th>Actions</th>
+		        </tr>
+		    </tfoot>
+		 
+		    <tbody>
+		        <tr>
+		            <td>005203</td>
+		            <td>John Smith</td>
+		            <td>12/10/2012</td>
+		            <td>60%</td>
+		            <td class="actions">
+						<a modal-overlay="novedades.html"><img src="assets/add_news.jpg"></a>
+		            	<a href="profile.html"><img src="assets/view_employee.jpg"></a>
+		            	<a href="form.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>005203</td>
+		            <td>John Smith</td>
+		            <td>12/10/2012</td>
+		            <td>60%</td>
+		            <td class="actions">
+		            	<a modal-overlay="novedades.html"><img src="assets/add_news.jpg"></a>
+		            	<a href="profile.html"><img src="assets/view_employee.jpg"></a>
+		            	<a href="form.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>005203</td>
+		            <td>John Smith</td>
+		            <td>12/10/2012</td>
+		            <td>60%</td>
+		            <td class="actions">
+		            	<a modal-overlay="novedades.html"><img src="assets/add_news.jpg"></a>
+		            	<a href="profile.html"><img src="assets/view_employee.jpg"></a>
+		            	<a href="form.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>005203</td>
+		            <td>John Smith</td>
+		            <td>12/10/2012</td>
+		            <td>60%</td>
+		            <td class="actions">
+		            	<a modal-overlay="novedades.html"><img src="assets/add_news.jpg"></a>
+		            	<a href="profile.html"><img src="assets/view_employee.jpg"></a>
+		            	<a href="form.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>005203</td>
+		            <td>John Smith</td>
+		            <td>12/10/2012</td>
+		            <td>60%</td>
+		            <td class="actions">
+		            	<a modal-overlay="novedades.html"><img src="assets/add_news.jpg"></a>
+		            	<a href="profile.html"><img src="assets/view_employee.jpg"></a>
+		            	<a href="form.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>005203</td>
+		            <td>John Smith</td>
+		            <td>12/10/2012</td>
+		            <td>60%</td>
+		            <td class="actions">
+		            	<a modal-overlay="novedades.html"><img src="assets/add_news.jpg"></a>
+		            	<a href="profile.html"><img src="assets/view_employee.jpg"></a>
+		            	<a href="form.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>005203</td>
+		            <td>John Smith</td>
+		            <td>13/10/2012</td>
+		            <td>60%</td>
+		            <td class="actions">
+		            	<a modal-overlay="novedades.html"><img src="assets/add_news.jpg"></a>
+		            	<a href="profile.html"><img src="assets/view_employee.jpg"></a>
+		            	<a href="form.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>005203</td>
+		            <td>John Smith</td>
+		            <td>12/10/2012</td>
+		            <td>60%</td>
+		            <td class="actions">
+		            	<a modal-overlay="novedades.html"><img src="assets/add_news.jpg"></a>
+		            	<a href="profile.html"><img src="assets/view_employee.jpg"></a>
+		            	<a href="form.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		    </tbody>
+		</table>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" language="javascript" src="js/vendor/jquery.dataTables.js"></script>	
+	<script src="js/rrhhmain.js"></script>
+</body>
+
+</html>

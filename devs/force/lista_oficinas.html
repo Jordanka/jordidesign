@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Force - Human Resources Module</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href="css/vendor/jquery.dataTables.css" rel="stylesheet">    
+    <link href="css/rrhhstyles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="logo">
+		<a class="menu-btn"><img src="assets/menu.jpg"></a>
+		<img src="assets/logo.jpg">
+	</div>
+
+    <!--Contenido del Menu Lateral-->
+    <div id='menu-container'>
+    	<a id="back-btn" class="menu-btn"><img src="assets/back.png"></a>
+        <ul>
+            <li><a href="index.html">Legajos</a></li>
+            <li><a href="lista_novedades.html">Novedades</a></li>
+            <li><a href="lista_bancos.html">Bancos</a></li>
+            <li><a href="lista_posiciones.html">Posiciones</a></li>
+            <li><a href="lista_sectores.html">Sectores</a></li>
+            <li><a href="lista_oficinas.html">Oficinas</a></li>
+            <li><a href="lista_conocimientos.html">Conocimientos</a></li>
+        </ul>
+    </div>
+	
+	<div id="header">
+		<h1>Oficinas</h1>
+		<div id="main-buttons">
+			<a modal-overlay="oficinas.html"><img src="assets/new_employee.jpg"></a>
+		</div>
+	</div>
+
+	<div  class="canvas small_list">
+		<label class="activo_small">Activo:
+			<select>
+			  <option value="argentino" selected>Todos</option>
+			  <option value="venezolano">Si</option>
+			  <option value="uruguayo">No</option>
+			</select>
+		</label>
+
+		<div class="export_title">Exportar archivo<a href="">+</a></div>
+		
+		<div id="export" class="col gu8 dataTables_filter hide">
+			<label>Formato de archivo:
+				<select>
+				  <option value="argentino" selected>XLS</option>
+				  <option value="argentino">PDF</option>
+				</select>
+			</label>
+			<a>guardar</a>
+		</div>
+		
+		<table id="example" class="display" cellspacing="0" width="100%">
+		    <thead>
+		        <tr>
+		            <th>Nombre</th>	            
+		            <th>Direccion</th>
+		            <th>Estado/Provincia</th>
+		            <th>País</th>
+		            <th>Teléfono</th>
+		            <th>Responsable</th>
+		            <th>Acciones</th>
+		        </tr>
+		    </thead>
+		 
+		    <tbody>
+		        <tr>
+		            <td>San Telmo</td>
+		            <td>Carlos Calvo 643</td>
+		            <td>Capital Federal</td>
+		            <td>Argentina</td>
+		            <td>4353-2342</td>
+		            <td>Jonh Smith</td>
+		            <td class="actions">
+		            	<a modal-overlay="oficinas.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>Saavedra</td>
+		            <td>Carlos Calvo 643</td>
+		            <td>Capital Federal</td>
+		            <td>Argentina</td>
+		            <td>4353-2342</td>
+		            <td>Jonh Smith</td>
+		            <td class="actions">
+		            	<a modal-overlay="oficinas.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>Tandil</td>
+		            <td>Carlos Calvo 643</td>
+		            <td>Buenos Aires</td>
+		            <td>Argentina</td>
+		            <td>4353-2342</td>
+		            <td>Jonh Smith</td>
+		            <td class="actions">
+		            	<a modal-overlay="oficinas.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>Dallas</td>
+		            <td>Carlos Calvo 643</td>
+		            <td>Dallas, Texas</td>
+		            <td>USA</td>
+		            <td>4353-2342</td>
+		            <td>Jonh Smith</td>
+		            <td class="actions">
+		            	<a modal-overlay="oficinas.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		    </tbody>
+		</table>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" language="javascript" src="js/vendor/jquery.dataTables.js"></script>	
+	<script src="js/rrhhmain.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+.version.preview /* version checker */
+{
+	color: #0000FB;
+	background-color: #8B347F;
+}
+
+#muse_css_mq
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 438px;
+	background-image: none;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	padding-bottom: 62px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#u144
+{
+	z-index: 2;
+	width: 961px;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u172
+{
+	z-index: 4;
+	width: 445px;
+	height: 28px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 230px;
+	left: 29px;
+}
+
+.ie #u172
+{
+	background-color: #FFFFFF;
+	opacity: 0.01;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+}
+
+#u172:hover
+{
+	background-color: #FF0000;
+	opacity: 0.1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+	filter: alpha(opacity=10);
+	width: 445px;
+	height: 28px;
+	min-height: 0px;
+	margin: 230px -10000px 0px 0px;
+}
+
+#u200
+{
+	z-index: 5;
+	width: 135px;
+	height: 144px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 48px;
+	left: 825px;
+}
+
+.ie #u200
+{
+	background-color: #FFFFFF;
+	opacity: 0.01;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+}
+
+#u200:hover
+{
+	background-color: #FF0000;
+	opacity: 0.1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+	filter: alpha(opacity=10);
+	width: 135px;
+	height: 144px;
+	min-height: 0px;
+	margin: 48px -10000px 0px 0px;
+}
+
+.ie #u172:hover,.ie #u200:hover
+{
+	opacity: 0.1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+	filter: alpha(opacity=10);
+}
+
+.html
+{
+	background-color: #7F7F7F;
+}
+
+body
+{
+	position: relative;
+	min-width: 962px;
+	padding-top: 35px;
+	padding-bottom: 36px;
+}
+
+

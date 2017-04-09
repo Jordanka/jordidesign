@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Force - Human Resources Module</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href="css/vendor/jquery.dataTables.css" rel="stylesheet">    
+    <link href="css/rrhhstyles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="logo">
+		<a class="menu-btn"><img src="assets/menu.jpg"></a>
+		<img src="assets/logo.jpg">
+	</div>
+
+	<!--Contenido del Menu Lateral-->
+    <div id='menu-container'>
+    	<a id="back-btn" class="menu-btn"><img src="assets/back.png"></a>
+        <ul>
+            <li><a href="index.html">Legajos</a></li>
+            <li><a href="lista_novedades.html">Novedades</a></li>
+            <li><a href="lista_bancos.html">Bancos</a></li>
+            <li><a href="lista_posiciones.html">Posiciones</a></li>
+            <li><a href="lista_sectores.html">Sectores</a></li>
+            <li><a href="lista_oficinas.html">Oficinas</a></li>
+            <li><a href="lista_conocimientos.html">Conocimientos</a></li>
+        </ul>
+    </div>
+	
+	<div id="header">
+		<h1>Nuevo Legajo<span> - No 002350</span></h1>
+		<div id="main-buttons">
+			<a href="index.html" class="employee_list"><img src="assets/employee_list.jpg"></a>
+		</div>
+	</div>
+
+	<div class="canvas" profile>
+		<div class="row steps">
+			<div class="step col gu3" tostep=1>
+				<h2>Paso 01</h2>
+				<p>Biométricos</p>
+			</div>
+
+			<div class="step col gu3" tostep=2>
+				<h2>Paso 02</h2>
+				<p>Laboral</p>
+			</div>
+
+			<div class="step col gu3" tostep=3>
+				<h2>Paso 03</h2>
+				<p>Estudios</p>
+			</div>
+
+			<div class="step col gu3" tostep=4>
+				<h2>Paso 04</h2>
+				<p>Conocimientos</p>
+			</div>
+		</div>
+
+		<form  class="row form_page" action="/images/save" method="post" enctype="multipart/form-data">
+			<div class="col profile gu2">
+				<img src="assets/employee_profile.jpg">
+				<input class="photo hide"type="file">
+				<h2>43%</h2>
+				<p>Completado</p>
+				<div class="activo">
+					<input type="checkbox" name="vehicle" value="Lunes"> Empleado Activo
+				</div>
+			</div>
+
+			<div class="col gu9" step=1>
+				<div class="form_step">
+					<h2>Biométricos</h2>
+
+					<div class="col gu2">
+						<label>Nombre</label>
+						<input name="firstname" type="text" size="20">
+						<p class="validation hide">El campo está vacío</p>
+					</div>
+
+					<div class="col gu2">
+						<label>Apellido</label>
+						<input name="lastname" type="text" size="20">
+						<p class="validation hide">El campo está vacío</p>
+					</div>
+
+					<div class="col gu2">
+						<label>Género</label>
+						<select name="gender">
+						  <option value="soltero" selected>Masculino</option>
+						  <option value="casado">Femenino</option>
+						</select>
+					</div>
+
+					<div class="col gu2">
+						<label>Fecha de Nacimiento</label>
+						<input name="birth_date" type="date">
+						<p class="validation hide">El campo está vacío</p>
+					</div>
+
+					<div class="col gu2">
+						<label>Documento</label>
+						<input name="id" type="text" size="20">
+						<p class="validation hide">El campo está vacío</p>
+					</div>
+
+					<div class="col gu2">
+						<label>CUIL</label>
+						<input type="text" size="2"><input type="text" size="8"><input type="text" size="1">
+						<p class="validation hide">El campo está vacío</p>
+					</div>
+
+					<div class="col gu2">
+						<label>Nacionalidad</label>
+						<select>
+						  <option value="argentino" selected>Argentino</option>
+						  <option value="venezolano">Venezolano</option>
+						  <option value="uruguayo">Uruguayo</option>
+						  <option value="chileno">Chileno</option>
+						</select>
+					</div>
+
+					<div class="col gu2">
+						<label>Estado Civil</label>
+						<select>
+						  <option value="soltero" selected>Soltero</option>
+						  <option value="casado">Casado</option>
+						  <option value="divorciado">Divorciado</option>
+						  <option value="viudo">Viudo</option>
+						</select>
+					</div>
+
+					<div class="col gu5">
+						<label>Hijos</label>
+						<div class="hijos">
+							<p class="col">No tiene</p>
+							<p class="col">1</p>
+							<p class="col">2</p>
+							<p class="col">3</p>
+							<p class="col">Más</p>
+						</div>
+						<input type="radio" name="hijos" class="col gu1">
+						<input type="radio" name="hijos" class="col gu1">
+						<input type="radio" name="hijos" class="col gu1">
+						<input type="radio" name="hijos" class="col gu1">
+						<input type="radio" name="hijos" class="col gu1">
+					</div>
+				</div>
+
+				<div class="form_step">
+					<h2>Contacto</h2>
+					
+					<div class="col gu4">
+						<label>Calle</label>
+						<input type="text" size="40">
+						<p class="validation hide">El campo está vacío</p>
+					</div>
+
+					<div class="col gu2 next_hidden">
+						<div class="span">
+							<label>Altura</label>
+							<input type="text" size="4">
+						</div>
+						<div class="span">
+							<label>Piso</label>
+							<input type="text" size="2">
+						</div>
+						<div class="span">
+							<label>No</label>
+							<input type="text" size="2">
+							<p class="validation hide">El campo está vacío</p>
+						</div>
+					</div>
+
+					<div class="col gu2">
+						<label>Provincia</label>
+						<select>
+						  <option value="capital_federal" selected>Capital Federal</option>
+						  <option value="buenos_aires">Provincia de Buenos Aires</option>
+						  <option value="entre_rios">Entre Rios</option>
+						  <option value="cordoba">Córdoba</option>
+						</select>
+					</div>
+
+					<div class="col gu2">
+						<label>Cuidad</label>
+						<select>
+						  <option value="capital_federal" selected>Capital Federal</option>
+						  <option value="buenos_aires">Provincia de Buenos Aires</option>
+						  <option value="entre_rios">Entre Rios</option>
+						  <option value="cordoba">Córdoba</option>
+						</select>
+					</div>
+
+					<div class="col gu2 next_hidden">
+						<label>Código Postal</label>
+						<input type="text" size="10">
+						<p class="validation hide">El campo está vacío</p>
+					</div>
+
+					<div class="col gu2">
+						<label>Teléfono Fijo</label>
+						<input type="text" size="20">
+						<p class="validation hide">El campo está vacío</p>
+					</div>
+
+					<div class="col gu2">
+						<label>Celular</label>
+						<input type="text" size="20">
+						<p class="validation hide">El campo está vacío</p>
+					</div>
+
+					<div class="col gu3">
+						<label>Email</label>
+						<input type="text" size="40">
+						<p class="validation hide">El campo está vacío</p>
+					</div>
+
+					<div model="addContact" keep="1">
+						<div class="col gu4">
+							<label>Persona de contacto</label>
+							<input type="text" size="40">
+							<p class="validation hide">El campo está vacío</p>
+						</div>
+
+						<div class="col gu2">
+							<label>Vínculo</label>
+							<input type="text" size="20">
+							<p class="validation hide">El campo está vacío</p>
+						</div>
+
+						<div class="col gu2">
+							<label>Teléfono</label>
+							<input type="text" size="20">
+							<p class="validation hide">El campo está vacío</p>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+
+					<div class="col gu8 add" duplicate="addContact">
+						<a>+ Agregar otra persona de contacto</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col gu9" step=2>
+				<div class="form_step">
+					<h2>Laboral</h2>
+
+					<div class="col gu2">
+						<label>Fecha de ingreso</label>
+						<input type="date">
+						<p class="validation hide">El campo está vacío</p>
+					</div>
+
+					<div class="col gu2">
+						<label>Posición</label>
+						<select class="small_select">
+						  <option value="argentino" selected>Líder de Diseño</option>
+						  <option value="venezolano">Líder Técnico</option>
+						  <option value="uruguayo">Desarrollador</option>
+						  <option value="chileno">Diseñador</option>
+						</select>
+						<a class="add_select" modal-overlay="posiciones.html">+</a>
+					</div>
+
+					<div class="col gu2 next_hidden">
+						<label>Tiene personas a su cargo</label>
+						<input type="checkbox" name="vehicle" value="Lunes">Sí
+					</div>
+
+					<div class="col gu2">
+						<label>Unidad de Negocio</label>
+						<select>
+						  <option value="argentino" selected>LATAM</option>
+						  <option value="venezolano">Brasil</option>
+						  <option value="uruguayo">USA</option>
+						</select>
+					</div>
+
+					<div class="col gu2">
+						<label>Sector</label>
+						<select class="small_select">
+						  <option value="argentino" selected>Proyectos</option>
+						  <option value="venezolano">Administración</option>
+						  <option value="uruguayo">Recursos Humanos</option>
+						  <option value="chileno">Métricas</option>
+						</select>
+						<a class="add_select" modal-overlay="sectores.html">+</a>
+					</div>
+
+					<div class="col gu2 next_hidden">
+						<label>Responsable directo</label>
+						<select>
+						  <option value="argentino" selected>Pablo Trapalla</option>
+						  <option value="venezolano">María Nicolás</option>
+						  <option value="uruguayo">Juan Saint</option>
+						  <option value="chileno">Adriana Castro</option>
+						</select>
+					</div>
+
+					<div class="col gu2">
+						<label>Inhouse/Outhouse</label>
+						<select>
+						  <option value="argentino" selected>Inhouse</option>
+						  <option value="venezolano">Outhouse</option>
+						</select>
+					</div>
+
+					<div class="col gu2">
+						<label>Oficina</label>
+						<select class="small_select">
+						  <option value="argentino" selected>Saavedra</option>
+						  <option value="venezolano">San Telmo</option>
+						  <option value="uruguayo">Tandil</option>
+						  <option value="chileno">Dalla</option>
+						</select>
+						<a class="add_select" modal-overlay="oficinas.html">+</a>
+					</div>				
+
+					<div class="col gu2 next_hidden">
+						<label>Interno Oficina</label>
+						<input type="text" size="6">
+						<p class="validation hide">El campo está vacío</p>
+					</div>
+
+					<div class="col gu2">
+						<label>Obra Social</label>
+						<select>
+						  <option value="argentino" selected>OSIM</option>
+						  <option value="venezolano">Whatever</option>
+						  <option value="venezolano">Whatever</option>
+						</select>
+					</div>
+
+					<div class="col gu2">
+						<label>Prepaga</label>
+						<select>
+						  <option value="argentino" selected>OSDE</option>
+						  <option value="venezolano">Galeno</option>
+						  <option value="uruguayo">Swiss Medical</option>
+						</select>
+					</div>
+
+					<div class="col gu7">
+						<label>Home Office</label>
+						<input type="checkbox" name="homeoffice" value="Lunes">Lunes
+						<input type="checkbox" name="homeoffice" value="Martes">Martes
+						<input type="checkbox" name="homeoffice" value="Miércoles">Miércoles
+						<input type="checkbox" name="homeoffice" value="Jueves">Jueves
+						<input type="checkbox" name="homeoffice" value="Viernes">Viernes
+						<input type="checkbox" name="homeoffice" value="No tiene">No tiene
+					</div>
+				</div>
+
+				<div class="form_step datos_contacto">
+					<h2>Salarial</h2>
+
+					<div class="col gu2">
+						<label>Salario</label>
+						<input type="text" size="20">
+						<p class="validation hide">El campo está vacío</p>
+					</div>
+					
+					<div class="col gu2">
+						<label>Costo por hora</label>
+						<input type="text" size="20">
+						<p class="validation hide">El campo está vacío</p>
+					</div>
+
+					<div class="col gu2">
+						<label>Horas Laborables p/dia</label>
+						<input type="text" size="20">
+						<p class="validation hide">El campo está vacío</p>
+					</div>
+
+					<div class="col gu2">
+						<label>Horas Laborables p/mes</label>
+						<input type="text" size="20">
+						<p class="validation hide">El campo está vacío</p>
+					</div>
+
+					<div model="addBank" keep="1">
+						<div class="col gu2">
+							<label>Banco</label>
+							<select class="small_select">
+							  <option value="capital_federal" selected>Galicia(Paseo Colón)</option>
+							  <option value="buenos_aires">Galicia(Cabildo)</option>
+							  <option value="entre_rios">Galicia(Tandil)</option>
+							  <option value="cordoba">HSBC</option>
+							  <option new modal-overlay="banks.html">Nuevo</option>
+							</select>
+							<a class="add_select" modal-overlay="banks.html">+</a>
+						</div>
+
+						<div class="col gu3 next_hidden">
+							<label>No de cuenta Bancaria</label>
+							<input type="text" size="40">
+							<p class="validation hide">El campo está vacío</p>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+
+					<div class="col gu8 add" duplicate="addBank">
+						<a>+ Agregar otra cuenta bancaria</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col gu9" step=3>
+				<div class="form_step">
+					<h2>Estudios</h2>
+
+					<div model="addStudy" keep="1">
+						<div class="col gu4">
+							<label>Título</label>
+							<input type="text" size="40">
+							<p class="validation hide">El campo está vacío</p>
+						</div>
+
+						<div class="col gu2">
+							<label>Institución</label>
+							<input type="text" size="20">
+							<p class="validation hide">El campo está vacío</p>
+						</div>
+
+						<div class="col gu2">
+							<label>Tipo de Estudios</label>
+							<select>
+							  <option value="soltero" selected>Secundario</option>
+							  <option value="casado">Terciario</option>
+							  <option value="casado">Universitario</option>
+							  <option value="casado">Posgrado</option>
+							</select>
+						</div>				
+
+						<div class="col gu2">
+							<label>Estado</label>
+							<select>
+							  <option value="soltero" selected>En curso</option>
+							  <option value="soltero" selected>Interrumpido</option>
+							  <option value="casado">Terminado</option>
+							</select>
+						</div>
+						
+						<div class="col gu2">
+							<label>Fecha de Inicio</label>
+							<input type="month">
+							<p class="validation hide">El campo está vacío</p>
+						</div>
+
+						<div class="col gu2">
+							<label>Fecha de Finalización</label>
+							<input type="month">
+							<p class="validation hide">El campo está vacío</p>
+						</div>
+
+						<div class="col gu2">
+							<label>Cert. de estudio regular</label>
+							<input type="checkbox" name="vehicle" value="Lunes">Sí
+						</div>
+
+						<div class="clear"></div>
+					</div>
+
+					<div class="col gu8 add" duplicate="addStudy">
+						<a>+ Agregar otra institución</a>
+					</div>
+				</div>
+
+				<div class="form_step">
+					<h2>Otros estudios/Cursos</h2>
+					<div model="addFormation" keep="1">
+						<div class="col gu4">
+							<label>Título</label>
+							<input type="text" size="40">
+							<p class="validation hide">El campo está vacío</p>
+						</div>
+
+						<div class="col gu2">
+							<label>Institución</label>
+							<input type="text" size="20">
+							<p class="validation hide">El campo está vacío</p>
+						</div>
+
+						<div class="col gu2">
+							<label>Tipo de Estudios</label>
+							<select>
+							  <option value="soltero" selected>Secundario</option>
+							  <option value="casado">Terciario</option>
+							  <option value="casado">Universitario</option>
+							  <option value="casado">Posgrado</option>
+							</select>
+						</div>
+
+						<div class="col gu2">
+							<label>Estado</label>
+							<select>
+							  <option value="soltero" selected>En curso</option>
+							  <option value="soltero" selected>Interrumpido</option>
+							  <option value="casado">Terminado</option>
+							</select>
+						</div>
+						
+						<div class="col gu2">
+							<label>Fecha de Inicio</label>
+							<input type="month">
+							<p class="validation hide">El campo está vacío</p>
+						</div>
+
+						<div class="col gu2">
+							<label>Fecha de Finalización</label>
+							<input type="month">
+							<p class="validation hide">El campo está vacío</p>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+					<div class="col gu8 add" duplicate="addFormation">
+						<a>+ Agregar otra institución</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col gu9"  step=4>
+				<div class="form_step">
+					<h2>Conocimientos</h2>
+
+					<div class="col gu8">
+						<span techModel="techArea">
+							<input type="checkbox" name="homeoffice" techArea><span caption>{{techArea}}</span>
+						</span>
+<!--						
+						<input type="checkbox" name="homeoffice" value="Lunes">Idiomas
+						<input type="checkbox" name="homeoffice" value="Lunes">Diseño
+						<input type="checkbox" name="homeoffice" value="Martes">Desarrollo
+						<input type="checkbox" name="homeoffice" value="No tiene">IT
+						<input type="checkbox" name="homeoffice" value="Miércoles">Gestión
+						<input type="checkbox" name="homeoffice" value="Jueves">Social Media
+						<input type="checkbox" name="homeoffice" value="Jueves">Métricas						
+-->						
+					</div>	
+
+					<div class="col gu8">
+						<div class="tecnologia_head">
+							<div class="tech_skills">
+								<p class="col gu1">N/A</p>
+								<p class="col gu1">Jr</p>
+								<p class="col gu1">Ssr</p>
+								<p class="col gu1">Sr</p>
+							</div>
+						</div>
+
+						<div class="tecnologia" techModel="Tech" tech>
+							<p caption>{{tech}}</p>
+							<div class="tech_skills">
+								<input type="radio" name="php" class="col gu1">
+								<input type="radio" name="php" class="col gu1">
+								<input type="radio" name="php" class="col gu1">
+								<input type="radio" name="php" class="col gu1">
+							</div> 
+						</div>
+
+<!--
+
+						<div class="tecnologia">
+							<p>PHP</p>
+							<div class="tech_skills">
+								<input type="radio" name="php" class="col gu1">
+								<input type="radio" name="php" class="col gu1">
+								<input type="radio" name="php" class="col gu1">
+								<input type="radio" name="php" class="col gu1">
+							</div> 
+						</div>
+
+						<div class="tecnologia">
+							<p>Javascript</p>
+							<div class="tech_skills">
+								<input type="radio" name="javascript" class="col gu1">
+								<input type="radio" name="javascript" class="col gu1">
+								<input type="radio" name="javascript" class="col gu1">
+								<input type="radio" name="javascript" class="col gu1">
+							</div> 
+						</div>
+
+						<div class="tecnologia">
+							<p>HTML5</p>
+							<div class="tech_skills">
+								<input type="radio" name="html5" class="col gu1">
+								<input type="radio" name="html5" class="col gu1">
+								<input type="radio" name="html5" class="col gu1">
+								<input type="radio" name="html5" class="col gu1">
+							</div> 
+						</div>
+
+						<div class="tecnologia">
+							<p>CSS3</p>
+							<div class="tech_skills">
+								<input type="radio" name="css3" class="col gu1">
+								<input type="radio" name="css3" class="col gu1">
+								<input type="radio" name="css3" class="col gu1">
+								<input type="radio" name="css3" class="col gu1">
+							</div> 
+						</div>
+-->
+						<div class="" model="addTech">
+							<div class="tecnologia">
+								<select class="small_select">
+								  <option value="capital_federal" selected>Pyton</option>
+								  <option value="buenos_aires">Android</option>
+								  <option value="entre_rios">IOS</option>
+								  <option value="cordoba">MySQL</option>
+								</select>
+								<a class="add_select" modal-overlay="tecnologias.html">+</a>
+
+								<div class="tech_skills">
+									<input type="radio" name="css3" class="col gu1">
+									<input type="radio" name="css3" class="col gu1">
+									<input type="radio" name="css3" class="col gu1">
+									<input type="radio" name="css3" class="col gu1">
+								</div> 
+							</div>
+
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+					<div class="col gu8 add" duplicate="addTech">
+						<a>+ Agregar otro conocimiento</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col gu9 bottom">
+				<div class="submit">
+					<div class="nav">
+						<a prev>Anterior</a>			
+						<a next>Siguiente</a>
+					</div>
+					
+					<div class="save">
+						<a href="#">Cancelar</a>
+						<a href="#">Guardar</a>
+						<a href="index.html">Guardar y Terminar</a>				
+					</div>
+				</div>			
+			</div>
+		</form>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" language="javascript" src="js/vendor/jquery.dataTables.js"></script>	
+	<script src="js/rrhhmain.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+/*=========    GENERAL   ========= */
+a {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/*=========    HEADER   ========= */
+
+header {
+    transition: all 0.4s ease;
+}
+
+/*_________Background hover transitions________*/
+
+.top-nav .anchors li:hover,
+.main-nav li:hover,
+.cta button:hover,
+.btn-cont button:hover {
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+/*_________Main header________*/
+
+.main-nav,
+.megamenu {
+     transition: all 0.4s ease;
+}
+
+.search-btn,
+.cart-resp-btn { 
+    transition: all .2s ease-in-out; 
+}
+
+.search-btn:hover,
+.cart-resp-btn:hover { 
+    transform: scale(1.1); 
+}
+
+/*=========  LISTS  ========= */
+
+/*_________Featured Products________*/
+
+.thumb-img>a>img,
+.list-img>a>img {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+.thumb-img:hover>a>img,
+.list-img:hover>a>img {
+  -webkit-transform: scale3d(1.1, 1.1, 1);
+          transform: scale3d(1.1, 1.1, 1);
+}
+
+.form .thumb-img:hover>a>img {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.thumb-img .img-hover a:hover {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.thumb-img .img-hover {
+    -webkit-transition: top 0.2s linear;
+    -moz-transition: top 0.2s linear;
+    -o-transition: top 0.2s linear;
+}
+
+.thumb-img .seller-hover {
+    -webkit-transition: bottom 0.2s linear;
+    -moz-transition: bottom 0.2s linear;
+    -o-transition: bottom 0.2s linear;
+}
+
+.taller-thumb a .play-hover i {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}

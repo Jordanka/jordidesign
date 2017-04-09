@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tonic3 Brag Badges</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body >
+	<div id="first">
+    	<h1>Por favor espere...</h1>
+	</div>
+
+	<div class="canvas">
+		<!--Banner-->
+		<div class="header row"></div>
+
+		<!--Formulario de carga-->
+		<form>
+			<div class="row badges">
+				<div class="col gu12">
+					<div class="badges_stroke">
+						<h2>01 |<span>Pick one!</span></h2>
+						<img class="ok hide" src="assets/images/ok.jpg">
+						<h4>Choose the badge you want to award your Tonic3 nominee.</h4>
+					</div>
+				</div>
+
+				<div class="col gu12">
+					<div class="badge">
+						<div id="f1_container">							
+							<div id="f1_card" class="shadow">
+								<div class="front face">
+									<img src="assets/images/badge01.jpg">
+								</div>
+								<div class="back face center">
+									<p>"Your drive for excellence contributes to our success everyday."</p>
+								</div>
+							</div>
+						</div>
+						
+						<h3>Star Performer</h3>
+						<input type="radio" class="ratio" name="badges">
+					</div>
+
+					<div class="badge">
+						<div id="f1_container">							
+							<div id="f1_card" class="shadow">
+								<div class="front face">
+									<img src="assets/images/badge02.jpg">
+								</div>
+								<div class="back face center">
+									<p>"You stimulate people's imagination."</p>
+								</div>
+							</div>
+						</div>
+
+						<h3>Creative</h3>
+						<input type="radio" class="ratio" name="badges">
+					</div>
+
+					<div class="badge">
+						<div id="f1_container">							
+							<div id="f1_card" class="shadow">
+								<div class="front face">
+									<img src="assets/images/badge03.jpg">
+								</div>
+								<div class="back face center">
+									<p>"You have the training, knowledge and experience that is needed to do it well."</p>
+								</div>
+							</div>
+						</div>
+						<h3>Skillful</h3>
+						<input type="radio" class="ratio" name="badges">
+					</div>
+
+					<div class="badge">
+						<div id="f1_container">							
+							<div id="f1_card" class="shadow">
+								<div class="front face">
+									<img src="assets/images/badge04.jpg">
+								</div>
+								<div class="back face center">
+									<p>"You empower and inspire others to achieve group and individual goals."</p>
+								</div>
+							</div>
+						</div>
+						<h3>Leader</h3>
+						<input type="radio" class="ratio" name="badges">
+					</div>
+
+					<div class="badge">
+						<div id="f1_container">							
+							<div id="f1_card" class="shadow">
+								<div class="front face">
+									<img src="assets/images/badge05.jpg">
+								</div>
+								<div class="back face center">
+									<p>"You bring critical thinking to the equation."</p>
+								</div>
+							</div>
+						</div>
+						<h3>Problem Solver</h3>
+						<input type="radio" class="ratio" name="badges">
+					</div>
+
+					<div class="badge">
+						<div id="f1_container">							
+							<div id="f1_card" class="shadow">
+								<div class="front face">
+									<img src="assets/images/badge06.jpg">
+								</div>
+								<div class="back face center">
+									<p>"You learn, teach, share and listen."</p>
+								</div>
+							</div>
+						</div>
+						<h3>Team Player</h3>
+						<input type="radio" class="ratio" name="badges">
+					</div>
+
+					<div class="badge">
+						<div id="f1_container">							
+							<div id="f1_card" class="shadow">
+								<div class="front face">
+									<img src="assets/images/badge07.jpg">
+								</div>
+								<div class="back face center">
+									<p>"You strive for WOW in what you do."</p>
+								</div>
+							</div>
+						</div>
+						<h3>Plain Awesome</h3>
+						<input type="radio" class="ratio" name="badges">
+					</div>
+				</div>
+				<div class="col gu12">
+					<p class="hide badges_val">Please, select a badge</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div id="to_box" class="col gu4">
+					<div>
+						<h2>02 |<span>My badge goes to</span></h2>
+						<img class="ok hide" src="assets/images/ok.jpg">
+						
+						<div class="form_cont">
+							<label class="hide">Name</label>
+							<input class="search" type="text" placeholder="Badge recipient’s name or email..." >
+							<p class="hide">Please, write the employees name or email</p>
+
+							<ul class="autocomplete hide"></ul>
+							<div class="Persons"></div>
+						</div>
+					</div>
+				</div>
+
+				<div id="why_box" class="col gu4">
+					<div>
+						<h2>03 |<span>Why</span></h2>
+						<img class="ok hide" src="assets/images/ok.jpg">
+
+						<div class="form_cont">
+							​<textarea placeholder="Tell us what prompted you to nominate this colleague..."></textarea>
+							<p class="hide">Please, write the reasons of your recognition</p>
+					  	</div>
+					</div>
+				</div>
+
+				<div id="from_box" class="col gu4">
+					<div>
+						<h2>04 |<span>From</span></h2>
+						<img class="ok hide" src="assets/images/ok.jpg">
+						
+						<div class="form_cont">				
+							<label>Full name</label>
+							<input type="text" class="name">
+							<p class="hide">Please, write your full name</p>
+
+							<label>Email</label>
+							<input type="text" class="email">
+							<p class="hide">Please, write a valid email address</p>
+
+							<label>Role</label>
+							<input type="text" class="role">
+							<p class="hide">Please, write your role</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row submit">
+				<div class="col gu12">
+					<input type="submit" value="send badge">
+				</div>
+			</div>
+		</form>
+
+		<div class="row footer">
+			<div class="col gu12">
+				<img src="assets/images/small_logo.jpg">
+				<p>For more information on the Tonic3 Brag Badges program contact us <a href="mailto:carolina.roca@tonic3.com">here.</a><span>Copyright 2015. All rights reserved. </span></p>
+			</div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div class="blackout hide"></div>
+	<div id="modal_badge" class="hide">
+		<div class="close"></div>
+		<h1>Badge Name</h1>
+		<img src="assets/images/badge_big.jpg">
+		<p>Badge Name</p>
+	</div>
+
+	<div id="modal_confirm" class="hide">
+		<div class="close"></div>
+		<h1>YOUR BRAG BADGE HAS BEEN SENT</h1>
+		<p>An email will be sent to the moderator and, once approved, the Tonic3 employee will receive your message.</p>
+		<p>Thank you for sending a Brag Badge!</p>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>	
+	<script src="js/main.js"></script>
+</body>
+
+</html>

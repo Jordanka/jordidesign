@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Force - Human Resources Module</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href="css/vendor/jquery.dataTables.css" rel="stylesheet">    
+    <link href="css/rrhhstyles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="logo">
+		<a class="menu-btn"><img src="assets/menu.jpg"></a>
+		<img src="assets/logo.jpg">
+	</div>
+
+	<!--Contenido del Menu Lateral-->
+    <div id='menu-container'>
+    	<a id="back-btn" class="menu-btn"><img src="assets/back.png"></a>
+        <ul>
+            <li><a href="index.html">Legajos</a></li>
+            <li><a href="lista_novedades.html">Novedades</a></li>
+            <li><a href="lista_bancos.html">Bancos</a></li>
+            <li><a href="lista_posiciones.html">Posiciones</a></li>
+            <li><a href="lista_sectores.html">Sectores</a></li>
+            <li><a href="lista_oficinas.html">Oficinas</a></li>
+            <li><a href="lista_conocimientos.html">Conocimientos</a></li>
+        </ul>
+    </div>
+
+	<div id="header">
+		<h1>John Smith<span> - No 002350</span></h1>
+		<div id="main-buttons">
+			<a href="form.html"><img src="assets/new_employee.jpg"></a>
+			<a href="form.html"><img src="assets/edit_employee_big.jpg"></a>
+			<a href="index.html"><img src="assets/employee_list.jpg"></a>
+		</div>
+	</div>
+
+	<div class="canvas profile_page">
+		<div class="row">
+			<div class="col profile gu2">
+				<img src="assets/employee_profile.jpg">
+				<h2>43%</h2>
+				<p>Completado</p>
+			</div>
+
+			<div class="col gu6" profile>
+				<div class="steps">
+					<div class="step col gu1" tostep=1>
+						<p>Biométricos</p>
+					</div>
+
+					<div class="step col gu1" tostep=2>
+						<p>Laboral</p>
+					</div>
+
+					<div class="step col gu1" tostep=3>
+						<p>Estudios</p>
+					</div>
+
+					<div class="step col gu1" tostep=4>
+						<p>Conocimientos</p>
+					</div>
+				</div>
+
+				<div step=1>
+					<div class="form_step">
+						<h2>Biométricos</h2>
+
+						<div class="col gu2">
+							<h4>Nombre</h4>
+							<h3>John</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Apellido</h4>
+							<h3>Smith</h3>
+						</div>
+
+						<div class="col gu2 invisible">
+							<h4>Apellido</h4>
+							<h3>Smith</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Género</h4>
+							<h3>13.10.1981</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Fecha de Nacimiento</h4>
+							<h3>13.10.1981</h3>
+						</div>
+
+						<div class="col gu2 invisible">
+							<h4>Apellido</h4>
+							<h3>Smith</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Documento</h4>
+							<h3>23 409 205</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>CUIL</h4>
+							<h3>24-23409205-4</h3>
+						</div>
+
+						<div class="col gu2 invisible">
+							<h4>Apellido</h4>
+							<h3>Smith</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Nacionalidad</h4>
+							<h3>Argentino</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Estado Civil</h4>
+							<h3>Soltero</h3>
+						</div>
+					</div>
+
+					<div class="form_step">
+						<h2>Contacto</h2>
+						
+						<div class="col gu2">
+							<h4>Dirección</h4>
+							<h3>Chile 4329 6toC</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Provincia</h4>
+							<h3>Capital Federal</h3>
+						</div>
+
+						<div class="col gu2 invisible">
+							<h4>Apellido</h4>
+							<h3>Smith</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Teléfono Fijo</h4>
+							<h3>4342-4566</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Teléfono Fijo</h4>
+							<h3>(15) 4564-8363</h3>
+						</div>
+
+						<div class="col gu2 invisible">
+							<h4>Apellido</h4>
+							<h3>Smith</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Email</h4>
+							<h3>john.smith@w3americas.com</h3>
+						</div>
+					</div>
+				</div>
+
+				<div step=2>
+					<div class="form_step">
+						<h2>Laboral</h2>
+
+						<div class="col gu2">
+							<h4>Fecha de ingreso</h4>
+							<h3>23/10/2014</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Posición</h4>
+							<h3>Developer Sr</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Unidad de Negocio</h4>
+							<h3>Latam</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Sector</h4>
+							<h3>USTEAM</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Responsable directo</h4>
+							<h3>Emanuel Castro</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Inhouse/Outhouse</h4>
+							<h3>Inhouse</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Oficina</h4>
+							<h3>San Telmo</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Interno oficina</h4>
+							<h3>132</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Seguro de vida</h4>
+							<h3>Whatever</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Obra social</h4>
+							<h3>OSIM</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Pregaga</h4>
+							<h3>Galeno</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Art</h4>
+							<h3>Whatever</h3>
+						</div>
+					</div>
+
+					<div class="form_step">
+						<h2>Salarial</h2>
+						
+						<div class="col gu2">
+							<h4>Costo por hora</h4>
+							<h3>$35</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Salario</h4>
+							<h3>$12325.55</h3>
+						</div>
+
+						<div class="col gu2 invisible">
+							<h4>Salario</h4>
+							<h3>$12325.55</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Horas Laborales p/dia</h4>
+							<h3>8hs</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Horas Laborables p/mes</h4>
+							<h3>160</h3>
+						</div>
+
+						<div class="col gu2 invisible">
+							<h4>Salario</h4>
+							<h3>$12325.55</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Banco</h4>
+							<h3>Banco Galicia</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>No de cuenta bancaria</h4>
+							<h3>23262700023423523</h3>
+						</div>
+					</div>
+				</div>
+
+				<div step=3>
+					<div class="form_step">
+						<h2>Estudios</h2>
+
+						<div class="col gu6">
+							<h4>Título</h4>
+							<h3>Desarrollo Integral en Javascript</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Institución</h4>
+							<h3>ImageCampus</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Tipo</h4>
+							<h3>Terciario</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Estado</h4>
+							<h3>En curso</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Nivel</h4>
+							<h3>Ssr</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Fecha de comienzo</h4>
+							<h3>23.10.2014</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Fecha de Finalización</h4>
+							<h3>14.12.2014</h3>
+						</div>
+					</div>
+
+					<div class="form_step">
+						<h2>Otros Estudios</h2>
+
+						<div class="col gu6">
+							<h4>Título</h4>
+							<h3>Desarrollo Integral en Javascript</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Institución</h4>
+							<h3>ImageCampus</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Tipo</h4>
+							<h3>Terciario</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Estado</h4>
+							<h3>En curso</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Nivel</h4>
+							<h3>Ssr</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Fecha de comienzo</h4>
+							<h3>23.10.2014</h3>
+						</div>
+
+						<div class="col gu2">
+							<h4>Fecha de Finalización</h4>
+							<h3>14.12.2014</h3>
+						</div>
+					</div>
+				</div>
+
+				<div step=4>
+					<div class="form_step tech">
+						<h2>Tecnologías</h2>
+
+						<div class="col gu2">
+							<h3>HTML5</h3>
+							<h4>- Sr</h4>
+						</div>
+
+						<div class="col gu2">
+							<h3>CSS3</h3>
+							<h4>- Sr</h4>
+						</div>
+
+						<div class="col gu2">
+							<h3>Javascript</h3>
+							<h4>- Sr</h4>
+						</div>
+						
+						<div class="col gu2">
+							<h3>jQuery</h3>
+							<h4>- Sr</h4>
+						</div>
+
+						<div class="col gu2">							
+							<h3>AngularJS</h3>
+							<h4>- Ssr</h4>
+						</div>
+
+						<div class="col gu2">
+							<h3>Php</h3>
+							<h4>- Ssr</h4>
+						</div>
+
+						<div class="col gu2">							
+							<h3>Mysql</h3>
+							<h4>- Ssr</h4>
+						</div>
+
+						<div class="col gu2">
+							<h3>Python</h3>
+							<h4>- Jr</h4>
+						</div>
+
+						<div class="col gu2">
+							<h3>Ruby</h3>
+							<h4>- N/A</h4>
+						</div>
+
+						<div class="col gu2">							
+							<h3>IOS</h3>
+							<h4>- N/A</h4>
+						</div>
+
+						<div class="col gu2">							
+							<h3>Android</h3>
+							<h4>- N/A</h4>
+						</div>
+
+						<div class="col gu2">
+							<h3>.Net</h3>
+							<h4>- N/A</h4>
+						</div>
+
+						<div class="col gu2">
+							<h3>Java</h3>
+							<h4>- N/A</h4>
+						</div>
+
+						<div class="col gu2">
+							<h3>C++</h3>
+							<h4>- N/A</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col gu3 novedades">
+				<h2>Novedades</h2>
+
+				<div class="agregar_novedad">					
+					<label>Tipo de novedad</label>
+					<select class="small_select">
+					  <option value="argentino" selected>Todos</option>		  
+					  <option value="venezolano">Enfermedad</option>
+					  <option value="uruguayo">Vacaciones</option>
+					  <option value="chileno">Trámites</option>			  
+					  <option value="uruguayo">Dias de estudio</option>
+					  <option value="uruguayo">Cambio de Homeoffice</option>
+					  <option value="argentino">Mudanza</option>
+					  <option value="chileno">Casamiento</option>
+					  <option value="argentino">Maternidad</option>
+					  <option value="venezolano">Paternidad</option>
+					  <option value="argentino">Accidente laboral</option>
+					  <option value="argentino">Sin goce de sueldo</option>
+					  <option value="argentino">Otros</option>
+					</select>
+
+					<a modal-overlay="novedades.html">Agregar</a>					
+				</div>
+
+				<div class="novedad">
+					<p><span>Martes 13, Octubre</span>Ausencia por enfermedad</p>
+					<div class="actions">
+						<img src="assets/edit_employee.jpg" modal-overlay="novedades.html">
+						<img src="assets/delete_employee.jpg">
+					</div>
+				</div>
+
+				<div class="novedad">
+					<p><span>Martes 13, Octubre</span>Ausencia por enfermedad</p>
+					<div class="actions">
+						<img src="assets/edit_employee.jpg" modal-overlay="novedades.html">
+						<img src="assets/delete_employee.jpg">
+					</div>
+				</div>
+
+				<div class="novedad">
+					<p><span>Martes 13, Octubre</span>Ausencia por enfermedad</p>
+					<div class="actions">
+						<img src="assets/edit_employee.jpg" modal-overlay="novedades.html">
+						<img src="assets/delete_employee.jpg">
+					</div>
+				</div>
+
+				<div class="novedad">
+					<p><span>Martes 13, Octubre</span>Ausencia por enfermedad</p>
+					<div class="actions">
+						<img src="assets/edit_employee.jpg" modal-overlay="novedades.html">
+						<img src="assets/delete_employee.jpg">
+					</div>
+				</div>
+
+				<div class="novedad">
+					<p><span>Martes 13, Octubre</span>Ausencia por enfermedad</p>
+					<div class="actions">
+						<img src="assets/edit_employee.jpg" modal-overlay="novedades.html">
+						<img src="assets/delete_employee.jpg">
+					</div>
+				</div>
+
+				<div class="novedad">
+					<p><span>Martes 13, Octubre</span>Ausencia por enfermedad</p>
+					<div class="actions">
+						<img src="assets/edit_employee.jpg" modal-overlay="novedades.html">
+						<img src="assets/delete_employee.jpg">
+					</div>
+				</div>
+
+				<a href="lista_novedades.html"class="novedades_all">Ver todas las novedades</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" language="javascript" src="js/vendor/jquery.dataTables.js"></script>	
+	<script src="js/rrhhmain.js"></script>
+</body>
+
+</html>

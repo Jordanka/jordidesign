@@ -1,0 +1,636 @@
+/* -----------------------------
+ * USA Projects General CSS
+ *
+ * ---------
+ * CSS Index
+ *
+ * 001 - Meyer's Reset
+ * 002 - Fonts
+ * 003 - Box Model
+ * 003 - General Styles
+
+ * ---------------
+ * 001 - Meyer's reset
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------------
+ * 002 - Grid System
+ */
+
+/* clearfix */
+.clearfix, .row {display:inline-block;} /*Those two .clearfix have to be separate!)*/
+.clearfix, .row {display:block;}
+
+.col {float:left; position:relative;}
+.gu1{width: 74px;}
+.gu2{width: 190px;}
+.gu3{width: 270px;}
+.gu4{width: 350px;}
+.gu5{width: 466px;}
+.gu6{width: 564px;}
+.gu7{width: 662px;}
+.gu8{width: 760px;}
+.gu9{width: 858px;}
+.gu10{width: 956px;}
+.gu11{width: 1054px;}
+.gu12{width:100%; max-width: 1110px;}
+
+.canvas {
+	margin:0 auto;
+	position:relative;
+	max-width: 1140px;
+}
+
+.hide {
+	display: none;
+}
+
+.clear {
+	clear: both;
+}
+
+/* ---------------
+ * 003 - Fonts
+ */
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../assets/fonts/proximanova-bold-webfont.eot');
+    src: url('../assets/fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('../assets/fonts/proximanova-bold-webfont.ttf') format('truetype'),
+         url('../assets/fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../assets/fonts/proximanova-regular-webfont.eot');
+    src: url('../assets/fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('../assets/fonts/proximanova-regular-webfont.ttf') format('truetype'),
+         url('../assets/fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('../assets/fonts/proximanova-semibold-webfont.eot');
+    src: url('../assets/fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/proximanova-semibold-webfont.woff') format('woff'),
+         url('../assets/fonts/proximanova-semibold-webfont.ttf') format('truetype'),
+         url('../assets/fonts/proximanova-semibold-webfont.svg#proxima_novasemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ---------------
+ * 004 - Header
+ */
+
+ body {
+ 	font-size: 1em;
+ 	line-height: 1.1em;
+ 	font-family: 'proxima_nova_rgregular';
+}
+
+#first {    
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;  
+    opacity:0.5;
+    background-color:#000;
+    color:#fff;
+    z-index:9999;
+}
+
+/* --------------------------------
+ * 003 - Header
+ */
+
+.header {
+	background-image: url('../assets/images/banner.jpg');
+	height: 383px;
+	margin: 0 15px;
+}
+
+.header img {
+	margin: 0 auto;
+	padding-top: 30px;
+	display: block;
+}
+
+#title {
+	margin-left: 64px;
+	width: 220px;
+}
+
+#title h1 {
+	font-family: 'proxima_nova_rgbold';
+	font-size: 1.15em;
+	line-height: 1.15em;
+	text-transform: uppercase;
+	color: #f26a25;
+	margin: 50px 0 20px 0;
+}
+
+.header a {
+	display: block;
+	clear: both;
+	width: 150px;
+	padding: 15px 25px;
+	position: relative;
+	top: 90px;
+	margin: 0 auto;
+	background-color: #f26a25;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'proxima_nova_rgbold';
+	font-size: 1.5em;
+	border-bottom: 2px solid #CB4B27;
+	-webkit-box-shadow: inset 0 -2px #CB4B27;
+  	box-shadow: inset 0 -2px #CB4B27;
+}
+
+.header a:active {
+  top: 91px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* --------------------------------
+ * 003 - Form General
+ */
+
+form .gu4 {
+  	margin: 20px 15px 50px 15px;
+}
+
+form .gu4>div {
+	padding-left: 20px; 
+}
+
+form .gu4>div, form .gu12>div, form .submit>div {
+	border-top: 2px solid black;
+}
+
+form h2 {
+	margin: 20px 5px 30px 0; 
+	float: left;
+	font-size: 1.9em;
+}
+
+form h2 span {
+	margin-left: 8px;
+	font-size: 0.6em;
+	text-transform: uppercase;
+}
+
+.ok {
+	float: right;
+	margin: 8px 10px 0 0;
+}
+
+.form_cont {
+	clear: both;
+}
+
+.form_cont label {
+	display: block;
+	margin: 20px 0 5px 0;
+	text-transform: uppercase;
+	font-size: 0.9em;
+}
+
+.form_cont label.hide {
+	visibility: hidden;
+}
+
+.form_cont input {
+	height: 30px;
+	width: 90%;
+	padding: 0 10px;
+	border: 1px solid black;
+	font-family: 'proxima_nova_rgregular';
+	font-size: 1em;
+}
+
+.form_cont textarea {
+	height: 166px;
+	margin-top: 44px;
+	width: 90%;
+	padding: 6px 10px;
+	border: 1px solid black;
+	font-family: 'proxima_nova_rgregular';
+	font-size: 1em;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+   font-size: 0.9em;
+   padding-top: 1px;
+   color: black;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-style: italic;
+   font-size: 0.75em; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-style: italic;
+   font-size: 0.75em;  
+}
+
+:-ms-input-placeholder {  
+   font-style: italic;
+   font-size: 0.75em; 
+}
+
+/* --------------------------------
+ * 003 - Form Steps
+ */
+
+#from_box .form_cont p, #to_box .form_cont>p, #why_box p, .badges_val {
+	float: right;
+	padding-right: 12px;
+	padding-top: 3px;
+	font-style: italic;
+	color: #f26a25;
+	font-size: 0.75em;
+}
+
+#to_box h3 {
+	font-family: 'proxima_novasemibold';
+	font-size: 1.13em;
+	margin: 23px 0 0 20px;
+}
+
+#to_box p {
+	margin-left: 20px;
+	font-size: 0.88em;
+}
+
+#to_box img {
+	float: right;
+	padding: 5px 10px 0 0;
+}
+
+#to_box .warning {
+	width: 300px;
+	border: 1px solid black;
+	padding: 8px;
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+ul.autocomplete li {
+	width: 99%;
+	border: 1px solid black;
+	border-bottom: 0px;
+	padding: 10px 5px;
+	cursor: pointer;
+	background-color: white;
+}
+
+ul.autocomplete li:last-child {
+	border-bottom: 1px solid black;
+}
+
+ul.autocomplete {
+	position: absolute;
+	background-color: white;
+	border: 0;
+	padding: 0;
+}
+
+.person img{
+	cursor: pointer;
+}
+
+#why_box h2, .badges h2{
+	margin-bottom: 8px;
+}
+
+/* --------------------------------
+ * 003 - Badges
+ */
+
+.badges, .submit, .footer {
+	margin: 60px 15px;
+}
+
+.badges_stroke {
+  padding-left: 20px;
+}
+
+.badge {
+	float: left;
+	border-top: 0 !important;
+	padding: 0 11px;
+	text-align: center;
+}
+
+#f1_container {
+  position: relative;
+  width: 135px;
+  height: 171px;
+  z-index: 1;
+}
+
+#f1_container {
+  perspective: 1000;
+}
+
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.2s linear;
+}
+
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+}
+
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+}
+
+#f1_container:hover .front {
+  display: none;
+}
+
+#f1_container:hover .back {
+  display: block;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.face.back {
+  display: none;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 40px 10px;
+  color: black;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.badge img {
+	padding: 20px 5px;
+	border-bottom: 1px solid black;
+}
+
+.badge h3 {
+	text-transform: uppercase;
+	font-size: 0.82em;
+	clear: both;
+	margin-top: 7px;
+}
+
+.badges h4 {
+	display: block;
+	clear: both;
+	font-size: 0.9em;
+	line-height: 1.1em;
+	width: 240px;
+	margin-bottom: 14px;
+} 
+
+.badges h4 {
+	width: 400px;
+}
+
+input[type="radio"] {
+	margin: 15px 0 40px 0;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+/* --------------------------------
+ * 003 - Modal Badge
+ */
+
+.blackout {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	min-height:100%;
+	
+	background-color: black;
+	opacity: 0.5;
+	z-index: 99;
+	cursor: pointer;
+}
+
+#modal_badge {
+	position: absolute;
+	width: 400px;
+	height: 500px;
+	background-color: white;
+	z-index: 999;
+}
+
+.close {
+	float: right;
+	margin: 10px;
+	background-image: url('../assets/images/cancel.jpg');
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+} 
+
+#modal_badge h1 {
+	font-family: 'proxima_novasemibold';
+	font-size: 1.4em;
+	margin: 40px 25px 30px 25px;
+	text-transform: uppercase;
+}
+
+#modal_badge p {
+	border-top: 1px solid black;
+	font-size: 1.2em;
+	line-height: 1.1em;
+	margin: 30px 25px 50px 25px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+#modal_badge img {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+}
+
+/* --------------------------------
+ * 003 - Submit
+ */
+
+form .submit div {
+   margin-top: 10px;
+}
+
+input[type="submit"] {
+	display: block;
+	margin: 60px auto 100px;
+	cursor: pointer;
+	border-radius: 0;
+	border: 0;
+	background-color: #f26a25;
+	color: white;
+	font-family: 'proxima_nova_rgbold';
+	text-transform: uppercase;
+	font-size: 1.75em;
+	padding: 20px 55px;
+	border-bottom: 2px solid #CB4B27;
+	-webkit-box-shadow: inset 0 -2px #CB4B27;
+  	box-shadow: inset 0 -2px #CB4B27;
+  	outline: none;
+  	position: relative; 
+}
+
+input[type="submit"]:active {
+	top: 1px;
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	outline: none;
+}
+
+/* --------------------------------
+ * 003 - Modal Confirm
+ */
+
+#modal_confirm {
+	position: absolute;
+	width: 500px;
+	height: 220px;
+	background-color: white;
+	z-index: 999;
+}
+
+#modal_confirm h1 {
+	font-family: 'proxima_novasemibold';
+	font-size: 1.1em;
+	color: #f26a25;
+	margin: 60px 25px 30px 25px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#modal_confirm p {
+	margin: 10px 25px;
+	text-align: center;
+	line-height: 1.2em;
+}
+
+/* --------------------------------
+ * 003 - Footer
+ */
+
+.footer .col{
+	margin-bottom: 20px;
+}
+
+.footer img {
+	position: relative;
+	top: 8px;
+	margin-right: 10px;
+}
+
+.footer p {
+	display: inline;
+	font-size: 0.88em;
+}
+
+.footer a {
+	color: #f26a25;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}
+
+.footer span {
+	position: relative;
+	top: 14px;
+	float: right;
+}

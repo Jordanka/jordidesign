@@ -1,0 +1,599 @@
+/*_______GENERAL______*/
+
+body {
+  color: #121212;
+}
+
+ul  {
+  padding-left: 0;
+}
+
+ul li {
+  list-style: none;
+}
+a:hover, 
+a:active, 
+a:focus  {
+  outline: none;
+}
+
+span.tag {
+    padding: 3px;
+    min-width: 22px !important;
+    color: white;
+    font-size: 0.9em;
+    display: inline-block;
+    text-align: center;
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.details-bc {
+  display: none;
+}
+
+.main-header {
+  border-bottom: 2px solid #545554;
+}
+
+.main-header h5 span {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.main-header .profile {
+  display: inline-block;
+  float: right;
+}
+
+.main-header .profile img {
+  width: 50px;
+  height: 50px;
+}
+
+.main-header .profile-name {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.main-header .profile-name p {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.main-header .profile-name p.list-label {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    font-style: italic;
+}
+
+/*------Header-----*/
+.tituloPrograma {
+  margin-bottom: 0;   
+}
+
+/*------Footer-----*/
+.main-footer {
+  font-size: 12px;
+  padding: 10px;
+  padding: 30px 0;
+}
+
+.main-footer .footer-texto {
+  padding-top: 20px;
+}
+
+/*_______LIST______*/
+
+/*------List title-----*/
+
+.main-header {
+  padding: 15px 0;
+}
+.main-header h5 {
+  display: inline-block;
+}
+
+.filtrar {
+  margin-right: 10px; 
+  cursor: pointer;
+}
+
+.filtrar .fa-filter {
+  font-size: 1.5em;
+}
+
+a.filtrar:hover,
+a.filtrar:active,
+a.filtrar:focus {
+  text-decoration: none !important; 
+}
+
+/*------List filters-----*/
+
+.dataTables_filter,
+.filters {
+  display: none;
+} 
+
+.dataTables_filter {
+    position: absolute;
+    right: 0;
+    top: -75px;
+}
+
+.filters {
+    float: left;
+    width: 100%;
+}
+
+.dataTables_wrapper {
+    border-top: 1px solid #eee;
+}
+
+.form-group {
+   margin: 15px 0 25px;
+}
+
+.form-group select,
+.form-group input,
+.form-group p,
+.dataTables_filter input {
+   font-size: 0.8em;
+ }
+
+.form-group p {
+   font-size: 1em;
+   padding-top: 5px;
+}
+
+.form-control {
+  display: inline-block;
+  width: auto;
+}
+
+input[type=number]{
+    width: 80px;
+} 
+
+.form-group.fecha p{
+  display: inline;
+  width: auto;
+  padding-right: 10px;
+  font-weight: 500;
+}
+
+.form-group.fecha a{
+  padding-right: 10px;
+}
+
+.form-group.fecha p.list-label {
+  display: block;
+  width: auto;
+}
+
+/*------List content-----*/
+
+table.dataTable {
+    font-size: 0.75em;
+    font-weight: 500;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+      padding: 10px 20px 10px 10px;
+      font-style: italic;  
+}
+
+.table-cont .action a {
+  padding-right: 5px;
+  color: #999;
+}
+
+.table-cont .action a:hover,
+.table-cont .action a:active,
+.table-cont .action a:focus {
+  color: #0072bc;
+}
+
+.table-cont .action i {
+  font-size: 1.5em;
+}
+
+.table-cont .action .aprobar:hover i,
+.table-cont .action .aprobar:active i, 
+.table-cont .action .aprobar:focus i  {
+  color: #33b560;
+}
+
+.table-cont .action .borrar:hover i,
+.table-cont .action .borrar:active i, 
+.table-cont .action .borrar:focus i  {
+  color: #ef4d3d;
+}
+
+
+/*------Pagination-----*/
+.table-cont .pagination {
+    margin-top: -5px;
+    font-size: 0.8em;
+}
+
+.table-cont .bottom {
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+.table-cont .dataTables_length select{
+  margin: 0 5px;
+}
+    
+/*_______DETAILS______*/
+
+/*------Detalles-----*/
+.details-cont {
+  display: none;
+}
+
+.backtolist {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.backtolist i {
+  font-size: 3em;
+  position: relative;
+  top: 7px;
+}
+
+/*------Left-col-----*/
+.simi-status {
+  background-color: #eee;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 25px 15px 10px;
+}
+
+.simi-status p {
+  font-size: 0.8em;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.simi-solicitante {
+  padding-top: 25px;
+}
+
+.simi-solicitante p {
+  font-size: 0.78em;
+  font-weight: bold; 
+  margin-bottom: 15px; 
+  line-height: 1.2em;
+}
+
+/*------Details content-----*/
+
+.content_format {
+  padding: 0 50px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.accordion-head {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-head.open {
+  border-bottom: 0;
+}
+
+.accordion-head h4{
+  margin: 1em 0;
+  display: inline-block;
+}
+
+.accordion-head .accordion-btn {
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    border-right: 1px solid #ccc;
+    vertical-align: middle;
+    position: relative;
+    top: -5px;
+    margin-right: 20px;
+}
+
+.accordion-head .accordion-btn i {
+    position: relative;
+    vertical-align: bottom;
+    top: 5px;
+}
+
+.section-actions {
+    margin: 0;
+    text-align: right;
+}
+
+.section-actions ul {
+    margin: 0;
+}
+
+.section-actions li {
+    margin: 20px 0 10px;
+}
+
+.section-actions i {
+    font-size: 1.2em; 
+}
+
+.content_format  p {
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.accordion-body {
+    padding: 15px 0 25px;
+}
+
+.accordion-body {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-body span.tag {
+  font-size: 0.68em;
+}
+
+.desc {
+  font-size: 0.7em;
+}
+
+/*------Posiciones arancelarias-----*/
+.pos_aran thead {
+  border-top: 3px solid #ccc
+}
+
+.pos_aran.accordion-body .table  thead .col-amount {
+    font-size: 12px;
+    line-height: 14px;
+    width: 10%;
+    border-right: 1px solid #ccc;
+    border-bottom: 0;
+}
+
+.pos_aran.accordion-body .table  thead .col-datos {
+    font-weight: 700;
+    border-bottom: 0;  
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.pos_aran.accordion-body .table  thead .action {
+    border-bottom: 0;
+}
+
+.pos_aran.accordion-body .table .col-datos {
+  width: 16%;
+  padding: 10px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ededed;
+}
+
+.pos_aran.accordion-body .table .col-amount {
+    width: 10%;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    text-align: right;
+    padding: 10px 15px; 
+}
+
+.pos_aran .action {
+    width: 10%;
+    padding: 0 !important;
+    text-align: center;
+    border-bottom: 1px solid #ededed;
+}
+
+.pos_aran .action .vermas {
+  font-size: 1.3em;
+}
+
+/*------mas-----*/
+
+.pos_aran .table>tbody>tr {
+  position: relative;
+}
+
+.pos_aran .table>tbody>tr>td.mas-cont {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border: 0;
+    display: none;
+    top: 96px;
+    padding: 0 15px !important;
+}
+
+.pos_aran .table>tbody>tr>td.mas-cont .pa_details {
+  padding-top: 30px;
+}
+
+.pos_aran .table>tbody>tr>td.mas-cont.active {
+  display: block;
+  background: none;
+}
+
+.pos_aran td.mas-cont .container {
+  width: 100%;
+}
+
+.pos_aran .pa_details p {
+  font-size: 13px;
+}
+
+.pos_aran .pa_details  .content_format  p {
+  margin-bottom: 24px;
+}
+
+/*------Importaciones-----*/
+
+.accordion-body .table>tbody>tr>td, 
+.accordion-body .table>tbody>tr>th, 
+.accordion-body .table>tfoot>tr>td, 
+.accordion-body .table>tfoot>tr>th, 
+.accordion-body .table>thead>tr>td, 
+.accordion-body .table>thead>tr>th {
+  vertical-align: middle;
+  font-size: 0.9em;
+  padding-left: 25px;
+}
+
+.accordion-body .table>thead>tr>th {
+  font-size: 1em;
+  padding: 0;
+}
+
+.accordion-body .table .col-datos {
+    font-size: 12px;
+    line-height: 14px;
+    width: 22%;
+    padding: 15px 25px; 
+    font-weight: 500;
+    border-right: 1px solid #ccc;
+}
+
+.accordion-body .table .col-amount {
+  font-weight: 700;
+  text-align: right;
+  padding: 15px 25px;
+  width: 26% 
+}
+
+.accordion-body .table td.col-amount {
+  border-right: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.accordion-body .archivo i {
+  padding-right: 15px;
+  font-size: 1.3em;
+}
+
+.accordion-body .archivo {
+    margin: 30px 0 20px;
+    font-size: 0.9em;
+}
+
+/*------Comentarios-----*/
+.jquery-comments  {
+  margin-top: 10px;
+}
+
+.jquery-comments .commenting-field.main .textarea-wrapper .textarea {
+    height: 4em !important;
+}
+
+.jquery-comments ul.navigation {
+  line-height: 1em;
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 1px;
+  margin-top: 30px;
+}
+
+.jquery-comments ul.navigation li {
+  font-size: 1em;
+  font-weight: 500;
+  padding: 5px 1em;
+  margin-bottom: 0;
+}
+
+.jquery-comments ul.main li.comment {
+  margin-bottom: 0;
+}
+
+.jquery-comments ul.main li.comment .comment-wrapper {
+    font-size: 0.85em;
+    font-weight: 400;
+    padding: 15px 0;
+}
+
+.jquery-comments ul.main li.comment .child-comments li.toggle-all {
+    font-size: 0.8em;
+    margin-bottom: 0;
+}
+
+.jquery-comments .textarea-wrapper {
+    font-weight: 400;
+}
+
+.jquery-comments .textarea-wrapper  .textarea{
+    padding: .5em .8em;
+}
+
+.jquery-comments .textarea-wrapper .control-row > span {
+  border-radius: 0.3em;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.jquery-comments .textarea-wrapper .control-row > span:hover {
+    background-color: #0091ef !important;
+}
+
+.jquery-comments .textarea-wrapper  .textarea {
+    font-size: 14px;
+}
+
+/*------CTA-----*/
+.cta {
+  margin: 50px 0;
+}
+
+.cta button {
+  margin-right: 10px;
+  padding: 10px 40px;
+}
+
+.cta a:last-child {
+    position: relative;
+    vertical-align: middle;
+    top: 9px;
+    padding-left: 10px;
+}
+
+/*------Right col----*/
+.right-col {
+    padding: 15px 15px 10px;
+}
+
+/*------Labels----*/
+
+p.list-label {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.filters p.list-label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.filters .fecha p.list-label {
+  margin-bottom: 10px;
+}
+
+.dataTables_filter p.list-label  {
+  margin-bottom: 5px;
+}
+
+
+
+
+

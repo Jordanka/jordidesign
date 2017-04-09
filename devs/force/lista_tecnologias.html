@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Force - Human Resources Module</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href="css/vendor/jquery.dataTables.css" rel="stylesheet">    
+    <link href="css/rrhhstyles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="logo">
+		<a class="menu-btn"><img src="assets/menu.jpg"></a>
+		<img src="assets/logo.jpg">
+	</div>
+
+    <!--Contenido del Menu Lateral-->
+    <div id='menu-container'>
+    	<a id="back-btn" class="menu-btn"><img src="assets/back.png"></a>
+        <ul>
+            <li><a href="index.html">Legajos</a></li>
+            <li><a href="lista_bancos.html">Bancos</a></li>
+            <li><a href="lista_posiciones.html">Posiciones</a></li>
+            <li><a href="lista_sectores.html">Sectores</a></li>
+            <li><a href="lista_oficinas.html">Oficinas</a></li>
+            <li><a href="lista_tecnologias.html">Tecnologías</a></li>
+        </ul>
+    </div>
+	
+	<div id="header">
+		<h1>Tecnologías</h1>
+		<div id="main-buttons">
+			<a modal-overlay="tecnologias.html"><img src="assets/new_employee.jpg"></a>
+		</div>
+	</div>
+
+	<div  class="canvas">
+		<table id="example" class="display" cellspacing="0" width="100%">
+		    <thead>
+		        <tr>
+		            <th>Tecnologia</th>
+		            <th>Acciones</th>
+		        </tr>
+		    </thead>
+		 
+		    <tfoot>
+		        <tr>
+		            <th>Tecnologia</th>
+		            <th>Acciones</th>
+		        </tr>
+		    </tfoot>
+		 
+		    <tbody>
+		        <tr>
+		            <td>HTML5</td>
+		            <td class="actions">
+		            	<a modal-overlay="tecnologias.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>CSS3</td>
+		            <td class="actions">
+		            	<a modal-overlay="tecnologias.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>Javascript</td>
+		            <td class="actions">
+		            	<a modal-overlay="tecnologias.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>jQuery</td>
+		            <td class="actions">
+		            	<a modal-overlay="tecnologias.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>AngularJS</td>
+		            <td class="actions">
+		            	<a modal-overlay="tecnologias.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>Php</td>
+		            <td class="actions">
+		            	<a modal-overlay="tecnologias.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>Mysql</td>
+		            <td class="actions">
+		            	<a modal-overlay="tecnologias.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>Python</td>
+		            <td class="actions">
+		            	<a modal-overlay="tecnologias.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>Ruby</td>
+		            <td class="actions">
+		            	<a modal-overlay="tecnologias.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>IOS</td>
+		            <td class="actions">
+		            	<a modal-overlay="tecnologias.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>Android</td>
+		            <td class="actions">
+		            	<a modal-overlay="tecnologias.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>.Net</td>
+		            <td class="actions">
+		            	<a modal-overlay="tecnologias.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>Java</td>
+		            <td class="actions">
+		            	<a modal-overlay="tecnologias.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>C++</td>
+		            <td class="actions">
+		            	<a modal-overlay="tecnologias.html"><img src="assets/edit_employee.jpg"></a>
+		            	<img src="assets/delete_employee.jpg">
+		            </td>
+		        </tr>
+		    </tbody>
+		</table>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" language="javascript" src="js/vendor/jquery.dataTables.js"></script>	
+	<script src="js/rrhhmain.js"></script>
+</body>
+
+</html>

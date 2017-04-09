@@ -1,0 +1,124 @@
+.version.index /* version checker */
+{
+	color: #0000FA;
+	background-color: #47BF06;
+}
+
+#muse_css_mq
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 438px;
+	background-image: none;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	padding-bottom: 62px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#u69
+{
+	z-index: 2;
+	width: 960px;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u85
+{
+	z-index: 4;
+	width: 111px;
+	height: 17px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 263px;
+	left: 146px;
+}
+
+.ie #u85
+{
+	background-color: #FFFFFF;
+	opacity: 0.01;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+}
+
+#u85:hover
+{
+	background-color: #FF0000;
+	opacity: 0.1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+	filter: alpha(opacity=10);
+	width: 111px;
+	height: 17px;
+	min-height: 0px;
+	margin: 263px -10000px 0px 0px;
+}
+
+#u108
+{
+	z-index: 5;
+	width: 195px;
+	height: 17px;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 233px;
+	left: 20px;
+}
+
+.ie #u108
+{
+	background-color: #FFFFFF;
+	opacity: 0.01;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+}
+
+#u108:hover
+{
+	background-color: #FF0000;
+	opacity: 0.1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+	filter: alpha(opacity=10);
+	width: 195px;
+	height: 17px;
+	min-height: 0px;
+	margin: 233px -10000px 0px 0px;
+}
+
+.ie #u85:hover,.ie #u108:hover
+{
+	opacity: 0.1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+	filter: alpha(opacity=10);
+}
+
+.html
+{
+	background-color: #7F7F7F;
+}
+
+body
+{
+	position: relative;
+	min-width: 962px;
+	padding-top: 35px;
+	padding-bottom: 36px;
+}
+
+

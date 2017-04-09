@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIMI</title>
+  <link href="vendor/poncho-0.3/dist/css/roboto-fontface.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/poncho-0.3/dist/css/poncho.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/headerMinisterio.css">
+  <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" type="text/css" href="vendor/comments/css/jquery-comments.css">
+  <link href="vendor/poncho-0.3/dist/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" href="img/cropped-Escudo-01-32x32.png" sizes="32x32">
+  <link rel="icon" href="img/cropped-Escudo-01-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon-precomposed" href="imgcropped-Escudo-01-180x180.png">
+</head>
+
+<body>
+  <header id="headerMinisterio" class="cd-main-header">
+    <a href="http://www.produccion.gob.ar"><img src="img/logoMinisterio.png" class="logoMinisterio" draggable="false" /></a>
+  </header>
+
+  <div class="tituloPrograma">
+    <h1>SIMI</h1>
+  </div>
+
+  <main role="main">
+    <div class="container">
+
+      <!-- Breadcrumbs -->
+      <div class="row">
+        <ol class="breadcrumb list-bc">
+          <li class="active">Listado de SIMIs</li>
+        </ol>
+
+        <ol class="breadcrumb details-bc">
+          <li><a href="">Listado de SIMIs</a></li>
+          <li class="active">Detalle de SIMI</li>
+        </ol>
+      </div>
+
+      <!-- List -->
+      <section class="list-cont">
+        <div class="row">
+
+          <div class="col-md-12 main-header">
+            <a class="filtrar">
+              <i class="fa fa-filter"></i>
+              <i class="fa fa-sort-desc"></i>
+            </a>
+            <h5>Listado de SIMIs</h5>
+            <div class="profile">
+              <img src="img/users/user-icon-01.png" class="profile-picture img-circle">
+              <div class="profile-name">
+                <p> Julian Castillo</p>
+                <p class="list-label">Auditor</p>
+              </div>
+            </div>
+          </div>
+
+          <!--  Table --> 
+          <div  class="row table-cont">
+              <div class="filters">
+                <div class="form-group col-md-2">
+                  <p class="list-label">Acción/Estado</p>
+                  <select class="form-control  input-sm">
+                    <option selected="selected">Autorizados</option>
+                    <option>Pendientes</option>
+                  </select>
+                </div>
+
+                <div class="form-group col-md-2">
+                  <p class="list-label">Rango de FOB</p>
+                  <input type="number" name="" class="form-control input-sm" placeholder="000">
+                  <input type="number" name="" class="form-control input-sm" placeholder="000">
+                </div>
+
+                <div class="form-group col-md-2">
+                  <p class="list-label">Rango de Acuerdo</p>
+                  <input type="number" name="" class="form-control input-sm" placeholder="000">
+                  <input type="number" name="" class="form-control input-sm" placeholder="000">
+                </div>
+
+                <div class="form-group col-md-3 fecha">
+                  <p class="list-label">Rango de Fecha</p>
+                  <p><a href=""><i class="fa fa-calendar"></i></a>20.10.2016</p>
+                  <p>al</p>
+                  <p><a href=""><i class="fa fa-calendar"></i></a>22.11.2016</p>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                  <table id="table_id" class="display">
+                      <thead>
+                          <tr>
+                              <th>Acción/Estado</th>
+                              <th>SIMI</th>
+                              <th>CUIT</th>
+                              <th>Razón Social</th>
+                              <th>FOB U$D Item</th>
+                              <th>% del año anterior</th>
+                              <th>Posición arancelaria</th>
+                              <th>Acuerdo</th>
+                              <th>Fecha Ofic.</th>
+                              <th>LNA Cargada</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td><span class="tag bg-info">NA</span>Autorizado</td>
+                              <td>17001SIMI028312X</td>
+                              <td>20222787697</td>
+                              <td>UNILEVER DE ARGENTINA S A</td>
+                              <td>1.293.20</td>
+                              <td>11.27%</td>
+                              <td><span class="tag bg-info">PA</span>8419.89.99.900J</td>
+                              <td><span class="tag bg-info">ID</span>400.000,00</td>
+                              <td>07.Feb.2017</td>
+                              <td><span class="tag bg-tomate">PDF</span></td>
+                              <td class="action">
+                                  <a class="aprobar active" href="#aprobar" data-toggle="modal"><i class="fa fa-check"></i></a>
+                                  <a class="borrar" href="#rechazar" data-toggle="modal"><i class="fa fa-close"></i></a>
+                                  <a class="vermas" href="#"><i class="fa fa-plus"></i></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td><span class="tag bg-info">NA</span>Autorizado</td>
+                              <td>17001SIMI028312X</td>
+                              <td>20222787697</td>
+                              <td>UNILEVER DE ARGENTINA S A</td>
+                              <td>1.293.20</td>
+                              <td>11.27%</td>
+                              <td><span class="tag bg-info">PA</span>8419.89.99.900J</td>
+                              <td><span class="tag bg-info">ID</span>400.000,00</td>
+                              <td>07.Feb.2017</td>
+                              <td><span class="tag bg-tomate">PDF</span></td>
+                              <td class="action">
+                                  <a class="aprobar" href="#aprobar" data-toggle="modal"><i class="fa fa-check"></i></a>
+                                  <a class="borrar active" href="#rechazar" data-toggle="modal"><i class="fa fa-close"></i></a>
+                                  <a class="vermas" href="#"><i class="fa fa-plus"></i></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td><span class="tag bg-info">NA</span>Autorizado</td>
+                              <td>17001SIMI028312X</td>
+                              <td>20222787697</td>
+                              <td>UNILEVER DE ARGENTINA S A</td>
+                              <td>1.293.20</td>
+                              <td>11.27%</td>
+                              <td><span class="tag bg-info">PA</span>8419.89.99.900J</td>
+                              <td><span class="tag bg-info">ID</span>400.000,00</td>
+                              <td>07.Feb.2017</td>
+                              <td><span class="tag bg-tomate">PDF</span></td>
+                              <td class="action">
+                                  <a class="aprobar" href="#aprobar" data-toggle="modal"><i class="fa fa-check"></i></a>
+                                  <a class="borrar" href="#rechazar" data-toggle="modal"><i class="fa fa-close"></i></a>
+                                  <a class="vermas" href="#"><i class="fa fa-plus"></i></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td><span class="tag bg-info">NA</span>Autorizado</td>
+                              <td>17001SIMI028312X</td>
+                              <td>20222787697</td>
+                              <td>UNILEVER DE ARGENTINA S A</td>
+                              <td>1.293.20</td>
+                              <td>11.27%</td>
+                              <td><span class="tag bg-info">PA</span>8419.89.99.900J</td>
+                              <td><span class="tag bg-info">ID</span>400.000,00</td>
+                              <td>07.Feb.2017</td>
+                              <td><span class="tag bg-tomate">PDF</span></td>
+                              <td class="action">
+                                  <a class="aprobar" href="#aprobar" data-toggle="modal"><i class="fa fa-check"></i></a>
+                                  <a class="borrar" href="#rechazar" data-toggle="modal"><i class="fa fa-close"></i></a>
+                                  <a class="vermas" href="#"><i class="fa fa-plus"></i></a>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Details -->
+      <section class="details-cont">
+        <div class="row">
+
+          <div class="col-md-12 main-header">
+            <a class="backtolist"><i class="fa fa-angle-left"></i></a>
+            <h5>Detalle de Unilever de Argentina SA  <span>|  17001SIMI028312X</span></h5>
+            <div class="profile">
+              <img src="img/users/user-icon-01.png" class="profile-picture img-circle">
+              <div class="profile-name">
+                <p> Julian Castillo</p>
+                <p class="list-label">Auditor</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left col -->
+          <aside class="col-md-2">
+            <div class="simi-status left-col">
+              <ul>
+                <li>
+                  <p class="list-label">SIMI</p>
+                  <p>17001SIMI028312X</p>
+                </li>
+                <li>
+                  <p class="list-label">Estado</p>
+                  <p>Observado</p>
+                </li>
+                <li>
+                  <p class="list-label">Última actualización</p>
+                  <p>20.10.2015</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="simi-solicitante left-col">
+               <ul>
+                <li>
+                  <p class="list-label">Razón social</p>
+                  <p>UNILEVER DE ARGENTINA S A</p>
+                </li>
+                <li>
+                  <p class="list-label">CUIT</p>
+                  <p>20222787697</p>
+                </li>
+                <li>
+                  <p class="list-label">Código de Actividad</p>
+                  <p>463111</p>
+                </li>
+                <li>
+                  <p class="list-label">Sector</p>
+                  <p>Productos químicos</p>
+                </li>
+                <li>
+                  <p class="list-label">Correo</p>
+                  <p>contact@unilever.com</p>
+                </li>
+                <li>
+                  <p class="list-label">Teléfono</p>
+                  <p>(11) 3423 2345</p>
+                </li>
+              </ul>           
+            </div>
+          </aside>
+
+          <!-- Main content -->
+          <article class="content_format col-md-9">
+            <div class="simi-datos">
+
+              <div class="section-actions">
+                  <ul class="list-inline">
+                    <li><a href="#"><i class="fa fa-print"></i></a></li>
+                    <li><a href="#"><i class="fa fa-download "></i></a></li>
+                    <li><a href="#"><i class="fa fa-question-circle"></i></a></li>
+                  </ul>
+              </div>
+
+              <!-- Posición Arancelaria -->
+              <div class="accordion-head open">
+                <div class="row">
+                  <div class="col-md-12">
+                    <a href="" class="accordion-btn">
+                      <i class="fa fa-sort-desc"></i>
+                    </a>
+                    <h4>Detalle SIMI</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-body pos_aran">
+                <div class="row ">
+                  <div class="col-md-12">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="col-datos">Posición arancelaria</th>
+                        <th class="col-datos">Acción/Estado</th>
+                        <th class="col-datos">Fecha Ofic.</th>
+                        <th class="col-amount">Item</th>
+                        <th class="col-amount">Sub Item</th>
+                        <th class="col-amount">Cant/uni</th>
+                        <th class="col-datos">FOB U$D</th>
+                        <td class="action">Más</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="bg-gray">
+                        <td class="col-datos">8419.89.99.900J</td>
+                        <td class="col-datos"><span class="tag bg-info">NA</span> Autorizado</td>
+                        <td class="col-datos">13.Mar.2017</td>
+                        <td class="col-amount">12</td>
+                        <td class="col-amount">3</td>
+                        <td class="col-amount">234</td>
+                        <td class="col-datos">12 533.20</td>
+                        <td class="action">
+                          <a class="vermas" href="#"><i class="fa fa-plus"></i></a>
+                        </td>
+                        <td class="mas-cont">
+                          <div class="pa_details container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="col-md-6">
+                                  <p class="list-label">Código Actividad</p>
+                                  <p>463111</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                  <p class="list-label">Procedencia</p>
+                                  <p>438 - Rep. Fed. de Alemania</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                  <p class="list-label">SIMI</p>
+                                  <p>17001SIMI028312X</p>
+                                </div>
+
+                                  <div class="col-md-6">
+                                    <p class="list-label">Fecha de arribo</p>
+                                    <p>20.03.2017</p>
+                                  </div>                              
+                                </div>
+
+                                <div class="col-md-6">
+                                  <p class="list-label">Descripción</p>
+                                  <p>Las demás // Los demás // Los demás // --Los demás // -Los demás aparatos y dispositivos: // APARATOS Y DISPOSITIVOS, AUNQUE SE CALIENTENELECTRICAMENTE (EXCEPTO LOS HORNOS Y DEMÁSAPARATOS DE LA PARTIDA 85.14), PARA EL TRATAMIENTODE MATERIAS MEDIANTE OPER</p>
+                                </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr></tr>
+
+                      <tr>
+                        <td class="col-datos">8419.89.99.900J</td>
+                        <td class="col-datos">Solicitado</td>
+                        <td class="col-datos">13.Mar.2017</td>
+                        <td class="col-amount">12</td>
+                        <td class="col-amount">3</td>
+                        <td class="col-amount">234</td>
+                        <td class="col-datos">12 533.20</td>
+                        <td class="action">
+                          <a class="vermas" href="#"><i class="fa fa-plus"></i></a>
+                        </td>
+                        <td class="mas-cont">
+                          <div class="pa_details container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="col-md-6">
+                                  <p class="list-label">Código Actividad</p>
+                                  <p>463111</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                  <p class="list-label">Procedencia</p>
+                                  <p>438 - Rep. Fed. de Alemania</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                  <p class="list-label">SIMI</p>
+                                  <p>17001SIMI028312X</p>
+                                </div>
+
+                                  <div class="col-md-6">
+                                    <p class="list-label">Fecha de arribo</p>
+                                    <p>20.03.2017</p>
+                                  </div>                              
+                                </div>
+
+                                <div class="col-md-6">
+                                  <p class="list-label">Descripción</p>
+                                  <p>Las demás // Los demás // Los demás // --Los demás // -Los demás aparatos y dispositivos: // APARATOS Y DISPOSITIVOS, AUNQUE SE CALIENTENELECTRICAMENTE (EXCEPTO LOS HORNOS Y DEMÁSAPARATOS DE LA PARTIDA 85.14), PARA EL TRATAMIENTODE MATERIAS MEDIANTE OPER</p>
+                                </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr></tr>
+
+                      <tr class="bg-gray">
+                        <td class="col-datos">8419.89.99.900J</td>
+                        <td class="col-datos">Solicitado</td>
+                        <td class="col-datos">13.Mar.2017</td>
+                        <td class="col-amount">12</td>
+                        <td class="col-amount">3</td>
+                        <td class="col-amount">234</td>
+                        <td class="col-datos">12 533.20</td>
+                        <td class="action">
+                          <a class="vermas" href="#"><i class="fa fa-plus"></i></a>
+                        </td>
+                        <td class="mas-cont">
+                          <div class="pa_details container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="col-md-6">
+                                  <p class="list-label">Código Actividad</p>
+                                  <p>463111</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                  <p class="list-label">Procedencia</p>
+                                  <p>438 - Rep. Fed. de Alemania</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                  <p class="list-label">SIMI</p>
+                                  <p>17001SIMI028312X</p>
+                                </div>
+
+                                  <div class="col-md-6">
+                                    <p class="list-label">Fecha de arribo</p>
+                                    <p>20.03.2017</p>
+                                  </div>                              
+                                </div>
+
+                                <div class="col-md-6">
+                                  <p class="list-label">Descripción</p>
+                                  <p>Las demás // Los demás // Los demás // --Los demás // -Los demás aparatos y dispositivos: // APARATOS Y DISPOSITIVOS, AUNQUE SE CALIENTENELECTRICAMENTE (EXCEPTO LOS HORNOS Y DEMÁSAPARATOS DE LA PARTIDA 85.14), PARA EL TRATAMIENTODE MATERIAS MEDIANTE OPER</p>
+                                </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr></tr>
+
+                      <tr>
+                        <td class="col-datos">8419.89.99.900J</td>
+                        <td class="col-datos">Solicitado</td>
+                        <td class="col-datos">13.Mar.2017</td>
+                        <td class="col-amount">12</td>
+                        <td class="col-amount">3</td>
+                        <td class="col-amount">234</td>
+                        <td class="col-datos">12 533.20</td>
+                        <td class="action">
+                          <a class="vermas" href="#"><i class="fa fa-plus"></i></a>
+                        </td>
+                        <td class="mas-cont">
+                          <div class="pa_details container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="col-md-6">
+                                  <p class="list-label">Código Actividad</p>
+                                  <p>463111</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                  <p class="list-label">Procedencia</p>
+                                  <p>438 - Rep. Fed. de Alemania</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                  <p class="list-label">SIMI</p>
+                                  <p>17001SIMI028312X</p>
+                                </div>
+
+                                  <div class="col-md-6">
+                                    <p class="list-label">Fecha de arribo</p>
+                                    <p>20.03.2017</p>
+                                  </div>                              
+                                </div>
+
+                                <div class="col-md-6">
+                                  <p class="list-label">Descripción</p>
+                                  <p>Las demás // Los demás // Los demás // --Los demás // -Los demás aparatos y dispositivos: // APARATOS Y DISPOSITIVOS, AUNQUE SE CALIENTENELECTRICAMENTE (EXCEPTO LOS HORNOS Y DEMÁSAPARATOS DE LA PARTIDA 85.14), PARA EL TRATAMIENTODE MATERIAS MEDIANTE OPER</p>
+                                </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr></tr>
+                      
+                      <tr class="bg-gray">
+                        <td class="col-datos">8419.89.99.900J</td>
+                        <td class="col-datos">Solicitado</td>
+                        <td class="col-datos">13.Mar.2017</td>
+                        <td class="col-amount">12</td>
+                        <td class="col-amount">3</td>
+                        <td class="col-amount">234</td>
+                        <td class="col-datos">12 533.20</td>
+                        <td class="action">
+                          <a class="vermas" href="#"><i class="fa fa-plus"></i></a>
+                        </td>
+                        <td class="mas-cont">
+                          <div class="pa_details container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="col-md-6">
+                                  <p class="list-label">Código Actividad</p>
+                                  <p>463111</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                  <p class="list-label">Procedencia</p>
+                                  <p>438 - Rep. Fed. de Alemania</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                  <p class="list-label">SIMI</p>
+                                  <p>17001SIMI028312X</p>
+                                </div>
+
+                                  <div class="col-md-6">
+                                    <p class="list-label">Fecha de arribo</p>
+                                    <p>20.03.2017</p>
+                                  </div>                              
+                                </div>
+
+                                <div class="col-md-6">
+                                  <p class="list-label">Descripción</p>
+                                  <p>Las demás // Los demás // Los demás // --Los demás // -Los demás aparatos y dispositivos: // APARATOS Y DISPOSITIVOS, AUNQUE SE CALIENTENELECTRICAMENTE (EXCEPTO LOS HORNOS Y DEMÁSAPARATOS DE LA PARTIDA 85.14), PARA EL TRATAMIENTODE MATERIAS MEDIANTE OPER</p>
+                                </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr></tr>
+
+                    </tbody>
+                  </table>
+
+                  <div class="archivo"><a href=""><i class="fa fa-archive"></i>Ver ficha con datos históricos</a></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Importaciones 2017 -->
+              <div class="accordion-head">
+                <div class="row">
+                  <div class="col-md-12">
+                    <a href="" class="accordion-btn">
+                      <i class="fa fa-sort-desc"></i>
+                    </a>
+                    <h4>Importaciones 2017</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-body">
+                <div class="row ">
+                  <div class="col-md-12">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Datos de importador</th>
+                        <th class="col-amount">Total</th>
+                        <th>&nbsp;</th>
+                        <th class="col-amount">Total LNA</th>
+                        <th>&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="bg-gray">
+                        <td class="col-datos">Solicitado</td>
+                        <td class="col-amount">1.424.940,00</td>
+                        <td>100%</td>
+                        <td class="col-amount">554.212,00</td>
+                        <td>100%</td>
+                      </tr>
+
+                      <tr class="bg-gray">
+                        <td class="col-datos">Autorizado</td>
+                        <td class="col-amount">924.940,00</td>
+                        <td>68,01%</td>
+                        <td class="col-amount">129.424,20</td>
+                        <td>23,37%</td>
+                      </tr>
+
+                      <tr class="bg-gray">
+                        <td class="col-datos">Observado</td>
+                        <td class="col-amount">553.940,00</td>
+                        <td>41,01%</td>
+                        <td class="col-amount">553.424,00</td>
+                        <td>99,81%</td>
+                      </tr>
+
+                      <tr>
+                        <td class="col-datos">Importado 2017</td>
+                        <td class="col-amount">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="col-amount">203.212,00</td>
+                        <td>100%</td>
+                      </tr>
+
+                      <tr>
+                        <td class="col-datos">Importado <span>2016</span></td>
+                        <td class="col-amount">924.940,00</td>
+                        <td>68,01%</td>
+                        <td class="col-amount">129.424,20</td>
+                        <td>23,37%</td>
+                      </tr>
+
+                      <tr>
+                        <td class="col-datos">Importado <span>2016/2017</span></td>
+                        <td class="col-amount">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="col-amount">189.424,20</td>
+                        <td>157,37%</td>
+                      </tr>
+
+                      <tr class="bg-gray">
+                        <td class="col-datos">Monto Referencia y % Consumido</td>
+                        <td class="col-amount">2.574.940,00</td>
+                        <td>36,31%</td>
+                        <td class="col-amount">2.403.212,00</td>
+                        <td>5,37%</td>
+                      </tr>
+
+                      <tr class="bg-gray">
+                        <td class="col-datos">FOB u$d Disponible y % Disponible</td>
+                        <td class="col-amount">2.024.940,00</td>
+                        <td>80,11%</td>
+                        <td class="col-amount">129.424,20</td>
+                        <td>23,37%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="archivo"><a href=""><i class="fa fa-archive"></i>Ver ficha con datos históricos</a></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Comentarios -->
+               <div class="accordion-head">
+                <div class="row">
+                  <div class="col-md-12">
+                    <a href="" class="accordion-btn">
+                      <i class="fa fa-sort-desc"></i>
+                    </a>
+                    <h4>Comentarios</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-body">
+                <div class="row ">
+                  <div class="col-md-12">
+                    <div id="comments-cont"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cta">
+              <a class="borrar" href="#aprobar" data-toggle="modal"><button type="button" class="btn btn-primary">Aprobar</button>
+              <a class="borrar" href="#rechazar" data-toggle="modal"><button type="button" class="btn btn-default">Rechazar</button></a>
+              <a href="">Cancelar</a>
+            </div>
+          </article>
+
+          <aside class="col-md-1 right-col bg-primary">
+           <p class="list-label">Se recomienda</p>
+           <p>Aprobar</p>
+          </aside>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 footer-texto">
+        2016 | Ministerio de Producción | Hipólito Yrigoyen 250 | (C1086AAB) CABA | Tel. 0800.333.7963</div>
+        
+       <div class="col-xs-12 col-sm-12 col-md-4 logo-footer">
+          <a href="http://www.produccion.gob.ar">
+          <img width="230" src="img/logoMinisterio.png"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+      
+  <!-- Overlays -->
+  <div id="aprobar" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title">Aprobar SIMI</h4>
+        </div>
+        <div class="modal-body">
+          <p>¿Esta seguro de que desea aprobar la SIMI? </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Aprobar</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div id="rechazar" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title">Rechazar SIMI</h4>
+        </div>
+        <div class="modal-body">
+          <p>¿Que acción desea realizar al rechazar la SIMI? </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Llamar</button>
+          <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Audiencia</button>
+          <button type="button" class="btn btn-sm  btn-primary" data-dismiss="modal">Onhold</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <script src="vendor/jquery/jquery-1.11.0.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
+  <script type="text/javascript" src="vendor/comments/data/comments-data.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.textcomplete/1.8.0/jquery.textcomplete.js"></script>
+  <script type="text/javascript" src="vendor/comments/js/jquery-comments.js"></script>
+  <script type="text/javascript" src="js/burger.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<manifest alg="2" build="2015.1.2.344" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="timetrac.com" resolutions="1x" timestamp="1465784622784">
+  <folder name="css">
+    <file name="site_global.css" crc="131700929"/>
+    <file name="index.css" crc="4199005958" ref="index"/>
+    <file name="mas-proyectos.css" crc="42284851" ref="mas-proyectos"/>
+    <file name="fecha-y-hora.css" crc="175530080" ref="fecha-y-hora"/>
+    <file name="calendar-preview.css" crc="71302001" ref="calendar-preview"/>
+    <file name="preview.css" crc="4220204159" ref="preview"/>
+    <file name="ok.css" crc="3900682857" ref="ok"/>
+    <file name="calendar.css" crc="4026261495" ref="calendar"/>
+    <file name="nueva-tarea.css" crc="120130969" ref="nueva-tarea"/>
+    <file name="tarea.css" crc="451763466" ref="tarea"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="207176553" ref="index:mas-proyectos:nueva-tarea:tarea:calendar:fecha-y-hora:preview:calendar-preview:ok"/>
+    <file name="museutils.js" crc="3790713428" ref="index:mas-proyectos:nueva-tarea:tarea:calendar:fecha-y-hora:preview:calendar-preview:ok"/>
+    <file name="whatinput.js" crc="84559013" ref="index:mas-proyectos:nueva-tarea:tarea:calendar:fecha-y-hora:preview:calendar-preview:ok"/>
+    <file name="jquery.watch.js" crc="4244854265" ref="index:mas-proyectos:nueva-tarea:tarea:calendar:fecha-y-hora:preview:calendar-preview:ok"/>
+  </folder>
+  <folder name="images">
+    <file name="tt_11 ft proyecto.jpg" crc="278450361" seo="true" ref="index"/>
+    <file name="tt_12 ft mas proyectos.jpg" crc="3896066623" seo="true" ref="mas-proyectos"/>
+    <file name="tt_13b ft nueva tarea.jpg" crc="3984497112" seo="true" ref="nueva-tarea"/>
+    <file name="tt_13a ft nueva tarea.jpg" crc="328792374" seo="true" ref="tarea"/>
+    <file name="tt_14b ft calendar.jpg" crc="3764731331" seo="true" ref="calendar"/>
+    <file name="tt_14a ft calendar.jpg" crc="119911259" seo="true" ref="fecha-y-hora"/>
+    <file name="tt_15 ft preview.jpg" crc="4080698076" seo="true" ref="preview"/>
+    <file name="tt_16 ft calendar preview.jpg" crc="260442868" seo="true" ref="calendar-preview"/>
+    <file name="tt_17 ft todo ok.jpg" crc="4011212556" seo="true" ref="ok"/>
+  </folder>
+  <file name="index.html" crc="462732310" seo="true" mt="1422294544408" redirect="true"/>
+  <file name="mas-proyectos.html" crc="91237871" seo="true" mt="1422294632269" redirect="true"/>
+  <file name="nueva-tarea.html" crc="205924311" seo="true" mt="1422295619189" redirect="true"/>
+  <file name="tarea.html" crc="35581833" seo="true" mt="1422294696415" redirect="true"/>
+  <file name="calendar.html" crc="3917092670" seo="true" mt="1422295728255" redirect="true"/>
+  <file name="fecha-y-hora.html" crc="384747487" seo="true" mt="1422295856757" redirect="true"/>
+  <file name="preview.html" crc="490111943" seo="true" mt="1422296165001" redirect="true"/>
+  <file name="calendar-preview.html" crc="4109016292" seo="true" mt="1422297004461" redirect="true"/>
+  <file name="ok.html" crc="4208906990" seo="true" mt="1422296123722" redirect="true"/>
+</manifest>

@@ -1,0 +1,572 @@
+/*=========    HEADER   ========= */
+
+/*_________Top Nav________*/
+
+.top-nav>ul li {
+  font-size: 1.65em;
+  line-height: 30px;
+}
+
+.top-nav .anchors li {
+  font-size: 0.93em;
+}
+
+/*_________Main header________*/
+
+.main-header .search a i {
+  font-size: 1.5em;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-style: italic;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-style: italic;
+}
+
+:-ms-input-placeholder {
+  font-style: italic;
+}
+
+.main-header .profile-menu .pm-cerrar {
+  line-height: 1em;
+}
+
+.main-header .profile-menu .pm-cerrar i {
+  font-size: 2.5em;
+}
+
+.main-header .profile h4 {
+    font-size: 1em;
+}
+
+
+/*_________Main nav________*/
+
+.main-nav li a {
+  font-size: 1.1em;
+}
+
+.main-nav button i {
+  font-size: 1.3em;
+  position: relative;
+  top: 2px;
+}
+
+/*_________Megamenu________*/
+
+.megamenu .mm-cerrar i {
+  font-size: 2.5em;
+}
+
+.megamenu h3 {
+  font-family: 'Satisfy', serif;
+}
+
+.megamenu li a {
+  font-size: 0.86em;
+}
+
+.megamenu li {
+  line-height: 1em;
+}
+
+.megamenu li a:hover,
+ .megamenu li a:focus,
+ .megamenu li a:active{
+  text-decoration: underline;
+}
+
+.megamenu .popular-tags p {
+  font-size: 0.86em;
+  font-weight: bold;
+}
+
+.megamenu .popular-tags a {
+  text-decoration: underline;
+}
+
+/*_________Backtotop________*/
+
+.backtotop-btn i {
+  font-size: 2.8em;
+}
+
+
+/*=========    HOME  ========= */
+
+/*_________Search________*/
+
+.search-home h1 {
+  font-size: 2.5em;
+}
+
+.search-home a i {
+  font-size: 2em;
+}
+
+.search-box input {
+  font-size: 1.3em;
+}
+
+/*_________Main title________*/
+
+.main-title h1 {
+  font-size: 4em;
+}
+
+.main-title h2 {
+  font-size: 1.2em;
+}
+
+/*__________Hacedores_______*/
+
+.hacedores-box h1 {
+    font-size: 3.6em;
+    line-height: 1em;
+}
+
+.hacedores-box h2 {
+    font-size: 1.2em;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+.hacedores-box .description,
+.hacedores-box  span {
+  font-size: 1em;
+}
+
+.hacedores-box .ficha {
+  font-size: 0.9em;
+}
+
+.hacedores-box  span {
+  font-weight: bold;
+}
+
+/*__________El taller_______*/
+
+.taller-thumb a p {
+  font-style: italic;
+}
+
+.taller-thumb a p:hover,
+.taller-thumb a p:focus,
+.taller-thumb a p:active {
+  text-decoration: underline;
+}
+
+.taller-thumb .play-hover i {
+  font-size: 5em;
+}
+
+#lightcase-case {
+  text-shadow: none;
+  font-family: 'Noto Serif', serif; 
+}
+
+#lightcase-info #lightcase-sequenceInfo {
+    font-size: 13px;
+    font-style: italic;
+}
+
+/*__________Desde nuestro blog_______*/
+
+.blog-content h3 {
+  font-family: 'Satisfy', serif;
+  font-size: 2.15em; 
+}
+
+/*=========    RELATED SEARCH, BREADCRUMBS  & BANNER  ========= */
+
+/*_________Related search________*/
+
+.related {
+  border-bottom-color: #e7e7e7;
+}
+
+.related span {
+  font-size: 0.93em;
+}
+
+.related a {
+  font-size: 0.85em;
+  text-decoration: underline;
+}
+
+/*_________Breadcrumb________*/
+
+.breadcrumbs {
+  font-size: 0.85em;
+}
+
+/*_________Banner________*/
+
+.main-add .featured-profile,
+.seller-hover .featured-profile {
+  font-size: 2em;
+}
+
+.main-add .seller {
+  font-size: 0.85em;
+}
+
+.main-add .title {
+  font-style: italic;
+  font-size: 1.15em;
+}
+
+.main-add .prize {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+
+/*=========    FILTERS  ========= */
+
+/*_________Filters________*/
+.filter-btn i {
+  font-size: 2.8em;
+}
+
+/*_________Hacedores________*/
+
+.filters .hacedores-filter h3 {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.7em;
+}
+
+.filters .hacedores-filter ul li a {
+  font-size: 1em;
+  text-decoration: none !important;
+}
+
+.filters .hacedores-filter ul li a i {
+  font-size: 1.5em;
+}
+
+/*_________Tags________*/
+
+.tag i {
+  font-size: 1.78em;
+}
+
+.tag span {
+  font-size: 0.85em;
+}
+
+/*_________Filter List________*/
+
+.filter-list h3 {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.filters ul li a {
+  font-size: 0.93em;
+}
+
+.filters ul li a:hover {
+  text-decoration: underline;
+}
+
+.filters .filter-list>a:hover {
+  text-decoration: underline;
+}
+
+.filters ul li div.active:hover a {
+  text-decoration: none; 
+}
+
+/*_________Payment________*/
+
+.filter-payment h3 {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.filter-payment .title,
+.payment-range,
+.filters .filter-payment>ul li {
+  font-size: 0.93em;
+}
+
+/*=========  LISTS  ========= */
+
+/*_________Section Header________*/
+
+.section-title h3 {
+  font-size: 1.15em;
+  font-weight: 700;
+}
+
+.section-title h3 span {
+  font-weight: 500;
+}
+
+.section-title h3 a {
+  font-size: 0.87em;
+  font-weight: 500;
+}
+
+.section-title h3 a:hover {
+  text-decoration: underline;
+}
+
+.carrito .section-title p span {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.section-filter {
+  font-size: 0.86em;
+}
+
+.section-filter .list-format i {
+    font-size: 2.5em;
+}
+
+/*_________Products Thumbs________*/
+
+.thumb-img .cart-hover i {
+  font-size: 1.8em;
+}
+
+.thumb>p {
+  font-style: italic;
+  font-size: 0.93em
+}
+
+.thumb>p>a:hover,
+.thumb>p>a:focus, 
+.thumb>p>a:active  {
+  text-decoration: underline;
+}
+
+.thumb.featured>p {
+  font-size: 1em;
+}
+
+.thumb.featured .location {
+  font-size: 0.86em;
+}
+
+.thumb.featured .location i {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.thumb .prize p {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+/*_________Products List________*/
+
+.resultados-list .product-info p {
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+.resultados-list .product-data span {
+  font-size: 0.86em;
+}
+
+.resultados-list .product-data span i {
+  font-size: 1.5em;
+}
+
+.resultados-list .product-data span i.icon-credit {
+  font-size: 1.9em;
+}
+
+.resultados-list .prize p {
+  font-size: 1.72em;
+  font-weight: bold;
+}
+
+.resultados-list .product-info p a:hover,
+.resultados-list .product-info p a:active,
+.resultados-list .product-info p a:focus {
+  text-decoration: underline;
+}
+
+/*_________Advertisement________*/
+
+.advertisement div {
+  font-size: 0.85em;
+}
+
+/*_________Pagination________*/
+
+.pagination>li:first-child>a, 
+.pagination>li:last-child>a {
+  padding: 4px 4px 0px;
+}
+
+.pagination>li:first-child>a i, 
+.pagination>li:last-child>a i {
+  font-size: 1.8em;
+}
+
+/*=========    STORES  ========= */
+
+/*_________Banners________*/
+
+.store-cont h1{
+    font-size: 3.3em;: 
+}
+
+.store-info .comment-link {
+    font-size: 0.9em;
+}
+
+/*=========    DETAILS  ========= */
+
+/*_________Detail main content________*/
+
+.main-detail-cont  .featured-profile,
+.seller-hover .featured-profile {
+  font-size: 2em;
+}
+
+.main-detail-cont .title {
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+.main-detail-cont .comment-link {
+  font-size: 0.9em;
+}
+
+.main-detail-cont .update {
+  font-size: 0.85em;
+}
+
+.main-detail-cont .prize {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+/*_________Detail description________*/
+
+.description-cont h5,
+.calif h5 {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.calif h5 span {
+  font-weight: normal;
+}
+
+.details .desc-cont .tags ul li {
+   font-size: 0.9em;
+}
+
+
+/*_________Detail seller________*/
+
+.store-cont  .featured-profile,
+.seller-hover .featured-profile {
+  font-size: 2em;
+}
+
+.main-detail-cont  .seller {
+  font-size: 0.85em;
+}
+
+.store-cont p,
+.store-cont span {
+  font-size: 0.9em;
+}
+
+/*_________Detail comment________*/
+
+.comments .section-title span {
+  font-size: 0.85em;
+}
+
+/*=========    CARRITO  ========= */
+
+/*_________Carrito________*/
+
+.carrito .prize-sum p  {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.carrito .prize-sum span {
+  float: right;
+  text-align: right;
+  font-weight: bold;
+}
+
+.resultados-list .close-btn i {
+  font-size: 1.8em;
+}
+
+/*=========    HACEDORES  ========= */
+
+/*_________Hacedores________*/
+
+#hacedores .thumb .prize p {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/*=========    COMPRA  ========= */
+
+/*_________Form________*/
+
+.form .wizard li a {
+  font-family: 'Satisfy', serif;
+  font-size: 2em;
+}
+
+.form .wizard li a span {
+    font-size: 0.6em;
+    font-family: 'Noto Serif', serif;
+}
+
+/*_________Tabs general________*/
+
+.form .form-tab p {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.form .form-tab label {
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
+.form  .form-tab select {
+    font-size: 1.1em;
+}
+
+
+
+
+/*=========  FOOTER  ========= */
+
+footer h3 {
+  font-family: 'Satisfy', serif;
+  font-size: 2em; 
+}
+
+footer a {
+  font-size: 0.9em;
+}
+
+footer p {
+  font-size: 0.85em;
+}

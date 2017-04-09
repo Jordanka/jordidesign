@@ -1,0 +1,45 @@
+.slide-1 {
+  background: url("../assets/images/main-bg.png") center center no-repeat;
+  background-size: cover;
+}
+
+.slide-5 {
+  background: url("../assets/images/second-bg.png") center center no-repeat;
+  background-size: cover;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+       all and (-o-min-device-pixel-ratio: 3 / 2),
+       all and (min--moz-device-pixel-ratio: 1.5),
+       all and (min-device-pixel-ratio: 1.5) {
+  .slide-1 {
+    background: url("../assets/images/main-bg@2x.png") center center no-repeat;
+    background-size: cover;
+  }
+  .slide-5 {
+    background: url("../assets/images/second-bg@2x.png") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .slide-1 {
+    background: url("main-bg@2x.png") center center no-repeat;
+    background-size: cover;
+  }
+  .slide-5 {
+    background: url("second-bg@2x.png") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+  .slide-1 {
+    background: url("../assets/images/main-bg@3x.png") center center no-repeat;
+    background-size: cover;
+  }
+  .slide-5 {
+    background: url("../assets/images/second-bg@3x.png") center center no-repeat;
+    background-size: cover;
+  }
+}
