@@ -31,7 +31,7 @@
 
     <ul id='quick-links'>
       <li>
-        <a href="#" class="icon-feather" alt="Languages"></a>
+        <a href="#" class="icon-feather"></a>
       </li>
       <li class="icon-send" alt="Contact">
         <ul>
@@ -54,9 +54,9 @@
     
     <!--Section IDEA-->
     <section id="idea">
-      <div class=" container">
 
-        <!--Section Head-->
+      <!--Section Head-->
+      <div class=" container">
         <div class="sechead row">
           <div class="about-pic responsive col-xxs-10 col-xxs-offset-1 col-xxxs-10 col-xxxs-offset-1"></div>
 
@@ -86,8 +86,8 @@
               <ul>
                 <li>
                   <h5>12.2010 - actual</h5>
-                  <p>Aracnia</p>
-                  <a href="about.html?filter=aracnia#cronologiahash">más<i class="icon-arrow"></i></a>
+                  <p>Jordi</p>
+                  <a href="about.html?filter=jordi#cronologiahash">más<i class="icon-arrow"></i></a>
                 </li>
                 <li>
                   <h5>04.2012 - actual</h5>
@@ -104,11 +104,6 @@
                   <p>Cirkuit Planet</p>
                   <a href="about.html?filter=cirkuitplanet#cronologiahash">más<i class="icon-arrow"></i></a>
                 </li>
-                <li>
-                  <h5>01.2008 -10.2009</h5>
-                  <p>Global Construcciones</p>
-                  <a href="about.html?filter=global#cronologiahash">más<i class="icon-arrow"></i></a>
-                </li>
               </ul>
             </div>
 
@@ -123,13 +118,12 @@
           </div>
         </div>
       </div>
-      <div id="spacer" name="spacer"></div>
-    </section>  
-
-    <div id="cronologiahash" name="cronologiahash" class="hash"></div>
+      <div class="spacer"></div>
+    </section>
     
     <!--Section CRONOLOGÍA-->
-    <section id="cronologia">  
+    <section id="cronologia-sec" class="cronologia">
+      <div id="cronologiahash" name="cronologiahash" class="hash"></div>
       <div class="container">  
 
         <!--Section Head-->
@@ -154,22 +148,20 @@
           <button class="ss2 sort view-more" data-sort="myorder:desc"></button>
           <button class="ss3 sort view-more" data-sort="myorder:desc"></button>
           <button class="ss4 sort view-more" data-sort="myorder:desc"></button>
-          <button class="ss5 sort view-more" data-sort="myorder:desc"></button>
         </div>
       </div>
 
       <div class="mix-cont  container">
-        <div id="Cronologia" class="row">
+        <div id="cronologiaMix" class="row cronologia-mix">
           <!-- Mix Images will be generated here -->
         </div>
       </div>
-      <div id="spacer" name="spacer"></div>
+      <div class="spacer"></div>
     </section>
-
-    <div id="tecnologiashash" name="tecnologiashash" class="hash"></div>
   
     <!--Section TECNOLOGÍAS-->
     <section id="tecnologias">
+      <div id="tecnologiashash" name="tecnologiashash" class="hash"></div>
       <div class="container"> 
 
         <!--Section Head-->
@@ -186,14 +178,14 @@
       <div id="techgraphs" class="container">
           <div class="row">
             <div class="col-md-9 col-sm-12 col-xs-12 col-xxs-12 col-xxxs-12">           
-              <h4 class="skillstitle col-md-1 col-sm-1 col-sm-1 col-xs-1 col-xxs-1 col-xxxs-1">Diseño Web/Apps Skills</h4>
-              <ul id="graphic-tech" class="skills col-md-11 col-sm-11 col-xs-11 col-xxs-11 col-xxxs-11"></ul>
+              <h4 class="skillstitle col-md-1 col-sm-1 col-sm-1 col-xs-1 col-xxs-1 col-xxxs-1">Diseño Visual Skills</h4>
+              <ul id="visual-tech" class="skills col-md-11 col-sm-11 col-xs-11 col-xxs-11 col-xxxs-11"></ul>
 
-              <h4 class="skillstitle col-md-1 col-sm-1 col-sm-1 col-xs-1 col-xxs-1 col-xxxs-1">UX & Frontend Skills</h4>
-              <ul id="uxdev-tech" class="skills col-md-11 col-sm-11 col-xs-11 col-xxs-11 col-xxxs-11"></ul>
+              <h4 class="skillstitle col-md-1 col-sm-1 col-sm-1 col-xs-1 col-xxs-1 col-xxxs-1">Frontend Skills</h4>
+              <ul id="frontend-tech" class="skills col-md-11 col-sm-11 col-xs-11 col-xxs-11 col-xxxs-11"></ul>
 
               <h4 class="skillstitle col-md-1 col-sm-1 col-sm-1 col-xs-1 col-xxs-1 col-xxxs-1">Otros Skills</h4>
-              <ul id="industrial-tech" class="skills col-md-11 col-sm-11 col-xs-11 col-xxs-11 col-xxxs-11"></ul>
+              <ul id="others-tech" class="skills col-md-11 col-sm-11 col-xs-11 col-xxs-11 col-xxxs-11"></ul>
             </div> 
             <div class="experience col-md-3 col-sm-4 col-xs-4 col-xxs-10 col-xxs-offset-2 col-xxxs-10 col-xxxs-offset-2">
               <div class="images"></div>
@@ -203,9 +195,8 @@
           </div>
         </div>
       </div>
+      <div class="spacer"></div>
     </section>
-
-    <div id="spacer" name="spacer"></div>
   </main>
 
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>

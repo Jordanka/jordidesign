@@ -14,7 +14,6 @@
  * ---------------
  * 001 - Extended files
  */
-
 @import url("icons.css");
 @import url("bootstrap_ext.css");
 @import url("general.css");
@@ -26,18 +25,16 @@
 #ideahash,
 #cronologiahash,
 #tecnologiashash {
-  width: 100%;
-  height: 100px;
+    width: 100%;
+    height: 100px;
 }
 
 .sechead p {
-  max-width: 700px;
+    max-width: 700px;
 }
 
-#spacer {
-  width: 100%;
-  height: 100px;
-  clear: both;
+.spacer {
+    clear: both;
 }
 
 /* ---------------
@@ -45,212 +42,213 @@
  */
 
 #idea .about-pic {
-  height: 220px;
+    height: 220px;
 }
 
 #idea .about-pic.responsive {
-  display: none;
+    display: none;
 }
 
 #idea-content {
-  font-size: 0.9em;
-  padding-top: 20px;
+    font-size: 0.9em;
+    padding-top: 20px;
 }
 
 #idea-content {
-  width: 100%;
-  background-color: #e9f4f4;
-  float: left;
+    width: 100%;
+    background-color: #e9f4f4;
+    float: left;
 }
 
 #idea .small-view-more {
-  width: 205px;
-  display: inline-block;
-  margin-bottom: 50px;
+    width: 205px;
+    display: inline-block;
+    margin-bottom: 50px;
 }
 
 #idea .small-view-more i:before {
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  display: inline-block;
-  font-size: 0.75em;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    display: inline-block;
+    font-size: 0.75em;
 }
 
 #idea-content h4 {
-  float: left;
-  position: relative;
-  left: -20px;
-  border-bottom: solid 1px #e9f4f4;
-  padding: 20px 0px 10px 0;
-  margin-top: 30px;
-  font-weight: bold;
-  color: #e9f4f4;
+    float: left;
+    position: relative;
+    left: -20px;
+    border-bottom: solid 1px #e9f4f4;
+    padding: 20px 0 10px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #e9f4f4;
 }
 
 #idea-content .clientstitle,
 #idea-content .experience h4,
 #dg-more h4,
 #techgraphs h4 {
-  float: left;
-  position: relative;
-  left: 0px;
-  border-bottom: solid 1px #abc9ca;
-  padding: 20px 0px 10px 0;
-  margin-top: 20px;
-  font-weight: bold;
-  color: #2c3a3a;
+    float: left;
+    position: relative;
+    left: 0;
+    border-bottom: solid 1px #abc9ca;
+    padding: 20px 0 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #2c3a3a;
 }
 
 #idea .sechead .cont-2 {
-  float: right;
-  position: relative;
-  top: -10px;
+    float: right;
+    position: relative;
+    top: -10px;
 }
 
 #idea-content .clientstitle {
-  left: 10px;
+    left: 10px;
 }
 
 .itsme {
-  float: left;
-  margin-top: 20px;
+    float: left;
+    margin-top: 20px;
 }
 
 .itsme h5 {
-  font-size: 2em;
-  color: #eb593c;
-  font-weight: 700;
-  font-style: italic;
-  padding-bottom: 20px;
+    font-size: 2em;
+    color: #eb593c;
+    font-weight: 700;
+    font-style: italic;
+    padding-bottom: 20px;
 }
 
 .itsme span {
-  color: #2c3a3a;
-  font-weight: 300;
+    color: #2c3a3a;
+    font-weight: 300;
 }
 
 .itsme p {
-  padding-bottom: 10px;
-  padding-right: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
 }
 
 .clients {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 20px 0 40px;
-  padding: 0 20px;
-  text-align: left;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px 0 40px;
+    padding: 0 20px;
+    text-align: left;
 }
 
 .clients ul li {
-  margin-right: 10px;
-  float: left;
+    margin-right: 10px;
+    float: left;
 }
 
 .clients img {
-  padding: 0 10px;
+    padding: 0 10px;
 }
 
 #idea .experience {
-  float: right;
-  height: 390px;
-  padding-left: 30px;
-  border-left: solid 1px #abc9ca;
+    float: right;
+    height: 390px;
+    padding-left: 30px;
+    border-left: solid 1px #abc9ca;
 }
 
 #idea .experience a,
 #idea .experience a:visited {
-  color: #2c3a3a;
-  font-style: italic;
+    color: #2c3a3a;
+    font-style: italic;
 }
 
 #idea .experience a:hover {
-  color: #eb593c;
+    color: #eb593c;
 }
 
 #idea-content .experience h4 {
-  left: 0;
-  margin-top: 0;
-  border: 0;
-  width: 100%;
+    left: 0;
+    margin-top: 0;
+    border: 0;
+    width: 100%;
 }
 
 #idea .experience ul {
-  margin-top: 40px
+    margin-top: 40px
 }
 
 #idea .experience ul li {
-  padding-top: 15px
+    padding-top: 15px
 }
 
 #idea .experience h5 {
-  font-size: 1.2em;
-  color: #eb593c;
+    font-size: 1.2em;
+    color: #eb593c;
 }
 
 #idea .experience i {
-  font-size: 0.7em;
-  padding-left: 5px;
+    font-size: 0.7em;
+    padding-left: 5px;
 }
 
 /* ---------------
  * 004 - CRONOLOGÍA
  */
 
-#Cronologia .mix {
-  text-align: left;
-  background: #2c3a3a;
+.cronologia-mix .mix {
+    text-align: left;
+    background: #2c3a3a;
 }
 
-#Cronologia .min {
-  width: 100%;
-  height: 100%;
+.cronologia-mix .min {
+    width: 100%;
+    height: 100%;
 }
 
-#Cronologia .menu-bg {
-  position: absolute;
-  background-color: black;
-  opacity: 0.5;
+.cronologia-mix .menu-bg {
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
 }
 
-#Cronologia .chrono {
-  position: relative;
-  height: 75px;
-  width: 100%;
-  padding: 10px;
-  background: #e9f4f4;
+.cronologia-mix .chrono {
+    position: relative;
+    height: 75px;
+    width: 100%;
+    padding: 10px;
+    background: #e9f4f4;
+    line-height: 2em;
 }
 
-#Cronologia .chrono h3 {
-  color: #eb593c;
-  font-size: 1.6rem;
-  float: left;
-  width: 100%;
+.cronologia-mix .chrono h3 {
+    color: #eb593c;
+    font-size: 1.6rem;
+    float: left;
+    width: 100%;
 }
 
-#Cronologia .chrono p {
-  color: #2c3a3a;
-  font-size: 0.7rem;
-  float: left;
+.cronologia-mix .chrono p {
+    color: #2c3a3a;
+    font-size: 0.7rem;
+    float: left;
 }
 
-#Cronologia .thumb-hover {
-  top: 80px;
-  padding: 0 20px 0 30px;
+.cronologia-mix .thumb-hover {
+    top: 80px;
+    padding: 0 20px 0 30px;
 }
 
-#Cronologia .thumb-hover h3 {
-  font-weight: bold;
-  font-size: 200em;
-  line-height: 1.2em;
-  color: #eb593c;
+.cronologia-mix .thumb-hover h3 {
+    font-weight: bold;
+    font-size: 200em;
+    line-height: 1.2em;
+    color: #eb593c;
 }
 
-#Cronologia .thumb-hover p {
-  font-size: 120em;
-  color: white;
+.cronologia-mix .thumb-hover p {
+    font-size: 120em;
+    color: white;
 }
 
 /* ---------------
@@ -258,158 +256,155 @@
  */
 
 #tecnologias .skillstitle {
-  left: 10px;
-  clear: both;
+    left: 10px;
+    clear: both;
 }
 
 #techgraphs {
-  font-size: 0.9em;
+    font-size: 0.9em;
 }
 
 #tecnologias .experience {
-  float: right;
-  height: 400px;
-  padding-left: 30px;
-  border-left: solid 1px #abc9ca;
-  padding-top: 20px;
+    float: right;
+    height: 400px;
+    padding-left: 30px;
+    border-left: solid 1px #abc9ca;
+    padding-top: 20px;
 }
 
 #tecnologias .experience a,
 #tecnologia .experience a:visited {
-  color: white;
+    color: white;
 }
 
 #tecnologias .experience a:hover {
-  color: #ff00a8;
+    color: #ff00a8;
 }
 
 #tecnologias .images img {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 #tecnologias .experience h4 {
-  left: 0;
-  margin-top: 0;
-  border: 0;
-  width: 100%;
+    left: 0;
+    margin-top: 0;
+    border: 0;
+    width: 100%;
 }
 
 #tecnologias .experience ul {
-  margin-top: 40px
+    margin-top: 40px
 }
 
 #tecnologias .experience ul li {
-  padding-top: 20px
+    padding-top: 20px
 }
 
 #tecnologias .experience h5 {
-  font-size: 1.2em;
-  color: #ff00a8;
+    font-size: 1.2em;
+    color: #ff00a8;
 }
 
 #tecnologias .experience i {
-  font-size: 0.7em;
-  padding-left: 5px;
+    font-size: 0.7em;
+    padding-left: 5px;
 }
 
 /* Load animation */
 
 @-webkit-keyframes load {
-  0% {
-    stroke-dashoffset: 0
-  }
+    0% {
+        stroke-dashoffset: 0
+    }
 }
 
 @-moz-keyframes load {
-  0% {
-    stroke-dashoffset: 0
-  }
+    0% {
+        stroke-dashoffset: 0
+    }
 }
 
 @keyframes load {
-  0% {
-    stroke-dashoffset: 0
-  }
+    0% {
+        stroke-dashoffset: 0
+    }
 }
 
 /* Container */
 
 .skills {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0;
-  padding: 0 20px;
-  text-align: left;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0 20px;
+    text-align: left;
 }
 
 .skills li {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  margin: 0 1.6rem;
-  line-height: 1.1em;
-  margin-bottom: 55px;
-  -ms-transition: all .2s ease-in-out;
-  /* IE 9 */
-  -webkit-transition: all .2s ease-in-out;
-  /* Chrome, Safari, Opera */
-  transition: all .2s ease-in-out;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 0 1.6rem 55px;
+    line-height: 1.1em;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .skills li:hover {
-  cursor: pointer;
-  -ms-transform: scale(1.1);
-  /* IE 9 */
-  -webkit-transform: scale(1.1);
-  /* Chrome, Safari, Opera */
-  transform: scale(1.1);
+    cursor: pointer;
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Chrome, Safari, Opera */
+    transform: scale(1.1);
 }
 
 .skills li:before {
-  content: attr(data-name);
-  position: absolute;
-  width: 100%;
-  bottom: -2rem;
-  font-weight: 400;
-  font-size: 0.8em;
+    content: attr(data-name);
+    position: absolute;
+    width: 100%;
+    bottom: -2rem;
+    font-weight: 400;
+    font-size: 0.8em;
 }
 
 .skills li:after {
-  content: attr(data-percent);
-  position: absolute;
-  width: 100%;
-  top: 33px;
-  left: 0;
-  text-align: center;
-  color: #eb593c;
-  font-weight: 700;
-  font-style: italic;
+    content: attr(data-percent);
+    position: absolute;
+    width: 100%;
+    top: 33px;
+    left: 0;
+    text-align: center;
+    color: #eb593c;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .skills svg {
-  width: 5rem;
-  height: 5rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .skills svg:nth-child(2) {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
 }
 
 .skills svg:nth-child(2) path {
-  fill: none;
-  stroke-width: 25;
-  stroke-dasharray: 629;
-  stroke: rgba(255, 255, 255, 0.9);
-  -webkit-animation: load 10s;
-  -moz-animation: load 10s;
-  -o-animation: load 10s;
-  animation: load 10s;
+    fill: none;
+    stroke-width: 25;
+    stroke-dasharray: 629;
+    stroke: rgba(255, 255, 255, 0.9);
+    -webkit-animation: load 10s;
+    -moz-animation: load 10s;
+    -o-animation: load 10s;
+    animation: load 10s;
 }
 
 /* ---------------
@@ -417,149 +412,172 @@
  */
 
 @media (max-width: 1400px) and (min-width: 767px) {
-  #nav-bar {
-    width: 600px;
-  }
+    #nav-bar {
+        width: 600px;
+    }
 }
 
 @media (max-width: 1200px) {
-  .skills {
-    margin-bottom: 60px;
-  }
-  .skills li {
-    margin: 0 1rem;
-  }
+    .skills {
+        margin-bottom: 60px;
+    }
+
+    .skills li {
+        margin: 0 1rem;
+    }
 }
 
 @media (max-width: 991px) {
-  .sechead h1 {
-    font-size: 2.5em;
-  }
-  .sechead p {
-    font-size: 0.8em;
-    width: 100%;
-  }
-  #idea-content .clientstitle {
-    left: 10px;
-    clear: both;
-  }
-  #cronologia .allss {
-    margin-left: 50px;
-  }
-  #cronologia .ss3 {
-    margin-right: 50px;
-  }
-  .skills li {
-    margin: 0 1.3rem;
-  }
-  #tecnologias .experience {
-    display: none;
-  }
+    .sechead h1 {
+        font-size: 2.5em;
+    }
+
+    .sechead p {
+        font-size: 0.8em;
+        width: 100%;
+    }
+
+    #idea-content .clientstitle {
+        left: 10px;
+        clear: both;
+    }
+
+    #cronologia .allss {
+        margin-left: 50px;
+    }
+
+    #cronologia .ss3 {
+        margin-right: 50px;
+    }
+
+    .skills li {
+        margin: 0 1.3rem;
+    }
+
+    #tecnologias .experience {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
-  .skills {
-    padding: 0 0 0 30px;
-  }
-  .skills li {
-    margin: 0 1rem;
-  }
+    .skills {
+        padding: 0 0 0 30px;
+    }
+
+    .skills li {
+        margin: 0 1rem;
+    }
 }
 
 @media (max-width: 810px) {
-  .clientstitle {
-    clear: both;
-  }
+    .clientstitle {
+        clear: both;
+    }
 }
 
 @media (max-width: 699px) {
-  #nav-bar {
-    width: 180px;
-  }
-  #ideahash,
-  #cronologiahash,
-  #tecnologiashash {
-    width: 100%;
-    height: 100px;
-  }
-  #tecnologias .skills {
-    width: 100%;
-    padding: 0;
-    margin-top: 20px;
-  }
-  #tecnologias .skillstitle {
-    width: 25%;
-    margin-top: 0;
-  }
-  #tecnologias .skills li {
-    margin: 0 0.8rem;
-  }
-  #cronologia .allss {
-    margin-left: 80px;
-  }
-  #cronologia .ss2 {
-    margin-right: 80px;
-  }
-  #cronologia .ss3 {
-    margin-right: 0px;
-  }
+    #nav-bar {
+        width: 180px;
+    }
+
+    #ideahash,
+    #Cronologiahash,
+    #tecnologiashash {
+        width: 100%;
+        height: 100px;
+    }
+
+    #tecnologias .skills {
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    #tecnologias .skillstitle {
+        width: 25%;
+        margin-top: 0;
+    }
+
+    #tecnologias .skills li {
+        margin: 0 0.8rem;
+    }
+
+    .cronologia .allss {
+        margin-left: 80px;
+    }
+
+    .cronologia .ss2 {
+        margin-right: 80px;
+    }
+
+    .cronologia .ss3 {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 640px) {
-  #idea .experience {
-    margin: 20px 0;
-  }
-  #idea .about-pic {
-    display: none;
-    margin-bottom: 30px;
-  }
-  #idea .about-pic.responsive {
-    display: block;
-  }
+    #idea .experience {
+        margin: 20px 0;
+    }
+
+    #idea .about-pic {
+        display: none;
+        margin-bottom: 30px;
+    }
+
+    #idea .about-pic.responsive {
+        display: block;
+    }
 }
 
 @media (max-width: 580px) {
-  #tecnologias .skillstitle {
-    width: 50%;
-    margin-top: 0;
-  }
-  #tecnologias .skills {
-    padding: 0 12px;
-    margin-bottom: 20px;
-  }
-  #tecnologias .skills li {
-    margin: 10px 2rem 50px 1rem;
-  }
-  .clients {
-    padding-left: 30px;
-  }
-  #cronologia .allss,
-  #cronologia .ss2,
-  #cronologia .ss4 {
-    margin-left: 55px;
-  }
-  #cronologia .ss1,
-  #cronologia .ss3,
-  #cronologia .ss5 {
-    margin-right: 55px;
-  }
-  #cronologia .ss2 {
-    margin-right: 0px;
-  }
+    #tecnologias .skillstitle {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    #tecnologias .skills {
+        padding: 0 12px;
+        margin-bottom: 20px;
+    }
+
+    #tecnologias .skills li {
+        margin: 10px 2rem 50px 1rem;
+    }
+
+    .clients {
+        padding-left: 30px;
+    }
+
+    .cronologia .allss,
+    .cronologia .ss2,
+    .cronologia .ss4 {
+        margin-left: 55px;
+    }
+
+    .cronologia .ss1,
+    .cronologia .ss3 {
+        margin-right: 55px;
+    }
+
+    .cronologia .ss2 {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 395px) {
-  #cronologia .allss,
-  #cronologia .ss2,
-  #cronologia .ss4 {
-    margin-left: 50px;
-  }
-  #cronologia .ss1,
-  #cronologia .ss3,
-  #cronologia .ss5 {
-    margin-right: 50px;
-  }
-  #cronologia .view-more {
-    padding: 7px;
-  }
+    .cronologia .allss,
+    .cronologia .ss2,
+    .cronologia .ss4 {
+        margin-left: 50px;
+    }
+
+    .cronologia .ss1,
+    .cronologia .ss3 {
+        margin-right: 50px;
+    }
+
+    .cronologia .view-more {
+        padding: 7px;
+    }
 }
