@@ -1,8 +1,26 @@
 (function ($, Hbars) {
     //_________Urls__________
-    var contentsURL = 'js/contents.json';
+    var contentsURL;
+    var lang;
+    switch (window.location.pathname) {
+        case '/jordidesign/':
+        case '/jordidesign/index.html':
+        case '/jordidesign/about.html':
+        case '/jordidesign/works.html':
+            contentsURL = 'js/contents.json';
+            lang = '';
+            break;
+        case '/jordidesign/en/':
+        case '/jordidesign/en/index.html':
+        case '/jordidesign/en/about.html':
+        case '/jordidesign/en/works.html':
+            contentsURL = '../js/contents.json';
+            lang = '../';
+            break;
+    }
 
     //_________Queries__________
+    var $body = $('body');
 
     //Menu
     var $menuBtn = $('.menu-btn');
@@ -17,6 +35,9 @@
     var $sliderP = $('#slider-p');
     var $sliderA = $('#slider-a');
     var $aboutP = $('#about').find('p');
+
+    //Accordion
+    var $category = $('.category');
 
     //Sections
     var $visualSec = $('#visual-sec');
@@ -53,7 +74,6 @@
     var hash = '';
 
     //_________Load Contents__________
-
     var loadMenu = function () {
         $.get('menu.html')
             .success(function (data) {
@@ -67,112 +87,140 @@
             dataType: 'json'
         }).done(function (res) {
             if (!res.error) {
-                secciones = res.contenidos.secciones;
-                works = res.works;
                 switch (window.location.pathname) {
                     case '/jordidesign/':
                     case '/jordidesign/index.html':
-                        $sliderP.text(res.contenidos.visual);
-                        $aboutP.text(res.contenidos.about);
-                        sliderEvents(res.contenidos);
-                        $.each(res.contenidos.steps, function (key, step) {
-                            processIndex(step);
-                        });
-
-                        $.each(works, function (index, work) {
-                            work.min = "";
-                            work.large = "";
-                            for (var i = 1; i <= work.imagenes; i++) {
-                                work.min = work.min + '<img src="assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_min.jpg" name="' + i + '"/>';
-                                work.large = work.large + '<img src="assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_large.jpg" name="' + i + '"/>';
-                            }
-                            work.miniatura = work.subseccion + '/' + work.miniatura + '.jpg';
-                            homeWork(work);
-                        });
-                        mixit($homeCont, 8, 'desc');
-                        thumbsEvents();
-                        animateImages();
+                        indexView(res.es);
+                        break;
+                    case '/jordidesign/en/':
+                    case '/jordidesign/en/index.html':
+                        indexView(res.en);
                         break;
                     case '/jordidesign/about.html':
-                        $.each(res.tecnologias.visual, function (index, tecnologia) {
-                            techAbout(tecnologia, $visualDiv);
-                        });
-
-                        $.each(res.tecnologias.frontend, function (index, tecnologia) {
-                            techAbout(tecnologia, $frontendDiv);
-                        });
-
-                        $.each(res.tecnologias.others, function (index, tecnologia) {
-                            techAbout(tecnologia, $othersDiv);
-                        });
-
-                        techHover($visualDiv, $detailsDiv);
-                        techHover($frontendDiv, $detailsDiv);
-                        techHover($othersDiv, $detailsDiv);
-
-                        $.each(works, function (index, work) {
-                            work.min = "";
-                            work.large = "";
-                            for (var i = 1; i <= work.imagenes; i++) {
-                                work.min = work.min + '<img src="assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_min.jpg" name="' + i + '"/>';
-                                work.large = work.large + '<img src="assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_large.jpg" name="' + i + '"/>';
-                            }
-                            work.miniatura = work.subseccion + '/' + work.miniatura + '.jpg';
-
-                            $.each(secciones.Cronologia, function (index, seccion) {
-                                switch (work.proveedor) {
-                                    case 'Jordi':
-                                        work.cronologia = 'jordi';
-                                        break;
-                                    case 'Omatic':
-                                        work.cronologia = 'omatic';
-                                        break;
-                                    case 'W3 Américas':
-                                        work.cronologia = 'w3americas';
-                                        break;
-                                    case 'Cirkuit Planet':
-                                        work.cronologia = 'cirkuitplanet';
-                                        break;
-                                }
-                            });
-                            cronologiaAbout(work);
-                        });
-
-                        mixit($cronologiaCont, 6, 'asc');
-                        thumbsEvents();
-                        filterBtns();
-                        chronoFix();
-                        animateImages();
-                        $cronologiaSec.find('.allss').click();
+                        aboutView(res.es);
+                        break;
+                    case '/jordidesign/en/about.html':
+                        aboutView(res.en);
                         break;
                     case '/jordidesign/works.html':
-                        $dwP.text(res.contenidos.visual);
-                        $dgP.text(res.contenidos.uxui);
-                        $diP.text(res.contenidos.frontend);
-
-                        $.each(works, function (index, work) {
-                            work.min = "";
-                            work.large = "";
-                            for (var i = 1; i <= work.imagenes; i++) {
-                                work.min = work.min + '<img src="assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_min.jpg" name="' + i + '"/>';
-                                work.large = work.large + '<img src="assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_large.jpg" name="' + i + '"/>';
-                            }
-                            work.miniatura = work.subseccion + '/' + work.miniatura + '.jpg';
-                            portfolioWork(work);
-                        });
-                        mixit($visualCont, 4, 'asc');
-                        mixit($uxuiCont, 4, 'asc');
-                        mixit($frontendCont, 4, 'asc');
-                        thumbsEvents();
-                        filterBtns();
-                        animateImages();
+                        workView(res.es);
+                        break;
+                    case '/jordidesign/en/works.html':
+                        workView(res.en);
                         break;
                 }
             } else {
-                alert("No se pudo ontener la lista de tecnologias");
+                alert("No se pudo obtener la lista de contenidos");
             }
         });
-    }
+    };
+
+    //___________Views____________
+
+    var indexView = function(res){
+        secciones = res.contenidos.secciones;
+        works = res.works;
+        $sliderP.text(res.contenidos.visual);
+        $aboutP.text(res.contenidos.about);
+        sliderEvents(res.contenidos);
+        $.each(res.contenidos.steps, function (key, step) {
+            processIndex(step);
+        });
+
+        $.each(works, function (index, work) {
+            work.min = "";
+            work.large = "";
+            for (var i = 1; i <= work.imagenes; i++) {
+                work.min = work.min + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_min.jpg" name="' + i + '"/>';
+                work.large = work.large + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_large.jpg" name="' + i + '"/>';
+            }
+            work.miniatura = work.subseccion + '/' + work.miniatura + '.jpg';
+            homeWork(work);
+        });
+        mixit($homeCont, 8, 'desc');
+        thumbsEvents();
+        animateImages();
+    };
+
+    var aboutView = function(res){
+        secciones = res.contenidos.secciones;
+        works = res.works;
+        $.each(res.tecnologias.visual, function (index, tecnologia) {
+            techAbout(tecnologia, $visualDiv);
+        });
+
+        $.each(res.tecnologias.frontend, function (index, tecnologia) {
+            techAbout(tecnologia, $frontendDiv);
+        });
+
+        $.each(res.tecnologias.others, function (index, tecnologia) {
+            techAbout(tecnologia, $othersDiv);
+        });
+
+        techHover($visualDiv, $detailsDiv);
+        techHover($frontendDiv, $detailsDiv);
+        techHover($othersDiv, $detailsDiv);
+
+        $.each(works, function (index, work) {
+            work.min = "";
+            work.large = "";
+            for (var i = 1; i <= work.imagenes; i++) {
+                work.min = work.min + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_min.jpg" name="' + i + '"/>';
+                work.large = work.large + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_large.jpg" name="' + i + '"/>';
+            }
+            work.miniatura = work.subseccion + '/' + work.miniatura + '.jpg';
+
+            $.each(secciones.Cronologia, function() {
+                switch (work.proveedor) {
+                    case 'Jordi':
+                        work.cronologia = 'jordi';
+                        break;
+                    case 'Omatic':
+                        work.cronologia = 'omatic';
+                        break;
+                    case 'W3 Américas':
+                        work.cronologia = 'w3americas';
+                        break;
+                    case 'Cirkuit Planet':
+                        work.cronologia = 'cirkuitplanet';
+                        break;
+                }
+            });
+            cronologiaAbout(work);
+        });
+
+        mixit($cronologiaCont, 6, 'asc');
+        thumbsEvents();
+        filterBtns();
+        //chronoFix();
+        animateImages();
+        $cronologiaSec.find('.allss').click();
+    };
+
+    var workView = function(res) {
+        secciones = res.contenidos.secciones;
+        works = res.works;
+        $dwP.text(res.contenidos.visual);
+        $dgP.text(res.contenidos.uxui);
+        $diP.text(res.contenidos.frontend);
+
+        $.each(works, function (index, work) {
+            work.min = "";
+            work.large = "";
+            for (var i = 1; i <= work.imagenes; i++) {
+                work.min = work.min + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_min.jpg" name="' + i + '"/>';
+                work.large = work.large + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_large.jpg" name="' + i + '"/>';
+            }
+            work.miniatura = work.subseccion + '/' + work.miniatura + '.jpg';
+            portfolioWork(work);
+        });
+        mixit($visualCont, 4, 'asc');
+        mixit($uxuiCont, 4, 'asc');
+        mixit($frontendCont, 4, 'asc');
+        thumbsEvents();
+        filterBtns();
+        animateImages();
+    };
 
     //___________Templates HandleBars____________
 
@@ -181,7 +229,7 @@
         var template = Hbars.compile(source);
         var div = template(steps);
         $processCont.append(div);
-    }
+    };
 
     var portfolioWork = function (work) {
         var source = $("#works-template").html();
@@ -225,7 +273,7 @@
 
     //Hash Animation
     $('a[href*=#]:not([href=#])').click(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
@@ -242,8 +290,11 @@
         e.preventDefault();
         $menuCont.toggleClass("open");
 
-        bgWidth = $(window).width() + 'px';
-        bgHeight = $(window).height() + 'px';
+        var $subMenuBtn = $('.sub-menu-btn');
+        var $subMenuCont = $('.sub-menu-container');
+        var bgWidth = $(window).width() + 'px';
+        var bgHeight = $(window).height() + 'px';
+
         $menuBg.width(bgWidth);
         $menuBg.height(bgHeight);
         $menuBg.toggleClass("hide");
@@ -259,22 +310,24 @@
             }, 250);
         }
 
-        $('.sub-menu-btn').each(function () {
+        $subMenuBtn.each(function () {
+            console.log('hola');
             $(this).on('click', function (e) {
                 e.preventDefault();
 
-                $('.sub-menu-container').each(function () {
+
+                $subMenuCont.each(function () {
                     $(this).removeClass('click');
                 });
 
                 var $subMenuContClick = $(this).next('.sub-menu-container').addClass('click');
 
                 // close all open class but clicked
-                $('.sub-menu-container').each(function () {
+                $subMenuCont.each(function () {
                     if (!($(this).hasClass('click')) && $(this).hasClass('open')) {
                         $(this).removeClass('open');
                         $(this).animate({
-                            left: -$(this).width(),
+                            left: -$(this).width()
                         }, 250, function () {
                             $(this).toggleClass("hide");
                         });
@@ -290,7 +343,7 @@
                     });
                 } else {
                     $subMenuContClick.animate({
-                        left: -$subMenuContClick.width(),
+                        left: -$subMenuContClick.width()
                     }, 250, function () {
                         $subMenuContClick.toggleClass("hide");
                     });
@@ -318,22 +371,22 @@
     });
 
     //Index Accordion	
-    $('.category').each(function () {
+    $category.each(function () {
         category.push(this);
     });
 
     var cleanSubcat = function (li1, li2) {
-        if ($(li1).find('ul').hasClass('subcat') == true) {
+        if ($(li1).find('ul').hasClass('subcat') === true) {
             $(li1).find('ul').removeClass(' subcat');
         }
 
-        if ($(li2).find('ul').hasClass('subcat') == true) {
+        if ($(li2).find('ul').hasClass('subcat') === true) {
             $(li2).find('ul').removeClass(' subcat');
         }
-    }
+    };
 
-    $('.category').on("click", function () {
-        if (category[0] == this) {
+    $category.on("click", function () {
+        if (category[0] === this) {
             cleanSubcat(category[1], category[2]);
 
             $(category[0]).find('ul').toggleClass('subcat');
@@ -341,7 +394,7 @@
             $(category[2]).removeClass(" accordion");
 
 
-        } else if (category[1] == this) {
+        } else if (category[1] === this) {
             cleanSubcat(category[0], category[2]);
 
             $(category[1]).find('ul').toggleClass('subcat');
@@ -358,28 +411,23 @@
     });
 
     //MIXITUP Setup
-    var mixit = function (cont, num, sort) {
+    var mixit = function(cont, num, sort) {
         cont.mixItUp({
             load: {
                 filter: 'all',
-                sort: 'myorder:asc'
+                sort: sort
             },
             pagination: {
                 limit: num,
                 prevButtonHTML: "",
                 nextButtonHTML: ""
-            },
-            callbacks: {
-                onMixFail: function () {
-                    alert('No items were found matching the selected filters.');
-                }
             }
         });
     };
 
     $.urlParam = function (name) {
         var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-        if (results == null) {
+        if (results === null) {
             return null;
         } else {
             return results[1] || 0;
@@ -399,11 +447,10 @@
         secCont.find('.allss').text('Todos');
 
         $.each(sec, function (index, ss) {
-            if (ss == filterUrl) {
+            if (ss === filterUrl) {
                 mixCont.mixItUp('filter', '.' + ss);
                 secCont.find('.' + index).addClass('click');
             }
-            ;
 
             secCont.find('.' + index).on("click", function (e) {
                 e.preventDefault();
@@ -417,16 +464,16 @@
                     secCont.find('.' + index).text(ss.toUpperCase());
                     break;
                 case 'cms':
-                    secCont.find('.' + index).text(ss.toUpperCase())
+                    secCont.find('.' + index).text(ss.toUpperCase());
                     break;
                 case 'generacion':
-                    secCont.find('.' + index).text('Generación')
+                    secCont.find('.' + index).text('Generación');
                     break;
                 default:
                     secCont.find('.' + index).text(ss.charAt(0).toUpperCase() + ss.slice(1));
             }
         });
-    }
+    };
 
     var filterBtns = function () {
         $.each(secciones, function (indexSec, sec) {
@@ -448,7 +495,7 @@
                     break;
             }
         });
-    }
+    };
 
     //Detail Images Animation
     var animateImages = function () {
@@ -456,7 +503,7 @@
             $(this).on('click', function () {
                 var name = $(this).attr('name');
                 $(this).closest('.mix').find('.project_img img').each(function () {
-                    if ($(this).attr('name') == name) {
+                    if ($(this).attr('name') === name) {
                         $('html, body').animate({
                             scrollTop: $(this).offset().top - 80
                         }, 800);
@@ -464,29 +511,29 @@
                 });
             });
         });
-    }
-
-    //About Chrono
-    var chronoFix = function () {
-        $('#cronologiaMix .mix').each(function () {
-            var date = $(this).find('.chrono h3').text();
-        });
     };
 
+    //About Chrono
+    /*var chronoFix = function () {
+        $('#cronologiaMix').find('.mix').each(function () {
+            var date = $(this).find('.chrono h3').text();
+        });
+    };*/
+
     //About Techs
-    var techHover = function (container, detailsDiv) {
-        container.find('li').hover(function (e) {
+    var techHover = function (container) {
+        container.find('li').hover(function() {
             var divTitle = $(this).find('h5').text();
             var divText = $(this).find('p').text();
             var divImages = $(this).find('span').text();
             var images = divImages.split('-');
             $('.images').empty();
             $.each(images, function (key, image) {
-                var src = '<img src="assets/tech/' + image + '@2x.jpg">';
+                var src = '<img src="'+ lang + 'assets/tech/' + image + '@2x.jpg">';
                 $('.images').append(src);
             });
-            $('#techgraphs .experience h4').text(divTitle);
-            $('#techgraphs .experience p').text(divText);
+            $detailsDiv.find('h4').text(divTitle);
+            $detailsDiv.find('.experience p').text(divText);
         });
     };
 
@@ -523,7 +570,7 @@
                 }, 100);
             }, 100);
         }, 200);
-    }
+    };
 
     var sliderEvents = function (text) {
         $sliderRight.on('click', function () {
@@ -556,7 +603,7 @@
     };
 
     //Works View more
-    $dwaMoreBtn.on("click", function (e) {
+    $dwaMoreBtn.on("click", function () {
         if ($dwaMore.hasClass('hide')) {
             $(this).text("[-] Ver menos");
         } else {
@@ -565,7 +612,7 @@
         $dwaMore.toggleClass('hide');
     });
 
-    $dufMoreBtn.on("click", function (e) {
+    $dufMoreBtn.on("click", function () {
         if ($dufMore.hasClass('hide')) {
             $(this).text("[-] Ver menos");
         } else {
@@ -574,7 +621,7 @@
         $dufMore.toggleClass('hide');
     });
 
-    $dgiMoreBtn.on("click", function (e) {
+    $dgiMoreBtn.on("click", function () {
         if ($dgiMore.hasClass('hide')) {
             $(this).text("[-] Ver menos");
         } else {
@@ -604,7 +651,7 @@
 
                 var skillsArray = $lightbox.find('.project_skills').text().split(',');
                 $.each(skillsArray, function (key, skill) {
-                    var src = '<img src="assets/tech/' + skill + '.jpg"/>';
+                    var src = '<img src="' + lang + 'assets/tech/' + skill + '.jpg"/>';
                     $lightbox.find('.project_skills_cont').append(src);
                 });
 
@@ -618,24 +665,23 @@
             var $lightbox = $(this);
             var $catThumbs = $lightbox.closest('.container');
 
-            if ($lightbox.find('.project_url a').attr('href') != '') {
+            if ($lightbox.find('.project_url a').attr('href') !== '') {
                 $(this).find('.project_url').show();
             }
-            ;
 
             $lightbox.find('.icon-close').on('click', function () {
                 $lightbox.addClass('hide');
                 $lightbox.find('.project_skills').text('');
                 $lightbox.find('.project_skills_cont').empty();
-                if ($('body').is('.home')) {
+                if ($body.is('.home')) {
                     $('html,body').animate({
                         scrollTop: $('#portfoliohash').offset().top
                     }, 1);
-                } else if ($('body').is('.works')) {
+                } else if ($body.is('.works')) {
                     $('html,body').animate({
                         scrollTop: $('#' + hash).offset().top
                     }, 1);
-                } else if ($('body').is('.about')) {
+                } else if ($body.is('.about')) {
                     $('html,body').animate({
                         scrollTop: $('#cronologiahash').offset().top
                     }, 1);
@@ -658,23 +704,22 @@
                 };
 
                 if ($catThumbs.prev().find('.pager-list').hasClass('no-pagers')) {
-                    if ($nextThumb.css('display') != 'none' && $nextThumb.hasClass('mix')) {
+                    if ($nextThumb.css('display') !== 'none' && $nextThumb.hasClass('mix')) {
                         nextPageOverlay();
                     } else {
-                        $thumbClass = $thisThumb.attr('class');
+                        var $thumbClass = $thisThumb.attr('class');
                         var first = true;
                         $catThumbs.find('.mix').each(function () {
-                            if ($(this).attr('class') == $thumbClass && first == true) {
+                            if ($(this).attr('class') === $thumbClass && first === true) {
                                 $(this).find('.min').click();
                                 first = false
                             }
-                            ;
                         });
                     }
                 } else {
-                    if ($nextThumb.css('display') != 'none' && $nextThumb.hasClass('mix')) {
+                    if ($nextThumb.css('display') !== 'none' && $nextThumb.hasClass('mix')) {
                         nextPageOverlay();
-                    } else if ($nextThumb.css('display') == 'none' && $nextThumb.hasClass('mix')) {
+                    } else if ($nextThumb.css('display') === 'none' && $nextThumb.hasClass('mix')) {
                         $('html,body').animate({
                             scrollTop: $('#' + hash).offset().top
                         }, 1);
@@ -700,38 +745,38 @@
 
                 var prevPageOverlay = function () {
                     $prevThumb.find('.min').click();
-                }
+                };
 
                 var firstPageOverlay = function () {
                     $catThumbs.find('.mix').last().find('.min').click();
-                }
+                };
 
                 if ($catThumbs.prev().find('.pager-list').hasClass('no-pagers')) {
-                    if ($prevThumb.css('display') != 'none' && $prevThumb.hasClass('mix')) {
+                    if ($prevThumb.css('display') !== 'none' && $prevThumb.hasClass('mix')) {
                         prevPageOverlay();
                     } else {
-                        $thumbClass = $thisThumb.attr('class');
+                        var $thumbClass = $thisThumb.attr('class');
                         var hasClass = false;
 
                         $catThumbs.find('.mix').each(function () {
-                            if ($(this).attr('class') == $thumbClass && hasClass == false) {
+                            if ($(this).attr('class') === $thumbClass && hasClass === false) {
                                 hasClass = true;
-                            } else if ($(this).attr('class') != $thumbClass && hasClass == true) {
+                            } else if ($(this).attr('class') !== $thumbClass && hasClass === true) {
                                 $(this).prev().find('.min').click();
                                 hasClass = false;
                             }
                         });
 
-                        if (hasClass == true) {
+                        if (hasClass === true) {
                             firstPageOverlay();
                         }
                         hasClass = false;
                     }
                 } else {
-                    if ($prevThumb.css('display') != 'none' && $prevThumb.hasClass('mix')) {
+                    if ($prevThumb.css('display') !== 'none' && $prevThumb.hasClass('mix')) {
                         $lightbox.find('.project_skills_cont').empty();
                         prevPageOverlay();
-                    } else if ($prevThumb.css('display') == 'none' && $prevThumb.hasClass('mix')) {
+                    } else if ($prevThumb.css('display') === 'none' && $prevThumb.hasClass('mix')) {
                         $('html,body').animate({
                             scrollTop: $('#' + hash).offset().top
                         }, 1);
