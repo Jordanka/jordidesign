@@ -21,6 +21,7 @@
 
     //_________Queries__________
     var $body = $('body');
+    var $quickLinks = $('#quick-links');
 
     //Menu
     var $menuBtn = $('.menu-btn');

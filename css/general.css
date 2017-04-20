@@ -252,7 +252,7 @@ button:focus {
     font-style: italic;
     display: block;
     text-align: center;
-    width: 125px;
+    width: 126px;
     clear: both;
 }
 
@@ -425,13 +425,15 @@ header {
 #quick-links li ul li div {
     height: 60px;
     text-align: left;
-    padding: 15px;
-    font-size: 0.8em;
+    padding: 13px 15px;
+}
+
+#quick-links li ul li div p {
+    line-height: 1.3em
 }
 
 #quick-links li ul li div a {
     color: #abc9ca;
-    line-height: 1.7em
 }
 
 #quick-links li ul li:after {
@@ -451,8 +453,26 @@ header {
     display: block
 }
 
+#quick-links li ul li span,
 #quick-links li ul li a:hover {
     color: #eb593c;
+}
+
+#quick-links li.icon-feather ul {
+    top: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+#quick-links li.icon-feather ul li {
+    width: 100px;
+    height: 40px;
+}
+
+#quick-links li.icon-feather ul li div {
+    height: 40px;
+    padding: 1px 15px;
+    font-size: 0.8em;
 }
 
 @media (max-width: 1400px) and (min-width: 768px) {

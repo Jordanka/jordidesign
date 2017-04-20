@@ -176,7 +176,7 @@
         "fecha": "2016",
         "url": "",
         "skills": "photoshop,illustrator",
-        "detalle": "Citi Brasil es el principal cliente de la división Saavedra de W3. Para ellos implementamos la nueva guía de estilos T&A en su sitio web citibank.com.br. Además de los proyectos de implementación, formé parte del equipo creativo generando campañas digitales por las diferentes vias promocionales del banco.",
+        "detalle": "Citi Brasil es el principal cliente de la división Saavedra de W3. Para ellos implementamos la nueva guía de estilos T&A en su sitio web citibank.com.br. Además de los proyectos de implementación, formé parte del equipo creativo generando campañas digitales para las diferentes vias promocionales del banco.",
         "miniatura": "citi_br",
         "imagenes": "4"
       },
@@ -260,7 +260,7 @@
         "fecha": "2017",
         "url": "",
         "skills": "photoshop,illustrator,html5,css3,jquery,bootstrap",
-        "detalle": "Para Deepview diseñamos la intefaz touch que opera su cámara de visión nocturna permitiendo, tomar fotos, videos y sincronizarlos en la nube. Dicha interfaz también brinda funciones de geolocalización, radar y conexión con el BUS de navegación.",
+        "detalle": "Para Deepview diseñamos la intefaz touch que opera su cámara de visión nocturna permitiendo tomar fotos, videos y sincronizarlos en la nube. Dicha interfaz también brinda funciones de geolocalización, radar y conexión con el BUS de navegación.",
         "miniatura": "deep_view",
         "imagenes": "5"
       },
@@ -358,7 +358,7 @@
         "fecha": "2015",
         "url": "https://youtu.be/6OHBzSE1-lY",
         "skills": "",
-        "detalle": "El GMS (General Management Sistem) es un ambicioso proyecto interno al que se volcó W3 para contar con una herramienta modular que interconectara las diferentes areas funcionales de la empresa: RRHH, Administración, Project Management y Time tracking. Al encararlo realizamos numerosas entrevistas a empleados y encargados de las diferentes areas, a un tiempo que revisamos propuesas rápidas a modo de kick off.",
+        "detalle": "El GMS (General Management System) es un ambicioso proyecto interno al que se volcó W3 para contar con una herramienta modular que interconectara las diferentes areas funcionales de la empresa: RRHH, Administración, Project Management y Time tracking. Al encararlo realizamos numerosas entrevistas a empleados y encargados de las diferentes areas, a un tiempo que revisamos propuesas rápidas a modo de kick off.",
         "miniatura": "gms_interviews",
         "imagenes": "3"
       },
@@ -851,8 +851,7 @@
         "fecha": "2016",
         "url": "",
         "skills": "photoshop,illustrator",
-        "detalle": "Citi Brasil es el principal cliente de la división Saavedra de W3. Para ellos implementamos la nueva guía de estilos T&A en su sitio web citibank.com.br. Además de los proyectos de implementación, formé parte del equipo creativo generando campañas digitales por las diferentes vias promocionales del banco.",
-        "detalle": "Citi Brasil es el principal cliente de la división Saavedra de W3. Para ellos implementamos la nueva guía de estilos T&A en su sitio web citibank.com.br. Además de los proyectos de implementación, formé parte del equipo creativo generando campañas digitales por las diferentes vias promocionales del banco.",
+        "detalle": "Citi Brasil is the main client of the Saavedra division of W3. We implemented for them the new T&A syle guide in their website citibank.com.br. In adition to the implementation projects, I also worked as a member of the creative team, generating digital campaings for the different promotional channels of the bank.",
         "miniatura": "citi_br",
         "imagenes": "4"
       },
@@ -866,7 +865,7 @@
         "fecha": "2015",
         "url": "",
         "skills": "photoshop,illustrator",
-        "detalle": "Superar es un programa de Bayer para promocionar su tratamiento para la Chronic Thromboembolic Pulmonary Hypertension (CTEPH). Para ellos en W3 diseñamos una landing sobre plataforma ICMS con login para clientes, donde los mismos tienen acceso a información sobre la enfermedad y contacto con Bayer para obtener o distribuir el tratamiento.",
+        "detalle": "Superar is a program created by Bayer in order to promote the treatment of the Chronic Thromboembolic Pulmonary Hypertension (CTEPH). We designed for them at W3 a landing page with an ICMS platform that included a post-login section for clients, where they have access to information about the desease and a contact with Bayer to get or distribute the treatment.",
         "miniatura": "superar",
         "imagenes": "4"
       },
@@ -880,8 +879,7 @@
         "fecha": "2016",
         "url": "",
         "skills": "photoshop,illustrator",
-        "detalle": "Puro es una divertida cadena de indumentaria con un toque distintivo por el colorido de sus productos y la osadía en la combinación de texturas. Con Omatic, diseñé un template su e-commerce en OpenCart.",
-        "miniatura": "puro",
+        "detalle": "Puro is a fun argentinian brand of women accesories with a distinctive touch given by the colorfulness of their products and the challenging combination of textures. With Omatic, we designed a template for their e-commerce on OpenCart.",        "miniatura": "puro",
         "imagenes": "4"
       },
       "04": {
@@ -894,7 +892,7 @@
         "fecha": "2014",
         "url": "",
         "skills": "photoshop,illustrator",
-        "detalle": "Para Citi Wealth Management Latin América (WMLA), el principal cliente de W3 dentro de Citi, realizamos el diseño y guia de la versión responsive basado en su anterior guía de estilos Avatar. La implementación se realizó sobre sus 5 sitios principales, WMLA, International Personal Banking (IPB), Citi Privated Client (CPC), Citigold y Global Excecutive Client (GEB).",
+        "detalle": "For Citi Wealth Management Latin América (WMLA), the main W3 client inside Citibank, we generated the visual design and style guide of the responsive version of their sites, based on theri previous Avatar style guide. It was implemented on their five main websites, WMLA, International Personal Banking (IPB), Citi Privated Client (CPC), Citigold and Global Excecutive Client (GEB).",
         "miniatura": "wmla",
         "imagenes": "4"
       },
@@ -908,7 +906,7 @@
         "fecha": "2015",
         "url": "//jordidesign.com/devs/ahs_center/index.html",
         "skills": "photoshop,illustrator,muse",
-        "detalle": "A pedido de un cliente interno de Citi, realizamos un portal para AHS Center, con el objetivo de comunicar eventos sociales, alojar publicaciones, transmitir notas de la directiva y compartir información de interés común para las diferentes sucursales del banco.",
+        "detalle": "Responding to a Citi internal request, we designed the portal AHS Center for the RRHH department, meant to communicate social events, publish Citi related news, transmit messages from the directive and share information of general interest for the different branches of the bank.",
         "miniatura": "ahs_center",
         "imagenes": "4"
       },
@@ -922,7 +920,7 @@
         "fecha": "2016",
         "url": "//jordidesign.com/devs/octopi_one/index.html",
         "skills": "photoshop,illustrator,html5,css3,jquery,bootstrap",
-        "detalle": "Octopi es un sistema para call centers encargado de manejar colas de llamadas. Cuenta con una interfaz para la interacción del operario con el usuario y una intefaz de supervisión. Para ellos realicé UX, UI y desarrollo frontend.",
+        "detalle": "Octopi is a call centers system in charge of the calls reception and management. Includes and interface for the interaction between the user and the operator and a supervision panel. For them I worked on UX, UI and frontend development.",
         "miniatura": "octopi",
         "imagenes": "3"
       },
@@ -936,7 +934,7 @@
         "fecha": "2017",
         "url": "",
         "skills": "photoshop,illustrator,html5,css3,jquery,bootstrap",
-        "detalle": "Para Deepview diseñamos la intefaz touch que opera su cámara de visión nocturna permitiendo, tomar fotos, videos y sincronizarlos en la nube. Dicha interfaz también brinda funciones de geolocalización, radar y conexión con el BUS de navegación.",
+        "detalle": "For Deepview we designed the touch interface that control their night vision camera, allowing to take pictures, videos and upload them to the cloud. The interface also offer functions like geolocalization, radar and conection with the navigation BUS of the ship.",
         "miniatura": "deep_view",
         "imagenes": "5"
       },
@@ -950,7 +948,7 @@
         "fecha": "2014",
         "url": "",
         "skills": "photoshop,illustrator,marvel",
-        "detalle": "A pedido de Citi, rediseñamos la base de datos Knowledge Center, la cual contiene toda la documentación de soporte del sector AHS. La misma consta de dos vistas frontend, una para usuario final y otra de administrador, además de un backend para la carga del material, evualuación y actualización del material.",
+        "detalle": "Responding to a Citi request, we redesigned the database Knowledge Center, which contains all the support documentation of the AHS sector. The interface consist on two frontend views, one for the end user and the other for the administrator, and also include a backend to upload, evaluate and update the material.",
         "miniatura": "ahs_kc",
         "imagenes": "4"
       },
@@ -964,7 +962,7 @@
         "fecha": "2015",
         "url": "",
         "skills": "photoshop,illustrator",
-        "detalle": "A pedido interno de los directivos de W3 Américas, realicé la propuesta gráfica para una landing que ofrecía un regalo de navidad a seleccionar y un destinatario de un préstamo KIVA para ayuda social. Como complemento se ofrecía un wallpaper navideño.",
+        "detalle": "In response to an internal request from the W3 Américas directive, I designed a graphic proposal for a landing that offered two christmass gift and two beneficiaries for a KIVA loan for the client to choose. As a complement it also offered a christmass wallpaper to download.",
         "miniatura": "xmass",
         "imagenes": "3"
       },
@@ -978,7 +976,7 @@
         "fecha": "2012",
         "url": "",
         "skills": "photoshop,illustrator,indesign,3dmax,acad",
-        "detalle": "Disney es la principal licencia de Cirkuit Planet y el mayor objeto de su producción. Mouses, teclados, auriculares, bolsos, parlantes y toda clase de accesorios fueron diseñados por nuestro equipo para los diferentes personajes de Disney.",
+        "detalle": "Disney was the main Cirkuit Planet license and the mayor focus on its production. Mouses, keyboards, headphones, bags, speakers and all kind of accesories were designed by our team showing the different Disney characters.",
         "miniatura": "disney",
         "imagenes": "5"
       },
@@ -992,7 +990,7 @@
         "fecha": "2012",
         "url": "",
         "skills": "photoshop,illustrator,indesign",
-        "detalle": "Además de los diseños de productos para sus diferentes licencias, con Cirkuit Planet desarrollamos lineas propias de productos y packaging. Nos encargamos además de la promoción de los mismos, diseñando sus catálogos, stands y piezas para marketing online e impreso.",
+        "detalle": "In adition to the product desings for the different licences, for Cirkuit Planet we designed its own lines of products y packaging. We were also in charge of promoting them, designing their catalogs, stands and marketing peaces for online and printing porpouse.",
         "miniatura": "cirkuitcol",
         "imagenes": "5"
       },
@@ -1006,7 +1004,7 @@
         "fecha": "2012",
         "url": "",
         "skills": "3dmax,acad",
-        "detalle": "Weenicons es una divertida linea de personajes que emulan artistas famosos. Para ellos diseñamos una variada línea de pendrives de cada celebridad modelados en CAD para su fabricación en China.",
+        "detalle": "Weenicons is funny line of characters based on famous artists cartoons. For them we designed a varied line with pendrives of each celebrity, modeled with CAD for their further manufacture in China.",
         "miniatura": "wee_pendrives",
         "imagenes": "5"
       },
@@ -1020,7 +1018,7 @@
         "fecha": "2015",
         "url": "//jordidesign.com/devs/brag_badges/index.html",
         "skills": "photoshop,illustrator,html5,css3,jquery",
-        "detalle": "Como iniciativa de Tonic3, realizamos la fase de research y análisis y más tarde prototipado y testeo de un sistema para que los clientes reconozcan el trabajo de los empleados de Tonic3. Como parte del proceso se realizaron entrevistas y se definieron personas, user cases, mvp, asi como se evaluaron posibles enhacement features.",
+        "detalle": "Following a Tonic3 initiative, we worked on the research and analysis phases, and later prototyping and user testing of a tool that ables the clients to congratulate the work of the Tonic3 employees. As part of the process we conducted several interviews and defined Personas, user cases, mvp, as well as evaluated posible enhacement features.",
         "miniatura": "brag_badges",
         "imagenes": "5"
       },
@@ -1034,7 +1032,7 @@
         "fecha": "2015",
         "url": "https://youtu.be/6OHBzSE1-lY",
         "skills": "",
-        "detalle": "El GMS (General Management Sistem) es un ambicioso proyecto interno al que se volcó W3 para contar con una herramienta modular que interconectara las diferentes areas funcionales de la empresa: RRHH, Administración, Project Management y Time tracking. Al encararlo realizamos numerosas entrevistas a empleados y encargados de las diferentes areas, a un tiempo que revisamos propuesas rápidas a modo de kick off.",
+        "detalle": "The GMS (General Management System) is an ambitious internal project requested by W3 in order to have a modular tool that connect the different functional areas of the company: HR, Administration, Project Management and Time tracking. For this purpose we conducted several interviews with employees and managers of the different areas involved, while we checked different quick proposals as a kick off.",
         "miniatura": "gms_interviews",
         "imagenes": "3"
       },
@@ -1048,7 +1046,7 @@
         "fecha": "2016",
         "url": "//marvelapp.com/j9789i",
         "skills": "illustrator,marvel",
-        "detalle": "Que memoria es una app para noticificaciones inteligentes, es un proyecto personal que lleva un tiempo ya rondandome la cabeza. Aproveché la excusa del trabajo práctico de CoderHouse para poder ahondar un poco más en sus posibilidades. Para el mismo realicé un completo trabajo de research incluyendo entrevistas, Personas, MVP, Flow, benchmarks y AI.",
+        "detalle": "Que memoria is an intelligent notifications app, is a personal project that have been playing around in my head for a while. I used the excuse of the final project of my UX Course at Coderhouse to explore more deeply its posibilities. For this project I did a complete research work including interviews, Personas, MVP, flow, benchmarks and AI.",
         "miniatura": "que_memoria",
         "imagenes": "6"
       },
@@ -1062,7 +1060,7 @@
         "fecha": "2016",
         "url": "//jordidesign.com/devs/ofelia/index.html",
         "skills": "photoshop,illustrator,html5,css3,jquery,bootstrap",
-        "detalle": "Ofelia es una tienda de productos artesanales que pone en contacto a vendedores y compradores. Fundada hace unos años por Felicitas Rossi, editora de Ohlalá, la tienda aumentó su popularidad llegando a los 40mil productos. El amplio número de categorias hizo indispensable un análisis de arquitectura basado en la data existente y en card sortings realizados.",
+        "detalle": "Ofelia is an e-commerce for handmade products and craftworks. Created a few years ago by Felicitas Rossi, editor at the Ohlalá magazine, the store increased its popularity reaching over 40 thousand products and over 60 thousand visits every day. The wide number of categories made indispensable to do an architecture analysis based on existing data and card sorting tests.",
         "miniatura": "ofelia_ai",
         "imagenes": "5"
       },
@@ -1076,7 +1074,7 @@
         "fecha": "2016",
         "url": "//youtu.be/wkxCWEYW8-w",
         "skills": "illustrator,animate",
-        "detalle": "La interfaz de Octopi, con la gran cantidad de vistas y los diferentes tipos de usuarios a los que iba dirigida, fue un reto en terminos de definición y organización del trabajo. Los wireframes fueron herramientas invaluables para generar propuestas preliminarles a bajo costo, mientras el video prototipo fue vital para hacer más accesible la propuesta a los clientes",
+        "detalle": "The Octopi interface, with the huge number of visits and the different kind of users its oriented to, was an enormous challenge in terms of definition and project management. The wireframes were invaluable tools para ir order to generate low cost proposals, while the video prototype was indispensable to make those proposals more accesible to the clients and future users",
         "miniatura": "octopi_wires",
         "imagenes": "3"
       },
@@ -1090,7 +1088,7 @@
         "fecha": "2017",
         "url": "",
         "skills": "illustrator",
-        "detalle": "Turner acudió a nosotros con la necesidad de darle un update a su actual sitio de RRHH y convertirlo en un portal centralizado donde cada usuario contaría con su dashboard para gestionar y sincronizar sus tareas, asi como recibir noticias e interactuar con el ambiente laboral.",
+        "detalle": "Turner came to us with the need to update his current HR site, willing to transform it in a centralized portal where each user would have his dashboard to control and synchronize his tasks, as well as get recent news and interact with the work environment.",
         "miniatura": "turner",
         "imagenes": "4"
       },
@@ -1104,7 +1102,7 @@
         "fecha": "2017",
         "url": "",
         "skills": "photoshop",
-        "detalle": "Con el boom de Uber, la ideas de aplicaciones tipo Carpool han ido proliferando. Es el caso de este cliente que nos solicitó una propuesta de aplicación sin una definición muy clara del alcance. Un storyboard fue la solución más sencilla para situar al cliente en el contexto de uso e ir aterrizando ideas para su desarrollo.",
+        "detalle": "With the Uber's boom, the Carpool ideas for applications have expanded like water. In this case, the client asked for a proposal without a clear definition. A storyboard was the easiest solution to introduce the client in the context of use of the application and start landing ideas for further implementation.",
         "miniatura": "car_pool",
         "imagenes": "4"
       },
@@ -1118,7 +1116,7 @@
         "fecha": "2015",
         "url": "//www.quiderma.com.ar/",
         "skills": "photoshop,illustrator,html5,css3,jquery,bootstrap",
-        "detalle": "Para el Ministerio de Producción nos encontramos desarrollando una web/app con el fin de controlar internamente las solicitudes de importaciones. El objetivo es contrastar los datos registrados del importador en aduana y afip para determinar la aprobación o no de la importación. Las propuesta fue presentada ante el Presidente de la Nación",
+        "detalle": "For the Nation Production Ministry, we are now developing a web/app that will internally control the importing requests of the different companies. The goal is to contrast the importer's data registred in both custom house and Afip (tax collector) in order to determine if the import should be approved or not. Our proposals were presented to the President of the Nation in person.",
         "miniatura": "minprod_wires",
         "imagenes": "4"
       },
