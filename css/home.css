@@ -326,7 +326,7 @@
 }
 
 .category > ul a:hover {
-    color: #eb593c;
+    color: #5bd9ef;
 }
 
 .category > ul.subcat {
@@ -384,7 +384,7 @@
     font-style: italic;
     margin-top: 60px;
     margin-bottom: 16px;
-    color: #eb593c;
+    color: #5bd9ef;
 }
 
 #about .about-cont h2 span {

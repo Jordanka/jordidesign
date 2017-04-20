@@ -117,7 +117,7 @@
 
 .itsme h5 {
     font-size: 2em;
-    color: #eb593c;
+    color: #5bd9ef;
     font-weight: 700;
     font-style: italic;
     padding-bottom: 20px;
@@ -164,7 +164,7 @@
 }
 
 #idea .experience a:hover {
-    color: #eb593c;
+    color: #5bd9ef;
 }
 
 #idea-content .experience h4 {
@@ -184,7 +184,7 @@
 
 #idea .experience h5 {
     font-size: 1.2em;
-    color: #eb593c;
+    color: #5bd9ef;
 }
 
 #idea .experience i {
@@ -222,7 +222,7 @@
 }
 
 .cronologia-mix .chrono h3 {
-    color: #eb593c;
+    color: #5bd9ef;
     font-size: 1.6rem;
     float: left;
     width: 100%;
@@ -243,7 +243,7 @@
     font-weight: bold;
     font-size: 200em;
     line-height: 1.2em;
-    color: #eb593c;
+    color: #5bd9ef;
 }
 
 .cronologia-mix .thumb-hover p {
@@ -376,7 +376,7 @@
     top: 33px;
     left: 0;
     text-align: center;
-    color: #eb593c;
+    color: #5bd9ef;
     font-weight: 700;
     font-style: italic;
 }
