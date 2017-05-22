@@ -542,7 +542,8 @@
                 $('.images').append(src);
             });
             $detailsDiv.find('h4').text(divTitle);
-            $detailsDiv.find('.experience p').text(divText);
+            console.log(divText);
+            $detailsDiv.find('p').text(divText);
         });
     };
 
