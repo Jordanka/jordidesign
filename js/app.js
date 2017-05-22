@@ -1,7 +1,7 @@
 (function($, Hbars) {
 
 	//URLs
-	var baseURL = 'jordidesign/library/';
+	var baseURL = 'http://www.jordidesign.com/library/';
 	var listURL = baseURL + "api.php?action=list";
 	var createURL = baseURL + "api.php?action=create";
 	var updateURL = baseURL + "api.php?action=update";

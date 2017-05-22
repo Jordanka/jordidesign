@@ -1,13 +1,13 @@
 /* -----------------------------
- * USA Projects General CSS
+ * Jordi Design Works CSS
  *
  * ---------
  * CSS Index
  *
  * 001 - Extended Files
- * 002 - Works General
+ * 002 - General Works 
  * 003 - View More
- * 003 - General Styles
+ * 004 - MixitUp
 
  * ---------------
  * 001 - Extended files
@@ -21,20 +21,32 @@
  * 002 - GENERAL WORKS
  */
 
-#visualhash,
-#uxuihash,
-#frontendhash {
+.hash-cont {
   width: 100%;
   height: 100px;
+}
+
+.sec-cont {
+  padding: 0 50px;
 }
 
 .sechead p {
   max-width: 700px;
 }
 
-@media (max-width: 1400px) and (min-width: 700px) {
+@media (max-width: 1400px) and (min-width: 768px) {
   #nav-bar {
     width: 540px;
+  }
+}
+
+@media (max-width: 767) {
+  #nav-bar {
+    width: 200px;
+  }
+  .hash-cont {
+    width: 100%;
+    height: 120px;
   }
 }
 
@@ -42,23 +54,22 @@
  * 003 - VIEW MORE
  */
 
-#dw-more,
-#dg-more,
-#di-more {
+.more-cont {
   font-size: 0.9em;
-  padding-top: 20px;
+  padding: 20px 0 0;
 }
 
-#dw-more h4,
-#dg-more h4,
-#di-more h4 {
+.more-cont h4 {
   float: left;
   position: relative;
-  left: -20px;
   border-bottom: solid 1px #abc9ca;
   padding: 20px 0 10px;
   margin-top: 60px;
   font-weight: bold;
+}
+
+.more-left {
+  padding: 0;
 }
 
 /* Load animation */
@@ -95,7 +106,7 @@
   display: inline-block;
   position: relative;
   text-align: center;
-  margin: 55px 1.3rem 0;
+  margin: 40px 1.3rem 0;
   float: left;
 }
 
@@ -149,6 +160,10 @@
 
 /* Clients */
 
+.more-cont h4.clientstitle {
+  margin-top: 90px;
+}
+
 .clients {
   display: flex;
   justify-content: left;
@@ -156,7 +171,7 @@
   float: left;
   margin-top: 80px;
   margin-bottom: 30px;
-  padding: 0 20px;
+  padding: 0 20px 0 40px;
 }
 
 .clients ul li {
@@ -165,7 +180,8 @@
 }
 
 .clients img {
-  padding: 0 20px;
+    padding: 20px 8px 0 8px;
+    height: 65px;
 }
 
 /* Experience */
@@ -177,9 +193,7 @@
   border-left: solid 1px #abc9ca;
 }
 
-#dw-more .experience h4,
-#dg-more .experience h4,
-#di-more .experience h4 {
+.more-cont .experience h4 {
   left: 0;
   margin-top: 0;
   border: 0;
@@ -204,39 +218,31 @@
   padding-left: 5px;
 }
 
-@media (max-width: 1300px) {
-  #dw-more h4,
-  #dg-more h4,
-  #di-more h4 {
-    left: 8.32%;
-    margin-top: -15px;
+@media (max-width: 1199px) {
+  .more-cont h4 {
+    margin-top: 0px;
   }
-  h4.clientstitle {
-    left: 8.32%;
-    margin-top: 45px;
+
+  .more-cont h4.clientstitle {
+    margin-top: 40px;
   }
+
+  .skills {
+    padding: 0;
+  }
+
+  .skills li {
+    margin: 30px 1.3rem 20px;
+  }
+
   .clients {
-    margin-top: 90px;
-  }
-  .skills,
-  .clients {
-    width: 66.66%;
-    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0 20px 0 20px;
   }
 }
 
-@media (max-width: 1100px) and (min-width: 811px) {
-  .skills,
-  .clients {
-    width: 58.4%;
-  }
-  .experience {
-    position: relative;
-    left: -8.32%;
-  }
-}
-
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .sechead h1 {
     font-size: 2.5em;
   }
@@ -244,75 +250,34 @@
     font-size: 0.8em;
     width: 100%;
   }
-}
-
-@media (max-width: 810px) {
-  .skills {
-    width: 50.08%;
-    left: 8.32%;
-    position: relative;
-    margin: 0 1rem;
-  }
-  .skills li {
-    margin: 10px 2rem 50px 1rem;
-  }
-  .clientstitle {
-    clear: both;
-  }
-  .clients {
-    width: 91.68%;
-    margin: 0 auto 20px auto;
-    left: 8.32%;
-    position: relative;
-    clear: both;
-  }
   .experience {
-    position: relative;
-    width: 41.76%;
+    height: 280px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 }
 
-@media (max-width: 699px) {
-  #nav-bar {
-    width: 200px;
-  }
-  #visualhash,
-  #uxuihash,
-  #frontendhash {
-    width: 100%;
-    height: 120px;
-  }
-  .skills,
-  .clients {
-    padding: 0;
+@media (max-width: 767px) {
+  .sec-cont {
+    padding: 0 90px;
   }
 }
 
-@media (max-width: 550px) {
-  .skills {
-    width: 100%;
-    padding: 0 12px;
-    left: 0;
-    clear: both;
+@media (max-width: 640px) {
+  .sec-cont {
+    padding: 0 70px;
   }
-  .skills li {
-    margin: 10px 2rem 50px 1rem;
+}
+
+@media (max-width: 480px) {
+  .sec-cont {
+    padding: 0 50px;
   }
-  h4.clientstitle,
-  .skillstitle {
-    clear: both;
-    margin-top: -15px;
-  }
-  .clients {
-    width: 91.68%;
-    margin: 0 auto 20px auto;
-    left: 8.32%;
-    position: relative;
-    clear: both;
-  }
-  .experience {
-    width: 91.68%;
-    margin: 0 auto 20px auto;
+}
+
+@media (max-width: 380px) {
+  .sec-cont {
+    padding: 0 30px;
   }
 }
 
@@ -324,13 +289,13 @@
   height: 400px;
 }
 
-@media (max-width: 1200px) and (min-width: 993px){
+@media (max-width: 1200px) and (min-width: 992px){
     .mix-cont.container {
       height: 250px;
     }
 }
 
-@media (max-width: 992px) and (min-width: 801px){
+@media (max-width: 991px) and (min-width: 801px){
     .mix-cont.container {
       height: 700px;
     }

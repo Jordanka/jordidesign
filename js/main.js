@@ -3,17 +3,17 @@
     var contentsURL;
     var lang;
     switch (window.location.pathname) {
-        case '/jordidesign/':
-        case '/jordidesign/index.html':
-        case '/jordidesign/about.html':
-        case '/jordidesign/works.html':
+        case '/':
+        case '/index.html':
+        case '/about.html':
+        case '/works.html':
             contentsURL = 'js/contents.json';
             lang = '';
             break;
-        case '/jordidesign/en/':
-        case '/jordidesign/en/index.html':
-        case '/jordidesign/en/about.html':
-        case '/jordidesign/en/works.html':
+        case '/en/':
+        case '/en/index.html':
+        case '/en/about.html':
+        case '/en/works.html':
             contentsURL = '../js/contents.json';
             lang = '../';
             break;
@@ -29,10 +29,6 @@
     var $menuBg = $('.menu-bg');
 
     //Slider
-    var $sliderImg = $('#slider');
-    var $sliderLeft = $sliderImg.find('.icon-arrow:first-child');
-    var $sliderRight = $sliderImg.find('.icon-arrow:last-child');
-    var $sliderH1 = $('#slider-h1');
     var $sliderP = $('#slider-p');
     var $sliderA = $('#slider-a');
     var $aboutP = $('#about').find('p');
@@ -48,7 +44,7 @@
     var $dwP = $visualSec.find('.sechead p');
     var $dgP = $uxuiSec.find('.sechead p');
     var $diP = $frontendSec.find('.sechead p');
-    var $processCont = $('#process').find('.cont-12');
+    var $processCont = $('#process').find('.process-cont');
 
     //View More
     var $dwaMoreBtn = $visualSec.find('.small-view-more');
@@ -89,24 +85,24 @@
         }).done(function (res) {
             if (!res.error) {
                 switch (window.location.pathname) {
-                    case '/jordidesign/':
-                    case '/jordidesign/index.html':
+                    case '/':
+                    case '/index.html':
                         indexView(res.es);
                         break;
-                    case '/jordidesign/en/':
-                    case '/jordidesign/en/index.html':
+                    case '/en/':
+                    case '/en/index.html':
                         indexView(res.en);
                         break;
-                    case '/jordidesign/about.html':
+                    case '/about.html':
                         aboutView(res.es);
                         break;
-                    case '/jordidesign/en/about.html':
+                    case '/en/about.html':
                         aboutView(res.en);
                         break;
-                    case '/jordidesign/works.html':
+                    case '/works.html':
                         workView(res.es);
                         break;
-                    case '/jordidesign/en/works.html':
+                    case '/en/works.html':
                         workView(res.en);
                         break;
                 }
@@ -122,20 +118,32 @@
         secciones = res.contenidos.secciones;
         works = res.works;
         $sliderP.text(res.contenidos.visual);
+
+        var mainSlider = new Swiper('.main-slider', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            autoplay: 5000,
+            autoplayDisableOnInteraction: false,
+            loop: true,
+            loopedSlides: 5 //looped slides should be the same
+        });
+
         $aboutP.text(res.contenidos.about);
-        sliderEvents(res.contenidos);
         $.each(res.contenidos.steps, function (key, step) {
             processIndex(step);
         });
+
 
         $.each(works, function (index, work) {
             work.min = "";
             work.large = "";
             for (var i = 1; i <= work.imagenes; i++) {
-                work.min = work.min + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_min.jpg" name="' + i + '"/>';
-                work.large = work.large + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_large.jpg" name="' + i + '"/>';
+                work.min = work.min + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_min@2x.jpg" name="' + i + '"/>';
+                work.large = work.large + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_large@2x.jpg" name="' + i + '"/>';
             }
-            work.miniatura = work.subseccion + '/' + work.miniatura + '.jpg';
+            work.miniatura = work.subseccion + '/' + work.miniatura + '@2x.jpg';
             homeWork(work);
         });
         mixit($homeCont, 8, 'desc');
@@ -166,10 +174,10 @@
             work.min = "";
             work.large = "";
             for (var i = 1; i <= work.imagenes; i++) {
-                work.min = work.min + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_min.jpg" name="' + i + '"/>';
-                work.large = work.large + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_large.jpg" name="' + i + '"/>';
+                work.min = work.min + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_min@2x.jpg" name="' + i + '"/>';
+                work.large = work.large + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_large@2x.jpg" name="' + i + '"/>';
             }
-            work.miniatura = work.subseccion + '/' + work.miniatura + '.jpg';
+            work.miniatura = work.subseccion + '/' + work.miniatura + '@2x.jpg';
 
             $.each(secciones.Cronologia, function() {
                 switch (work.proveedor) {
@@ -209,10 +217,10 @@
             work.min = "";
             work.large = "";
             for (var i = 1; i <= work.imagenes; i++) {
-                work.min = work.min + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_min.jpg" name="' + i + '"/>';
-                work.large = work.large + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_large.jpg" name="' + i + '"/>';
+                work.min = work.min + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_min@2x.jpg" name="' + i + '" data-rjs="2"/>';
+                work.large = work.large + '<img src="'+ lang + 'assets/works/' + work.subseccion + '/' + work.miniatura + '0' + i + '_large@2x.jpg" name="' + i + '" data-rjs="2"/>';
             }
-            work.miniatura = work.subseccion + '/' + work.miniatura + '.jpg';
+            work.miniatura = work.subseccion + '/' + work.miniatura + '@2x.jpg';
             portfolioWork(work);
         });
         mixit($visualCont, 4, 'asc');
@@ -371,7 +379,7 @@
         $menuBtn.click();
     });
 
-    //Index Accordion	
+    //Index Accordion
     $category.each(function () {
         category.push(this);
     });
@@ -540,69 +548,6 @@
 
     //_________Events__________
 
-    //Slider
-    //Index Slider
-    var cleanSlide = function () {
-        $sliderImg.removeClass('slider');
-        $sliderH1.removeClass('slider');
-        $sliderP.removeClass('slider');
-        $sliderA.removeClass('slider');
-        $sliderP.empty();
-    };
-
-    var displaySlide = function (slide, nextSlide, oldName, name, name2, text, url) {
-        $sliderImg.removeClass(slide);
-
-        $sliderImg.addClass(nextSlide);
-        $sliderImg.addClass('slider');
-
-        setTimeout(function () {
-            $sliderH1.text(name);
-            $sliderH1.append('<span>' + name2 + '</span>');
-            $sliderH1.addClass('slider');
-
-            setTimeout(function () {
-                $sliderP.text(text);
-                $sliderP.addClass('slider');
-
-                setTimeout(function () {
-                    $sliderA.attr("href", url);
-                    $sliderA.addClass('slider');
-                }, 100);
-            }, 100);
-        }, 200);
-    };
-
-    var sliderEvents = function (text) {
-        $sliderRight.on('click', function () {
-            cleanSlide();
-
-            if ($sliderImg.hasClass("slider-1")) {
-                displaySlide('slider-1', 'slider-2', 'Visual', 'UX/', 'UI', text.uxui, 'works.html#uxuihash');
-
-            } else if ($sliderImg.hasClass("slider-2")) {
-                displaySlide('slider-2', 'slider-3', 'UX/UI', 'Frontend ', 'Dev', text.frontend, 'works.html#frontendhash');
-
-            } else if ($sliderImg.hasClass("slider-3")) {
-                displaySlide('slider-3', 'slider-1', 'Fontend', 'Diseño ', 'Visual', text.visual, 'works.html#visualhash');
-            }
-        });
-
-        $sliderLeft.on('click', function () {
-            cleanSlide();
-
-            if ($sliderImg.hasClass("slider-1")) {
-                displaySlide('slider-1', 'slider-3', 'Visual', 'Frontend ', 'Dev', text.frontend, 'works.html#frontendhash');
-
-            } else if ($sliderImg.hasClass("slider-2")) {
-                displaySlide('slider-2', 'slider-1', 'UX/UI', 'Diseño ', 'Visual', text.visual, 'works.html#visualhash');
-
-            } else if ($sliderImg.hasClass("slider-3")) {
-                displaySlide('slider-3', 'slider-2', 'Fontend', 'UX/', 'UI', text.uxui, 'works.html#uxuihash');
-            }
-        });
-    };
-
     //Works View more
     $dwaMoreBtn.on("click", function () {
         if ($dwaMore.hasClass('hide')) {
@@ -652,7 +597,7 @@
 
                 var skillsArray = $lightbox.find('.project_skills').text().split(',');
                 $.each(skillsArray, function (key, skill) {
-                    var src = '<img src="' + lang + 'assets/tech/' + skill + '.jpg"/>';
+                    var src = '<img src="' + lang + 'assets/tech/' + skill + '.jpg"  data-rjs="2"/>';
                     $lightbox.find('.project_skills_cont').append(src);
                 });
 

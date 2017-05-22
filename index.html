@@ -5,17 +5,34 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jordi</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Jordi Design</title>
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="js/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="js/vendor/swiper/css/swiper.min.css">
     <link href="css/home.css" rel="stylesheet">
 </head>
 
 <body class="home">
 <header>
     <div id='nav-bar'>
-        <a class="menu-btn icon-list"><img src="/jordidesign/assets/images/logo.svg" alt="" width="65px"></a>
+        <a class="menu-btn icon-list"><img src="/assets/images/logo.svg" alt="" width="65px"></a>
         <nav id='anchors'>
             <a href="#slider">_Bienvenidos</a>
             <a href="#abouthash">_Sobre mi</a>
@@ -34,7 +51,7 @@
                 <li>
                     <div>
                         <span>_ES</span>
-                        <a href="/jordidesign/en">_EN</a>
+                        <a href="/en">_EN</a>
                     </div>
                 </li>
             </ul>
@@ -56,60 +73,85 @@
 </header>
 
 <main>
-    <section>
-        <div id="slider" class="slider slider-1">
-            <div class="container">
-                <div class="row">
-                    <div class="slider-cont col-md-12">
-                        <a href="#" class="icon-arrow"></a>
-                        <div class="cont-11">
-                            <div class="cont-4">
-                                <h1 id="slider-h1" class="slider">Diseño<span>Visual</span></h1>
-                                <p id="slider-p" class="slider"></p>
-                                <a href="works.html#visualhash" id="slider-a" class="small-view-more slider">[+] Ver
-                                    más</a>
-                            </div>
+    <section id="slider" class="swiper-container main-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(assets/banners/banner_01.jpg); background-size: cover;">
+                <div class="container">
+                    <div class="row">
+                        <div class="slider-cont col-lg-3 col-lg-offset-8 col-md-4 col-md-offset-7 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                            <h1>Diseño <span>Visual</span></h1>
+                            <p>_Diseño creativo visual para multidispositivos. Generación y seguimiento de guías de estilos. Transiciones y animaciones. Branding, editorial y campañas de marketing. Diseño de productos y packagings.</p>
+                            <a href="works.html#visualhash" id="slider-a" class="small-view-more">[+] Ver más</a>
                         </div>
-                        <a href="#" class="icon-arrow"></a>
                     </div>
                 </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image:url(assets/banners/banner_02.jpg); background-size: cover;">
+                <div class="container">
+                    <div class="row">
+                        <div class="slider-cont col-lg-3 col-lg-offset-8 col-md-4 col-md-offset-7 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                            <h1 class="ux-h1">UX/<span>UI</span></h1>
+                            <p>_Diseño de interfaces gráficas con metodología UX. Investigación y generación de propuestas. Diseño UI, wireframing, prototipado y testeo con usuarios. Propuestas validadas técnicamente.</p>
+                            <a href="works.html#uxuihash" id="slider-b" class="small-view-more">[+] Ver más</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image:url(assets/banners/banner_03.jpg); background-size: cover;">
+                <div class="container">
+                    <div class="row">
+                        <div class="slider-cont col-lg-3 col-lg-offset-8 col-md-4 col-md-offset-7 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                            <h1 id="slider-h1" class="slider">Desarrollo <span>Frontend</span></h1>
+                            <p id="slider-p" class="slider">_Desarrollo frontend responsive HTML5/CSS3/JS para webs y aplicaciones. Arquitectura con Angular JS, Sass y Bootstrap. Templates para Wordpress y otros CMS.</p>
+                            <a href="works.html#frontendhash" id="slider-c" class="small-view-more slider">[+] Ver más</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
         </div>
-
-        <nav id="cat-cont" class="container">
-            <ul class="inner row">
-                <li class="category col-md-4">
-                    <span>[+] Diseño Visual</span>
-                    <ul class="">
-                        <li><a href="works.html?filter=webs#visualhash">_Sitios webs</a></li>
-                        <li><a href="works.html?filter=interfaces#visualhash">_Interfaces</a></li>
-                        <li><a href="works.html?filter=otros#visualhash">_Otros</a></li>
-                    </ul>
-                </li>
-                <li class="category col-md-4">
-                    <span href="">[+] UX/UI</span>
-                    <ul class="">
-                        <li><a href="works.html?filter=research#uxuihash">_Research</a></li>
-                        <li><a href="works.html?filter=generacion#uxuihash">_Generación</a></li>
-                        <li><a href="works.html?filter=prototipado#uxuihash">_Prototipado</a></li>
-                    </ul>
-                </li>
-                <li class="category col-md-4">
-                    <span href="">[+] Frontend</span>
-                    <ul class="">
-                        <li><a href="works.html?filter=scratch#frontendhash">_Scratch</a></li>
-                        <li><a href="works.html?filter=templates#frontendhash">_Templates</a></li>
-                        <li><a href="works.html?filter=cms#frontendhash">_CMS</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div class="spacer"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </section>
 
-    <div id="abouthash"></div>
+    <nav id="cat-cont" class="cat-cont container">
+        <ul class="inner row">
+            <li class="category col-md-4">
+                <span>[+] Diseño Visual</span>
+                <ul class="">
+                    <li><a href="works.html?filter=webs#visualhash">_Sitios webs</a></li>
+                    <li><a href="works.html?filter=interfaces#visualhash">_Interfaces</a></li>
+                    <li><a href="works.html?filter=otros#visualhash">_Otros</a></li>
+                </ul>
+            </li>
+            <li class="category col-md-4">
+                <span href="">[+] UX/UI</span>
+                <ul class="">
+                    <li><a href="works.html?filter=research#uxuihash">_Investigación</a></li>
+                    <li><a href="works.html?filter=generacion#uxuihash">_Generación</a></li>
+                    <li><a href="works.html?filter=prototipado#uxuihash">_Prototipado</a></li>
+                </ul>
+            </li>
+            <li class="category col-md-4">
+                <span href="">[+] Frontend</span>
+                <ul class="">
+                    <li><a href="works.html?filter=scratch#frontendhash">_De cero</a></li>
+                    <li><a href="works.html?filter=templates#frontendhash">_Templates</a></li>
+                    <li><a href="works.html?filter=cms#frontendhash">_CMS</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
-    <section id="about">
+    <div class="spacer"></div>
+    <div id="abouthash" class="hash-cont"></div>
+
+    <section id="about" class="aboutsec">
         <div class="container">
             <div class="row">
                 <div class="about-pic col-md-3 col-sm-3 col-xs-4 col-xxs-5 col-xxxs-12"></div>
@@ -122,19 +164,19 @@
         </div>
     </section>
 
-    <section id="process">
+    <section id="process" class="process-sec">
         <div class="container">
             <div class="row">
-                <div class="cont-12">
+                <div class="col-md-12 process-cont">
                     <!-- Process steps will be generated here -->
                 </div>
             </div>
         </div>
     </section>
 
-    <div id="portfoliohash"></div>
+    <div id="portfoliohash" class="hash-cont"></div>
 
-    <section id="portfolio">
+    <section id="portfolio" class="portfolio-cont">
         <!--Mixit Up-->
         <div class="container">
             <div class="row">
@@ -153,20 +195,20 @@
     </section>
 </main>
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/vendor/jquery-1.11.0.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/handlebars-v2.0.0.js"></script>
-<script src="js/vendor/retina.min.js"></script>
+<script src="js/vendor/swiper/js/swiper.js"></script>
 <script src="//cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
 <script src="//tseoc.co.uk/chris/jquery.mixitup-pagination.min.js"></script>
-<script src="js/module.js"></script>
+<script src="js/vendor/lazysizes.min.js" async=""></script>
 <script src="js/main.js"></script>
 
 <!-- Handlebars templates -->
 <script id="process-template" type="text/x-handlebars-template">
     <div class="cont-2">
-        <img src="jordidesign/../assets/images/{{title}}.png" data-rjs="2">
+        <img src="assets/process/{{title}}-es.svg">
         <p>{{content}}</p>
     </div>
 </script>
@@ -179,7 +221,12 @@
             <h3>{{titulo}}</h3>
             <p>{{cliente}} | <span>{{fecha}}</span></p>
         </div>
-        <img class="min" src="assets/works/{{miniatura}}">
+        <img
+            data-sizes="auto"
+            data-src="assets/images/ring.svg"
+            data-srcset="assets/works/{{miniatura}} 300w,
+            assets/works/{{miniatura}} 600w,
+            assets/works/{{miniatura}} 900w" class="min lazyload" />
 
         <!--Overlay-->
         <div class="project_cont hide">
@@ -188,15 +235,15 @@
                 <a href="#" class="icon-arrow"></a>
                 <a href="#" class="icon-close"></a>
             </div>
-            <div class="cont-12">
-                <div class="project_info cont-3">
+            <div class="col-md-12 project_all">
+                <div class="project_info col-md-4 col-xs-12">
                     <h2>{{titulo}}</h2>
                     <h4>{{seccion}} <span>| {{subseccion}}</span></h4>
                     <div class="project_data">
                         <p>Proveedor: <span>{{proveedor}}</span></p>
                         <p>Cliente: <span>{{cliente}}</span></p>
                         <p>Fecha: <span>{{fecha}}</span></p>
-                        <p class="project_url hide">URL: <span><a href="{{url}}" target="_blank">Click aquí</a></span>
+                        <p class="project_url">URL: <span><a href="{{url}}" target="_blank">Click aquí</a></span>
                         </p>
                     </div>
                     <div class="project_min">{{{min}}}</div>
@@ -204,7 +251,7 @@
                     <div class="project_skills_cont"></div>
                     <p class="project_skills hide">{{skills}}</p>
                 </div>
-                <div class="project_img cont-8">{{{large}}}</div>
+                <div class="project_img col-md-8 col-xs-12">{{{large}}}</div>
             </div>
         </div>
     </div>
